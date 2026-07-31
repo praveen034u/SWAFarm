@@ -1,7 +1,7 @@
 # SWAFarm Node V1 — Power Supply Subsystem Design
 
 Author: Hardware Architect
-Status: Architecture baseline — ready for schematic capture
+Status: Architecture baseline — schematic capture now complete across two milestones. `01_power` (2026-07-30) captured the DC-IN/buck portion; `08_BatterySolar` (2026-07-31) captured the solar input, charger, battery protection, and battery pack portions described below — see [`SWAFarmNodeV1_08BatterySolar_DesignReview.md`](SWAFarmNodeV1_08BatterySolar_DesignReview.md) for the as-built implementation, including one as-built deviation from this document: §4.1's BQ25792 has no official KiCad symbol and was substituted with the real, verified, same-family **BQ25798** (dual-input NVDC buck-boost charger, same core architecture) — §4.1, §6, and §7 below should be read as the original design intent, not the final as-built part number.
 Scope: Power Supply subsystem ONLY (12V external DC input, solar input, battery charging/protection, buck conversion to 3.3V, protection, sleep optimization). No sensor, relay, RS485, LoRaWAN, MCU, or enclosure design is included here — those are separate subsystems per `.ai/agent_index.md`.
 
 This document is a **design record**, not a policy standard. It implements the normative rules already defined in `.ai/knowledge/power_management.md` and `.ai/knowledge/hardware_requirements.md` for the specific case of SWAFarm Node V1. It does not restate those documents' policy content — see the Cross References section for what to read there instead.
