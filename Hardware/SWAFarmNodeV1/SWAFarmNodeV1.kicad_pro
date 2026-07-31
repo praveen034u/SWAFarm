@@ -658,13 +658,18 @@
       {
         "filename": "SWAFarmNodeV1.kicad_sch",
         "name": "SWAFarmNodeV1",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "060522f3-d6eb-4e60-99ff-6cb93ab6e749"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C_INTVCC1,C_BST1,R_EN_BOT1,C_FF1,C_SS1,R_gate1,R_EN_TOP1,D_LED1,R_PG1,R_LED1,R_RT1",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "060522f3-d6eb-4e60-99ff-6cb93ab6e749",
+      "SWAFarmNodeV1"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
