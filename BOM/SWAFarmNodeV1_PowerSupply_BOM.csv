@@ -1,0 +1,33 @@
+RefDes,Block,Description,Manufacturer,Representative Part Number,Package,Qty,Approx Unit Cost (USD, ROM),Approx Ext Cost (USD, ROM),Preferred Distributor,Notes
+J1,Connectors,DC-IN pluggable screw terminal 2-pos 5.08mm,Phoenix Contact,MSTB 2,5/2-G-5.08 class,THT 5.08mm pluggable,1,1.50,1.50,DigiKey/Mouser,Field-serviceable polarity-safe per SWA-HWR-305
+J2,Connectors,Solar-IN pluggable screw terminal 2-pos 5.08mm,Phoenix Contact,MSTB 2,5/2-G-5.08 class,THT 5.08mm pluggable,1,1.50,1.50,DigiKey/Mouser,Same family as J1 for AVL simplicity
+J3,Connectors,Battery pack connector keyed 2-pos,Molex,Mini-Fit Jr class,THT/crimp,1,0.80,0.80,DigiKey/Mouser,Keyed against reverse insertion
+J4,Connectors,VSYS raw output header 2-pos,Generic,Conn_01x02 class,THT 2.54mm,1,0.30,0.30,DigiKey/Mouser,Feeds relay/other-subsystem rails; not consumed on this board
+D_GDT1,Surge Protection - DC-IN,Gas discharge tube primary surge clamp,Littelfuse,CG2-series class,THT/SMD per selection,1,0.60,0.60,DigiKey/Mouser,Exact voltage rating pending IEC 61000-4-5 test level definition (Risk R-5)
+D_TVS1,Surge Protection - DC-IN,Bidirectional TVS diode secondary clamp,Littelfuse,SMBJ36CA class,SMB (DO-214AA),1,0.25,0.25,DigiKey/Mouser,Coordinate clamp voltage below charger IC abs max
+F1,Surge Protection - DC-IN,PTC resettable fuse,Littelfuse/Bourns,MF-R series class,SMD 1812/2920,1,0.30,0.30,DigiKey/Mouser,Size to port max current with margin
+D_GDT2,Surge Protection - Solar-IN,Gas discharge tube primary surge clamp,Littelfuse,CG2-series class,THT/SMD per selection,1,0.60,0.60,DigiKey/Mouser,Same rationale as D_GDT1
+D_TVS2,Surge Protection - Solar-IN,Bidirectional TVS diode secondary clamp,Littelfuse,SMBJ36CA class,SMB (DO-214AA),1,0.25,0.25,DigiKey/Mouser,Same rationale as D_TVS1
+F2,Surge Protection - Solar-IN,PTC resettable fuse,Littelfuse/Bourns,MF-R series class,SMD 1812/2920,1,0.30,0.30,DigiKey/Mouser,Same rationale as F1
+U_RP1,Reverse Polarity - DC-IN,Ideal diode controller,Texas Instruments,LM74610-Q1,Small outline per datasheet,1,0.60,0.60,DigiKey/Mouser,Zero added IQ near-zero voltage drop
+Q_RP1,Reverse Polarity - DC-IN,N-channel MOSFET 40-60V,TBD (Infineon/Nexperia/onsemi class),TBD at detailed design,SO-8/DPAK class,1,0.40,0.40,DigiKey/Mouser,Sized to LM74610-Q1 application guide
+U_RP2,Reverse Polarity - Solar-IN,Ideal diode controller,Texas Instruments,LM74610-Q1,Small outline per datasheet,1,0.60,0.60,DigiKey/Mouser,Same rationale as U_RP1
+Q_RP2,Reverse Polarity - Solar-IN,N-channel MOSFET 40-60V,TBD (Infineon/Nexperia/onsemi class),TBD at detailed design,SO-8/DPAK class,1,0.40,0.40,DigiKey/Mouser,Same rationale as Q_RP1
+U1,Charger / Power Path,I2C dual-input buck-boost battery charger,Texas Instruments,BQ25792,VQFN-40,1,3.00,3.00,DigiKey/Mouser,Single-source today; second-source qualification tracked as Risk R-2
+L1,Charger / Power Path,Charger power inductor,TBD,TBD at detailed design,Shielded SMD,1,1.20,1.20,DigiKey/Mouser,Value per BQ25792 application guide
+Q_SEL1,Charger / Power Path,VAC1 selector back-to-back N-FET pair (2x),TBD,TBD at detailed design,SO-8 class,2,0.35,0.70,DigiKey/Mouser,Driven by BQ25792 ACDRV1; not reverse-polarity protection (Risk R-6)
+Q_SEL2,Charger / Power Path,VAC2 selector back-to-back N-FET pair (2x),TBD,TBD at detailed design,SO-8 class,2,0.35,0.70,DigiKey/Mouser,Driven by BQ25792 ACDRV2; not reverse-polarity protection (Risk R-6)
+C_CHG1,Charger / Power Path,Input/output bulk and decoupling capacitors (support group),TBD,TBD at detailed design,0805/1206/bulk mix,1,1.00,1.00,DigiKey/Mouser,Check electrolytic lifetime vs SWA-CST-301 at worst thermal zone
+CELL1,Battery,LiFePO4 cylindrical cell 26650-class ~3.2-3.5Ah,TBD (EVE/CALB/Lishen class),TBD - lock during AVL qualification,26650 cylindrical,4,3.50,14.00,Arrow/Future Electronics,4S pack; capacity provisional pending SWA-PWM-201 power budget (Risk R-3)
+PACK_HW,Battery,Cell holder / nickel strip / wrap hardware,TBD,TBD,Mechanical,1,1.00,1.00,Arrow/Future Electronics,Assembly requires safety handling controls per manufacturing_rules.md
+NTC1,Battery,Pack temperature thermistor (NTC),TBD,TBD at detailed design,0603/leaded per selection,1,0.10,0.10,DigiKey/Mouser,Feeds BQ25792 TS pin and/or BQ76920
+U2,Battery Protection,Battery monitor and protector AFE 3S-5S,Texas Instruments,BQ76920,TSSOP,1,2.20,2.20,DigiKey/Mouser,Single-source today; second-source qualification tracked as Risk R-2
+Q_PROT1,Battery Protection,Charge FET (protection),TBD,TBD at detailed design,SO-8 class,1,0.50,0.50,DigiKey/Mouser,Back-to-back with Q_PROT2
+Q_PROT2,Battery Protection,Discharge FET (protection),TBD,TBD at detailed design,SO-8 class,1,0.50,0.50,DigiKey/Mouser,Back-to-back with Q_PROT1
+R_SHUNT1,Battery Protection,Coulomb counting sense resistor,TBD,TBD at detailed design,2512 or similar,1,0.30,0.30,DigiKey/Mouser,Precision low-value current-sense resistor
+F3,Battery Protection,One-time series fuse (tertiary failsafe),Bel Fuse/SCHURTER class,TBD at detailed design,THT/SMD per selection,1,0.40,0.40,DigiKey/Mouser,Backup to protection FETs
+U3,Buck Converter,42V synchronous buck converter fixed 3.3V output,Analog Devices,LT8609A-3.3,MSOP-10,1,2.80,2.80,DigiKey/Mouser,Single-source today; second-source qualification tracked as Risk R-2
+L2,Buck Converter,Buck converter power inductor,TBD,TBD at detailed design,Shielded SMD,1,0.60,0.60,DigiKey/Mouser,Value per LT8609A datasheet
+C_BUCK1,Buck Converter,Input/output capacitors and feedback network (support group),TBD,TBD at detailed design,0603/0805 mix,1,0.40,0.40,DigiKey/Mouser,
+U4,Load Switching,Ultra-low leakage load switch - RF/LoRa rail,Texas Instruments,TPS22919 class,SOT-23,1,0.35,0.35,DigiKey/Mouser,MCU-controlled power gating for sleep optimization
+U5,Load Switching,Ultra-low leakage load switch - RS485/Sensor rail,Texas Instruments,TPS22919 class,SOT-23,1,0.35,0.35,DigiKey/Mouser,MCU-controlled power gating for sleep optimization
