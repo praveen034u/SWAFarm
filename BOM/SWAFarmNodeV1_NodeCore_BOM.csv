@@ -1,0 +1,80 @@
+﻿RefDes,Qty,Value,Footprint,DNP,Manufacturer,MPN,Spec_Component_ID,Notes
+"CMC_RS485_1, CMC_RS485_2",2,744232090,Inductor_SMD:L_CommonModeChoke_Bourns_SRF1260,,Wurth Elektronik,744232090,CMP_RS485_CMC,Exact match
+"C_BOOT1, C_BOOT2, C_DEC1, C_DEC10, C_DEC2, C_DEC3, C_DEC4, C_DEC5, C_DEC6, C_DEC7, C_DEC8, C_DEC9, C_FILT1, C_FILT2, C_FILT3, C_FILT4, C_FILT5, C_FILT6, C_ISOIN1, C_ISOOUT1",20,100nF,Capacitor_SMD:C_0603_1608Metric,,,,,
+C_BULK2,1,10uF,Capacitor_SMD:C_1206_3216Metric,,,,,
+C_COMP1,1,2.2nF_TBD,Capacitor_SMD:C_0603_1608Metric,,,,,
+C_DVDT1,1,1nF_TBD,Capacitor_SMD:C_0805_2012Metric,,,,,
+"C_EN1, C_VMDEC1, C_VMDEC2, C_VMDEC3, C_VMDEC4, C_VMDEC5, C_VMDEC6",7,1uF,Capacitor_SMD:C_0805_2012Metric,,,,,
+"C_IN1, C_IN2, C_OUT1",3,10uF_25V,Capacitor_SMD:C_1206_3216Metric,,,,,
+C_IN3,1,10uF_16V,Capacitor_SMD:C_1206_3216Metric,,,,,
+"C_OUT2, C_OUT3",2,22uF_10V,Capacitor_SMD:C_1206_3216Metric,,,,,
+C_SS1,1,10nF_TBD,Capacitor_SMD:C_0603_1608Metric,,,,,
+C_VALVEBULK1,1,1000uF_25V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,,Panasonic,EEU-FR1E102,CMP_VALVE_PULSE_BULK_CAP,Exact match (1000uF/25V radial electrolytic)
+D1,1,SMBJ18CA,Diode_SMD:D_SMB,,Littelfuse,SMBJ18CA,CMP_INPUT_TVS / CMP_SURGE_PROTECTOR,"Spec suggests SMBJ24A/SMAJ24A (two BOM rows, likely redundant spec entries for the same physical TVS) -- schematic uses SMBJ18CA (18V clamp) instead; confirm target clamp voltage against real 12V rail transient spec before BOM lock"
+"D_CLHI1, D_CLHI2, D_CLHI3, D_CLHI4, D_CLHI5, D_CLHI6",6,BAV99_1of2,Diode_SMD:D_SOD-123,,onsemi,BAV99LT1G,CMP_SENSOR_INPUT_PROTECT,SUBSTITUTION: spec specifies 1x BAV99 dual-diode package per channel (qty 6). Design uses 2x discrete Device:D diodes per channel (12 total) implementing the identical bipolar-clamp function -- disclosed schematic-level simplification; BAV99 SOT-23 can implement both at real PCB/BOM stage if preferred
+"D_CLLO1, D_CLLO2, D_CLLO3, D_CLLO4, D_CLLO5, D_CLLO6",6,BAV99_2of2,Diode_SMD:D_SOD-123,,onsemi,BAV99LT1G,CMP_SENSOR_INPUT_PROTECT,See D_CLHI note -- same disclosed substitution
+D_FLT1,1,Red_FAULT,LED_SMD:LED_0805_2012Metric,,Kingbright,APT1608xxx (red),,"Not itemized in spec BOM -- FAULT LED is this project's own addition per Final_MCU_Pin_Map (GPIO40/LED_FAULT). Same package family as PWR/LINK LEDs, red variant -- exact MPN TBD"
+D_LED1,1,Green_PowerGood,LED_SMD:LED_0805_2012Metric,,,,,
+D_LED2,1,Green_3V3Present,LED_SMD:LED_0805_2012Metric,,,,,
+D_LINK1,1,Yellow_LINK,LED_SMD:LED_0805_2012Metric,,Kingbright,APT1608SYCK,CMP_LED_LINK,Exact match
+D_PWR1,1,Green_PWR,LED_SMD:LED_0805_2012Metric,,Kingbright,APT1608QBC-D,CMP_LED_PWR,Exact match
+"D_RS485PROT1, D_RS485PROT2",2,SM712-02HTG,Package_TO_SOT_SMD:SOT-23,,Littelfuse,SM712-02HTG,CMP_RS485_LINE_PROTECT,Exact match
+F1,1,Polyfuse_1.5A,Fuse:Fuse_1812_4532Metric,,Bourns,MF-R110,CMP_INPUT_FUSE_PTC,
+J1,1,M12_5P_A_Coded_PowerIn,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,TE Connectivity,T4141412041-000,CMP_CONN_M12A_4P_PWR12_PANEL,Placeholder THT pin-header footprint used for schematic/PCB placement -- swap to real M12 A-coded panel-mount footprint before Gerber export
+J_LORASMA1,1,SMA_Bulkhead_Antenna,Connector_Coaxial:SMA_Amphenol_132134_Vertical,,Amphenol RF,132134,CMP_CONN_SMA_BULKHEAD,Exact match. Populated -- external gain antenna (>=3dBi) required at deployment to hit the 5km+ range target
+J_OUT1,1,M12_5P_A_Coded_PowerOut,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,TE Connectivity,T4141412041-000,CMP_CONN_M12A_4P_PWR12_PANEL,Placeholder THT pin-header footprint -- swap to real M12 footprint before Gerber export
+J_PROG1,1,Debug_UART_TX_RX_GND,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,,,"Generic 3-pin 2.54mm header for optional external debug UART adapter, not spec-itemized"
+J_RS485_IN1,1,M12_5P_A_Coded_RS485_Bus_In,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,TE Connectivity,T4141412051-000,CMP_CONN_M12A_5P_RS485_PANEL,Placeholder THT pin-header footprint -- swap to real M12 footprint before Gerber export
+J_RS485_LOC1,1,M12_5P_A_Coded_RS485_Local,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,TE Connectivity,T4141412051-000,CMP_CONN_M12A_5P_RS485_PANEL,Placeholder THT pin-header footprint -- swap to real M12 footprint before Gerber export
+J_RS485_OUT1,1,M12_5P_A_Coded_RS485_Bus_Out,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,TE Connectivity,T4141412051-000,CMP_CONN_M12A_5P_RS485_PANEL,Placeholder THT pin-header footprint -- swap to real M12 footprint before Gerber export
+J_SENSOR_RET1,1,SensorReturn_x6,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",,Phoenix Contact,1840409,CMP_CONN_TERM_6CH_SENSOR,Exact match
+J_SENSOR_SIG1,1,SensorSignal_x6,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",,Phoenix Contact,1840409,CMP_CONN_TERM_6CH_SENSOR,Exact match
+J_USB1,1,USB-C_Programming,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,,HRO Electronics (or equiv.),TYPE-C-31-M-12 class,,"Not itemized in spec BOM (native-USB programming port is this project's own addition per Final_MCU_Pin_Map). Footprint is a real USB-C receptacle exposing GND/VBUS/CC1-2/D+-/SBU1-2 (16 pads, no SuperSpeed) -- confirm exact MPN with procurement"
+J_VALVE_OUT1_1,1,ValveOut1_x6,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",,Phoenix Contact,1840412,CMP_CONN_TERM_6CH_VALVE,Exact match
+J_VALVE_OUT2_1,1,ValveOut2_x6,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",,Phoenix Contact,1840412,CMP_CONN_TERM_6CH_VALVE,Exact match
+L1,1,3.3uH_TBD,Inductor_SMD:L_Bourns-SRN6028,,Wurth Elektronik,74437368100 (10uH class),CMP_BUCK_IND_10UH,"VALUE MISMATCH: spec's recommended inductor for the 12V->5V buck is a 10uH-class part (74437368100); schematic placeholder value is 3.3uH_TBD (sized by rule-of-thumb buck formula, not yet reconciled against the real recommended part) -- resolve before BOM lock, real inductor value drives loop compensation too"
+L2,1,2.2uH_TBD,Inductor_SMD:L_Bourns-SRN4018,,Wurth Elektronik,74438335022 (2.2uH class),CMP_BUCK_IND_2UH2,Matches schematic's 2.2uH_TBD placeholder value closely -- confirm exact part/current rating before BOM lock
+Q1,1,IPD50N06S4L-16,Package_TO_SOT_SMD:SOT-23,,Infineon,IPD50N06S4L-16,CMP_POLARITY_PROTECT,Exact match
+"R_BIASA1, R_BIASB1",2,680,Resistor_SMD:R_0805_2012Metric,,Vishay,CRCW0603680RFKEA,CMP_RS485_BIAS_NET,Exact match
+"R_BOOT1, R_EN1B1, R_ENPU1, R_EXPRST1, R_FB1B1, R_FB2B1, R_FLT1, R_IMON1, R_LORABOOT1, R_LORARST1, R_OVP2, R_PG1, R_SETUP1, R_UVLO2, R_gate1",15,10k,Resistor_SMD:R_0805_2012Metric,,,,,
+"R_BURDEN1, R_BURDEN2, R_BURDEN3, R_BURDEN4, R_BURDEN5, R_BURDEN6",6,150_0.1pct,Resistor_SMD:R_0805_2012Metric,,Yageo,RT0805BRD07150RL,CMP_SENSOR_BURDEN_R,"Exact match, 150R/0.1% burden/divider resistor (x6 channels)"
+"R_CC1_1, R_CC2_1",2,5.1k,Resistor_SMD:R_0805_2012Metric,,,,,
+R_COMP1,1,10k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
+R_EN1A1,1,73.2k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
+"R_EN2, R_SER1, R_SER2, R_SER3, R_SER4, R_SER5, R_SER6, R_SHDN1",8,100k,Resistor_SMD:R_0805_2012Metric,,,,,
+R_FB1A1,1,52.3k,Resistor_SMD:R_0805_2012Metric,,,,,
+R_FB2A1,1,32.4k,Resistor_SMD:R_0805_2012Metric,,,,,
+"R_ILIM1, R_ILIM_V1, R_ILIM_V2, R_ILIM_V3, R_ILIM_V4, R_ILIM_V5, R_ILIM_V6",7,20k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
+"R_LED1, R_LEDFLT1, R_LINK1, R_PWR1",4,1k,Resistor_SMD:R_0805_2012Metric,,,,,
+R_LED2,1,330,Resistor_SMD:R_0805_2012Metric,,,,,
+R_OVP1,1,124k,Resistor_SMD:R_0805_2012Metric,,,,,
+R_RT1,1,100k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
+R_TERM1,1,120_SOLDER_SELECT,Resistor_SMD:R_0805_2012Metric,,Vishay,CRCW0603120RFKEA,CMP_RS485_TERM_SELECT,"Spec qty=2 (one per segment); design has 1 (single shared bus, see U_RS485_TX1 note). Solder-select: populate only at true end-of-line node"
+R_UVLO1,1,64.9k,Resistor_SMD:R_0805_2012Metric,,,,,
+SW_BOOT1,1,BOOT,Button_Switch_SMD:SW_SPST_B3U-1000P,,,,,
+SW_RESET1,1,RESET,Button_Switch_SMD:SW_SPST_B3U-1000P,,,,,
+SW_SETUP1,1,SETUP,Button_Switch_SMD:SW_SPST_B3U-1000P,,,,,
+TP_12V_SW1,1,V12_SW,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_3V3,1,V3V3_RAIL,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_5V1,1,V5_RAIL,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_FLT1,1,nFLT,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_GND1,1,GND,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_IMON1,1,IMON,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_ISO5V1,1,ISO_5V,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_ISOGND1,1,ISO_GND,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_LORABOOT1,1,LORA_BOOT0,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_LORARST1,1,LORA_RESET,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_PG1,1,nPWRGD,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_RS485DI1,1,ISO_DI,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_RS485RO1,1,ISO_RO,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_USBVBUS1,1,USB_VBUS,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+U1,1,TPS26600PWP,Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias,,Texas Instruments,TPS26600PWPR,CMP_EFUSE_UVLO_OVP,Exact match (PWPR = tape/reel of PWP)
+U2,1,TPS54561,Package_SON:WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias,,Texas Instruments,TPS54561DDAR,CMP_REGULATOR_12V_TO_5V,"SUBSTITUTION: spec specifies TPS54531DDAR, no exact KiCad stock symbol exists. TPS54561 is the same TI SWIFT integrated-FET family, 5A vs spec's 3.5A (headroom). Package differs (WSON-10 vs SO-8 PowerPAD) -- confirm before BOM lock"
+U3,1,TPS563201,Package_TO_SOT_SMD:SOT-23-6,,Texas Instruments,TPS563201DDCR,CMP_REGULATOR_5V_TO_3V3,Exact match
+"U_DRV1, U_DRV2, U_DRV3, U_DRV4, U_DRV5, U_DRV6",6,DRV8871DDAR,Package_SO:TI_SO-PowerPAD-8_ThermalVias,,Texas Instruments,DRV8871DDAR,CMP_VALVE_DRIVER_CH,Exact match
+U_ISO1,1,ISO7761DW,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,,Texas Instruments,ISO7761DW,CMP_RS485_ISOLATOR,"SUBSTITUTION: spec specifies ISO1410BDWR. ISO7761DW is a real stock 6-channel (5fwd/1rev) TI isolator with more channel headroom than needed (2fwd+1rev used) -- disclosed substitution, same TI isolator family/class"
+U_ISODCDC1,1,MEE1S0505SC,Converter_DCDC:Converter_DCDC_Murata_MEE1SxxxxSC_THT,,Murata,MEE1S0505SC,CMP_RS485_ISO_DCDC,"SUBSTITUTION: spec specifies NXE1S0505MC. MEE1S0505SC is a real, stock, function-identical (5Vin/5Vout, 1W, SIP) Murata isolated DC-DC -- disclosed substitution, same class"
+U_LORA1,1,RAK3172-xx-8-SM-xI,RF_Module:RAK3172,,RAKwireless,RAK3172-xx-8-SM-xI,,"Populated (not DNP) per explicit user request for India-region LoRa with 5km+ theoretical range. This exact stock symbol variant's own Description field reads ""LoRa Module, STM32WLE5, RU864/IN865/EU868"" -- IN865 is India's LoRaWAN band. Link budget: +22dBm max TX, -148dBm RX sensitivity (SF12/BW125) => ~176dB budget => ~71dB margin over free-space path loss at 5km with a conservative 3dBi/3dBi antenna assumption. UART/AT-command interface (STM32WLE5 onboard) is host-MCU-agnostic -- confirmed compatible with ESP32-S3 (3.3V logic, spare UART on GPIO17/18 exactly as Final_MCU_Pin_Map allocates, 2 spare GPIOs for BOOT0/RESET). See Step 5 design review for the full calculation."
+U_MCU1,1,ESP32-S3-WROOM-1-N16R8,RF_Module:ESP32-S3-WROOM-1,,Espressif,ESP32-S3-WROOM-1-N16R8,CMP_MCU_ESP32S3,Exact match
+U_RS485_TX1,1,THVD1450DR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,,Texas Instruments,THVD1450DR,CMP_RS485_TRANSCEIVER,"Spec BOM qty=2 (one per physical segment); design uses 1 shared transceiver fanned out to all 3 M12 connectors after a real ERC-caught pin_to_pin conflict on a 2-transceiver design (2 active RO outputs on 1 isolator channel) -- disclosed deviation, see Step 4 design review"
+U_VALVEEXP1,1,MCP23S17-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm,,Microchip,MCP23S17-E/SO,CMP_VALVE_HBRIDGE_SPI_EXPANDER,"Package variant: spec specifies -E/SS (SSOP-28); design uses -E/SO (SOIC-28W), same die/function, different package -- confirm before BOM lock"

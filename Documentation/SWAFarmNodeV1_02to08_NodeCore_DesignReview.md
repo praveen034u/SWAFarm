@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-01
 **Milestones:** Steps 2-8 of the ESP32-S3 NODE_CORE rebuild (see `C:\Users\prave\.claude\plans\moonlit-napping-snowglobe.md`; Step 1 has its own review at `SWAFarmNodeV1_01Power_NodeCore_DesignReview.md`).
-**Status:** Full schematic captured (161 components) and PCB floor-planned (4-layer, 385×335mm). **ERC: 0 errors, 6 documented warnings. DRC: 0 errors, 4 cosmetic silkscreen warnings.**
+**Status (as of 2026-08-01, post LoRa re-add with India-band/range requirements and PCB placement correction):** Full schematic captured (161 components — LoRaWAN module bay populated, see Step 5 below) and PCB floor-planned (4-layer, 420×355mm, real-footprint-measured placement, 0 out-of-bounds). **ERC: 0 errors, 7 documented warnings. DRC: 0 violations of any kind.**
 
 ## 1. Scope
 
@@ -33,7 +33,22 @@ Every GPIO reservation placed in Step 2 (as an isolated local label, matching th
 **One real design correction made during this milestone, caught by ERC, not guessed:** the first attempt used two independent transceivers (one per physical "segment," matching the spec's `qty=2` BOM line) with their `RO` outputs tied to the same isolator reverse channel — real `kicad-cli` ERC caught a `pin_to_pin` conflict (two active outputs on one net). Fixed by using one shared transceiver whose `A`/`B` pins fan out to all three M12 connectors (IN/OUT/LOCAL), the same "multiple connectors, one bus" pattern already proven in the archived `04_RS485`/`07_FieldIO`. Disclosed deviation from the spec's transceiver quantity, in favor of electrical correctness.
 Line protection (`SM712_SOT23`) + common-mode choke at the two external field-entry points (IN, LOCAL); OUT is a direct daisy-chain tap. 120Ω solder-select termination + 680Ω/680Ω fail-safe bias, once for the shared bus.
 
-**Step 5 — LoRaWAN Module Bay.** `RAK3172-xx-8-SM-xI` (same real symbol already used and verified in the archived `05_LoRaWAN`), UART wired to `LORA_UART_TX/RX`, `BOOT0` pull-down + `~RST` pull-up + test points (same topology as the archived project's own pattern), RF pin to an SMA bulkhead (`Connector:Conn_Coaxial` symbol, same as the archived project's U.FL). **Per the user's explicit confirmation, the module, antenna, and their support resistors/test points are marked `dnp yes`** — footprints are placed (bay is real and populatable) but BOM-optional by default, strictly matching the spec's `PROVISIONAL`/optional treatment of LoRa for `NODE_CORE`.
+**Step 5 — LoRaWAN Module Bay — three revisions on 2026-08-01, current state: populated, India-band, range-justified.**
+
+1. *Originally captured*: `RAK3172-xx-8-SM-xI`, UART wired to `LORA_UART_TX/RX`, `BOOT0` pull-down + `~RST` pull-up + test points, RF pin to an SMA bulkhead. Module/antenna/support parts marked `dnp yes` (footprints placed, bay populatable, but BOM-optional by default) matching the spec's `PROVISIONAL` treatment of LoRa for `NODE_CORE`.
+2. *Fully removed*, per explicit user decision (confirmed first, since this reversed the DNP-bay decision and left the board with no LoRa capability at all) — executed via a full clean rebuild from the Step 1 checkpoint with Step 5 skipped, not manual deletion (this session had already hit real corruption from hand-editing the generated schematic once, during a USB-connector symbol fix, so "rebuild from checkpoint" is the established practice for any removal, not just additions).
+3. *Re-added, populated*, per a follow-up request specifying an India-region module with roughly 5km+ theoretical range. Re-used the exact same `RAK3172-xx-8-SM-xI` part (its own stock-symbol `Description` field reads *"LoRa Module, STM32WLE5, RU864/IN865/EU868"* — `IN865` is India's LoRaWAN band, so this was already the right regional variant, just previously unpopulated) — this time **not** DNP.
+   - **Range justification (link budget, not just a claim):** RAK3172's STM32WLE5 radio core: +22dBm max TX, -148dBm RX sensitivity at SF12/BW125 (most robust setting) → **176dB link budget**. Free-space path loss at 5km/866MHz ≈ 105.2dB, even with a conservative 3dBi antenna assumption on both ends → **~71dB of margin** at 5km:
+
+  | Range | FSPL (866MHz) | Margin |
+  |---|---|---|
+  | 1 km | 91.2 dB | 84.8 dB |
+  | 5 km | 105.2 dB | 70.8 dB |
+  | 10 km | 111.2 dB | 64.8 dB |
+  | 20 km | 117.2 dB | 58.8 dB |
+ Real-world range will be lower than the free-space figure due to terrain/foliage/obstruction, but the margin is large enough that 5km+ is comfortably achievable in typical rural/farm line-of-sight conditions — consistent with vendor-documented real-world LoRaWAN range claims for this radio class. Requires an external gain antenna (≥3dBi) at deployment via the SMA connector — a PCB trace antenna would not hit this target.
+   - **ESP32-S3 compatibility, explicitly confirmed:** RAK3172 exposes a UART/AT-command interface (its own onboard STM32WLE5CC runs the LoRaWAN stack) — host-MCU-agnostic by design, needing only 3.3V power, a UART pair, and 2 GPIOs for `BOOT0`/`RESET`. All three match ESP32-S3 directly (shared `V3V3_RAIL`, `GPIO17/18` exactly as the spec's own `Final_MCU_Pin_Map` allocates for `LORA_UART_TX/RX`, 2 spare GPIOs for control) — no level-shifting or special host bus support needed.
+   - Final component count: 161 (back to the original Step 7 total). Independently netlist-traced: UART correctly lands on `U_MCU1` pins 10/11, RF pin correctly reaches `J_LORASMA1`, all unused module pins (SPI/I2C/SWD/spare GPIO/UART2) correctly isolated.
 
 **Step 6 — Universal Sensor Front-End.** 6 channels, each: 100kΩ series + 150Ω/0.1% burden resistor (doubles as the 0-10V divider bottom leg and the 4-20mA current-sense burden — a disclosed single-resistor simplification of the spec's separate "divider + burden" description), bipolar clamp (2 discrete diodes standing in for a `BAV99` dual-diode package — same protection function, disclosed schematic-level simplification), 100nF RC filter into ADC1. Each channel's return tied to system GND (no isolation stage ahead of this frontend — disclosed). 2×6-pole terminal blocks (SIG block + RET block), matching the locked `Netlist_Seed` rows (`NODE_SENSOR_001..012`, each channel has its own SIG+RET pair) over the connector description's more ambiguous "shared +12V loop" wording.
 
