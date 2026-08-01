@@ -158,15 +158,15 @@ Per `global_engineering_rules.md`: **"Do not finalize impedance values without t
 
 | Subsystem | Status | Zone (§3) | Key Constraints |
 |---|---|---|---|
-| Power (`01_power`) | Captured | Power Zone | Compact switching loop (§6), thermal via strategy (§8), external connector edge placement (§9) |
-| MCU (`02_MCU`) | Captured | MCU Zone (central hub) | No RF-specific constraint itself, but hosts the SWD/debug access point (§9) |
-| Human Interface (`03_HMI`) | Captured | Co-located with MCU zone | Mounting holes (§9), board-ID silkscreen (deferred to enclosure milestone per `03_HMI` §7) |
-| RS485 (`04_RS485`, field I/O protection added `07_FieldIO`) | Captured | RS485 Zone (edge) | Differential routing (existing §15 of that doc), isolation moat provision (§7), 5-connector edge cluster with field-connector clearance reservations (§9), per-drop Sensor Power fusing + shared TVS (`07_FieldIO`) |
-| LoRaWAN (`05_LoRaWAN`) | Captured | RF Zone (edge, isolated from switching) | RF keepout (§5), antenna edge placement (§9) |
-| Relay driver (`06_Relay`) | Captured | Relay Driver Zone (edge, isolated from RF/sensor) | 5× flyback-protected low-side N-MOSFET channels, locally-filtered shared coil rail (ferrite+bulk cap off `VSYS_RAW_OUT`), contact side (COM/NO/NC) galvanically isolated from board GND by the relay itself — no PCB-level isolation moat needed here (contrast RS485 §7); thermal: 5× ~0.9W coil dissipation + contact I²R at rated load, TBD against real enclosure airflow at layout stage |
+| Power (`01_power`) | Captured + Placed (`09_PCBFloorplan`) | Power Zone (X10-130,Y10-85) | Compact switching loop (§6), thermal via strategy (§8), external connector edge placement (§9) |
+| MCU (`02_MCU`) | Captured + Placed | MCU Zone (central hub, X95-160,Y75-135) | Decoupling tightened to ~12mm of the IC during placement (see `09_PCBFloorplan` §8); hosts the SWD/debug access point (§9) |
+| Human Interface (`03_HMI`) | Captured + Placed | HMI Zone (X165-210,Y118-138) | Mounting holes placed at all 4 corners (§9), board-ID silkscreen still deferred to enclosure milestone per `03_HMI` §7 |
+| RS485 (`04_RS485`, field I/O protection added `07_FieldIO`) | Captured + Placed | RS485 Zone (left edge, X10-100,Y80-215) | Differential routing (existing §15 of that doc) still pending — placement only; isolation moat provision (§7) remains open; 5-connector edge cluster placed on the left board edge |
+| LoRaWAN (`05_LoRaWAN`) | Captured + Placed | RF Zone (top-right corner, X210-290,Y10-70) | RF keepout (§5) remains a routing-stage item; antenna placed at the board's outer edge, farthest zone from every switching/high-current block (verified via rendered placement, not just intent) |
+| Relay driver (`06_Relay`) | Captured + Placed | Relay Zone (bottom edge, X95-210,Y140-195) | 5× flyback-protected low-side N-MOSFET channels; contact side (COM/NO/NC) galvanically isolated from board GND by the relay itself — no PCB-level isolation moat needed here (contrast RS485 §7); real Finder 40.51 courtyard (29.55×12.95mm, measured not assumed) drove the final connector pitch |
+| Battery/Solar (`08_BatterySolar`) | Captured + Placed | Battery Zone (X138-200,Y10-85), adjacent to Power Zone as planned | Thermal (§8) and safety clearance (`manufacturing_rules.md`) remain routing/layout-detail items; placement confirms the adjacent-to-Power-Zone plan from this document was followed |
 | Sensor front-end | Not started | Reserved (Future) | Isolated from relay switching noise (§6) |
-| Battery/Solar | Not started | Reserved (Future), adjacent to Power Zone | Thermal (§8), safety clearance (`manufacturing_rules.md`) |
-| Enclosure/mounting | Not started | N/A (drives edge assignments once designed) | Mounting hole clearance (§9), connector edge orientation (§9), antenna SMA bulkhead (`05_LoRaWAN` §5) |
+| Enclosure/mounting | Not started | N/A (drives edge assignments once designed) | Mounting hole clearance (§9) — 4× M3 corner holes now placed at a provisional 10mm inset, to be validated once a real enclosure exists; connector edge orientation (§9); antenna SMA bulkhead (`05_LoRaWAN` §5) |
 
 ---
 

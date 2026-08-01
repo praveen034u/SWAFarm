@@ -1,0 +1,136 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-08-01T03:52:17",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/7f190bf9-c800-4055-b329-7f500a7a2cbd",
+            "violations": [
+                {
+                    "description": "Symbol 'TPS563201' doesn't match copy in library 'Regulator_Switching'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [TPS563201]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": 2.9464
+                            },
+                            "uuid": "6e4afe5e-897c-483b-8c0e-6861c58294c4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Both RS485_DE and RS485_RE are attached to the same items; RS485_DE will be used in the netlist",
+                    "items": [
+                        {
+                            "description": "Label 'RS485_DE'",
+                            "pos": {
+                                "x": 4.1783,
+                                "y": 1.524
+                            },
+                            "uuid": "f0eb5f4a-9e3f-457c-aecd-7f17792524e7"
+                        },
+                        {
+                            "description": "Label 'RS485_RE'",
+                            "pos": {
+                                "x": 4.1783,
+                                "y": 1.5494
+                            },
+                            "uuid": "6ea6a51d-bac3-425c-84e5-7717aff1643a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "Symbol 'MEE1S0505SC' doesn't match copy in library 'Converter_DCDC_Isolated'",
+                    "items": [
+                        {
+                            "description": "Symbol U_ISODCDC1 [MEE1S0505SC]",
+                            "pos": {
+                                "x": 5.9944,
+                                "y": 0.5969
+                            },
+                            "uuid": "ba0ee387-2177-4363-9316-a05bc30bf995"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Filter_EMI_CommonMode' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol CMC_RS485_1 [Filter_EMI_CommonMode]",
+                            "pos": {
+                                "x": 6.604,
+                                "y": 1.4986
+                            },
+                            "uuid": "4109d31a-f6f8-46bc-adb1-afc06d3ea05f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Filter_EMI_CommonMode' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol CMC_RS485_2 [Filter_EMI_CommonMode]",
+                            "pos": {
+                                "x": 6.604,
+                                "y": 1.7018
+                            },
+                            "uuid": "5d2c5594-b267-452b-bb16-b5919b96ede0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'THVD1450DR' doesn't match copy in library 'Interface_UART'",
+                    "items": [
+                        {
+                            "description": "Symbol U_RS485_TX1 [THVD1450DR]",
+                            "pos": {
+                                "x": 6.9977,
+                                "y": 0.9017
+                            },
+                            "uuid": "5eab13b1-80e5-4967-8653-b22cf1037dd3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "SWAFarmNodeV1.kicad_sch"
+}
