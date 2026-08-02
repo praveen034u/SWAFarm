@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-01
 **Milestones:** Steps 2-8 of the ESP32-S3 NODE_CORE rebuild (see `C:\Users\prave\.claude\plans\moonlit-napping-snowglobe.md`; Step 1 has its own review at `SWAFarmNodeV1_01Power_NodeCore_DesignReview.md`).
-**Status (as of 2026-08-01, post LoRa re-add with India-band/range requirements and PCB placement correction):** Full schematic captured (161 components — LoRaWAN module bay populated, see Step 5 below) and PCB floor-planned (4-layer, 420×355mm, real-footprint-measured placement, 0 out-of-bounds). **ERC: 0 errors, 7 documented warnings. DRC: 0 violations of any kind.**
+**Status (as of 2026-08-01, post 11-category design audit and 2 critical-finding fixes — see §6):** Full schematic captured (181 components — LoRaWAN module bay populated per Step 5; valve rail and sensor front-end corrected per §6) and PCB floor-planned (4-layer, 420×361.6mm, real-footprint-measured placement, 0 out-of-bounds). **ERC: 0 errors, 7 documented warnings (unchanged by the audit fixes). DRC: 0 violations of any kind.**
 
 ## 1. Scope
 
@@ -50,9 +50,9 @@ Line protection (`SM712_SOT23`) + common-mode choke at the two external field-en
    - **ESP32-S3 compatibility, explicitly confirmed:** RAK3172 exposes a UART/AT-command interface (its own onboard STM32WLE5CC runs the LoRaWAN stack) — host-MCU-agnostic by design, needing only 3.3V power, a UART pair, and 2 GPIOs for `BOOT0`/`RESET`. All three match ESP32-S3 directly (shared `V3V3_RAIL`, `GPIO17/18` exactly as the spec's own `Final_MCU_Pin_Map` allocates for `LORA_UART_TX/RX`, 2 spare GPIOs for control) — no level-shifting or special host bus support needed.
    - Final component count: 161 (back to the original Step 7 total). Independently netlist-traced: UART correctly lands on `U_MCU1` pins 10/11, RF pin correctly reaches `J_LORASMA1`, all unused module pins (SPI/I2C/SWD/spare GPIO/UART2) correctly isolated.
 
-**Step 6 — Universal Sensor Front-End.** 6 channels, each: 100kΩ series + 150Ω/0.1% burden resistor (doubles as the 0-10V divider bottom leg and the 4-20mA current-sense burden — a disclosed single-resistor simplification of the spec's separate "divider + burden" description), bipolar clamp (2 discrete diodes standing in for a `BAV99` dual-diode package — same protection function, disclosed schematic-level simplification), 100nF RC filter into ADC1. Each channel's return tied to system GND (no isolation stage ahead of this frontend — disclosed). 2×6-pole terminal blocks (SIG block + RET block), matching the locked `Netlist_Seed` rows (`NODE_SENSOR_001..012`, each channel has its own SIG+RET pair) over the connector description's more ambiguous "shared +12V loop" wording.
+**Step 6 — Universal Sensor Front-End.** 6 channels, each: series + burden resistor front end into ADC1, bipolar clamp (2 discrete diodes standing in for a `BAV99` dual-diode package — same protection function, disclosed schematic-level simplification), 100nF RC filter. Each channel's return tied to system GND (no isolation stage ahead of this frontend — disclosed). 2×6-pole terminal blocks (SIG block + RET block), matching the locked `Netlist_Seed` rows (`NODE_SENSOR_001..012`, each channel has its own SIG+RET pair) over the connector description's more ambiguous "shared +12V loop" wording. **The original single-resistor divider/burden network here had a real math defect, found and fixed during the 2026-08-01 audit — see §6.2.**
 
-**Step 7 — Valve Output Drivers.** 6× `DRV8871DDA` (real stock symbol) full H-bridge channels, driven by one `MCP23S17` SPI I/O expander (`GPA0-7` = channels 1-4, `GPB0-3` = channels 5-6, `GPB4-7` spare). Per the resolved DNP contradiction from the plan: `CMP_VALVE_FLYBACK_DIODE_CH`/`CMP_VALVE_GATE_NETWORK_CH`/`CMP_VALVE_CURRENT_SENSE_CH` are **omitted** (not silently forgotten — `DRV8871`'s integrated freewheeling diodes, current limit, and thermal shutdown make them unnecessary, per `DNP_Optional_Parts`' own dated rationale). Each channel gets only a `VM` decoupling cap + `ILIM` resistor. 1000µF/25V bulk cap for latching-solenoid pulse current. 2×6-pole terminal blocks (OUT1 block + OUT2 block — full H-bridge needs both dedicated leads per channel, no shared return, unlike the sensor SIG/RET pattern).
+**Step 7 — Valve Output Drivers.** 6× `DRV8871DDA` (real stock symbol) full H-bridge channels, driven by one `MCP23S17` SPI I/O expander (`GPA0-7` = channels 1-4, `GPB0-3` = channels 5-6, `GPB4-7` spare). Per the resolved DNP contradiction from the plan: `CMP_VALVE_FLYBACK_DIODE_CH`/`CMP_VALVE_GATE_NETWORK_CH`/`CMP_VALVE_CURRENT_SENSE_CH` are **omitted** (not silently forgotten — `DRV8871`'s integrated freewheeling diodes, current limit, and thermal shutdown make them unnecessary, per `DNP_Optional_Parts`' own dated rationale). Each channel gets only a `VM` decoupling cap + `ILIM` resistor. 1000µF/25V bulk cap for latching-solenoid pulse current. 2×6-pole terminal blocks (OUT1 block + OUT2 block — full H-bridge needs both dedicated leads per channel, no shared return, unlike the sensor SIG/RET pattern). **`VM` originally shared the eFuse's 2A-rated `V12_SW` rail with buck1 — a real overcurrent risk, found and fixed during the 2026-08-01 audit; now on its own `V12_VALVE` branch — see §6.1.**
 
 **Step 8 — PCB Floor Planning & Placement.** See §5.
 
@@ -81,18 +81,58 @@ Line protection (`SM712_SOT23`) + common-mode choke at the two external field-en
 
 **Known limitation, disclosed:** `kicad-cli`'s `--schematic-parity` check reports ~206 items, almost all `footprint_symbol_mismatch`/`net_conflict` false positives that stem from a real gap in the placement technique — footprints placed via raw `pcbnew` scripting (rather than KiCad's own "Update PCB from Schematic" GUI flow) don't get their UUID/path cross-reference metadata linked back to the schematic symbol instances, even when the footprint and net assignment are correct (confirmed correct by 0 real DRC errors and by netlist-trace spot-checks throughout Steps 1-7). A GUI "Update PCB from Schematic" pass before routing begins would resolve this cross-reference gap; it does not reflect an actual footprint or connectivity error.
 
-## 6. Files changed
+## 6. 2026-08-01 design audit — 2 critical findings, both fixed
 
-- `Hardware/SWAFarmNodeV1/SWAFarmNodeV1.kicad_sch` — extended through Steps 2-7 (incremental splices onto Step 1's file).
-- `Hardware/SWAFarmNodeV1/SWAFarmNodeV1.kicad_pcb` — rebuilt from scratch for Step 8 (Arduino_Mega template placeholder replaced).
+User-requested 11-category audit (datasheet verification, power rail audit, connectivity/net review, connector verification, pull-up/down check, protection audit, RF verification, test point review, BOM validation, peer design review, simulation) run against the schematic above, verified via real `kicad-cli` ERC/netlist-trace tooling rather than assertions. 2 real defects found; both fixed and re-verified (0 ERC errors/7 pre-existing documented warnings unchanged, 0 DRC violations, 0 out-of-bounds footprints).
+
+### 6.1 Power rail audit — valve rail overcurrent risk (CRITICAL, fixed)
+
+**Finding:** `V12_SW`, the `TPS26600PWP` eFuse's (`U1`) output — rated 2A by the silicon itself, not just an adjustable `ILIM` setting — fed both buck1 (`U2`, the 5V regulator) AND all 6 `DRV8871` valve drivers (`U_DRV1-6`), each individually rated up to 3.6A continuous / capable of ~2.5A+ pulses when driving latching solenoid valves. A single valve channel pulsing already exceeds the eFuse's 2A rating; this was a genuine architecture defect, not a resistor-value tuning issue (no `ILIM` resistor value can raise a 2A-silicon-limited part past its own rating).
+
+**Fix:** gave the valve rail its own branch, independent of the eFuse:
+- New net `V12_VALVE`, tapped from `V12_PROT` (the fused, TVS-protected, reverse-polarity-protected input rail) **upstream** of the eFuse — through a new dedicated fuse `F2` (Littelfuse 1812L-class PTC, ~4A hold current).
+- `U_DRV1-6` pin 5 (`VM`), `C_VMDEC1-6` pin 1, and `C_VALVEBULK1` pin 1 moved from `V12_SW` to `V12_VALVE`.
+- `F1` (input fuse) resized 1.5A → 5A — it was undersized even for a single valve pulse alone, before this fix existed.
+- New `TP_VALVE_PWR1` test point on `V12_VALVE`, matching the existing `TP_12V_SW1` pattern; new `FLAG6` `PWR_FLAG` (required — `V12_VALVE` has no power-output-type pin driving it in ERC's strict sense, same requirement class as `FLAG1-5` on the other rails).
+
+**Disclosed caveat, not yet enforced in hardware:** `F2`'s sizing assumes sequential (one-channel-at-a-time) valve actuation — standard practice for solenoid valve banks, and consistent with a single shared `MCP23S17` SPI expander driving all 6 channels. Simultaneous multi-valve firing is a firmware policy this hardware doesn't prevent by itself; if simultaneous operation is required, `F2` and its downstream wiring/connector gauge need resizing for the full multi-channel worst case.
+
+Verified via netlist trace (`kicad-cli sch export netlist`): `V12_SW` now contains only `C_IN2`, `C_OUT1`, `R_EN1A1`, `TP_12V_SW1`, `U1`.15/16, `U2`.2 (the logic/buck chain). `V12_VALVE` contains `F2`.2, `TP_VALVE_PWR1`, `FLAG6`, `C_VALVEBULK1`.1, `U_DRV1-6`.5, `C_VMDEC1-6`.1 (the valve chain) — cleanly separated.
+
+### 6.2 Datasheet + connectivity review — sensor front-end 0-10V divider math (CRITICAL, fixed)
+
+**Finding:** the Step 6 front-end's `R_SER`(100kΩ)+`R_BURDEN`(150Ω) network was a single shared resistor pair serving both the 0-10V divider and the 4-20mA burden. By calculation: for 0-10V mode, `Vadc = Vin × 150/(100000+150) ≈ Vin × 0.0015` — a 10V input produced only **~15mV** at the ADC, far too small for usable resolution. Separately, for 4-20mA mode, having `R_SER` permanently in series with the current loop meant the loop's compliance voltage requirement became `I × (100150Ω)` — at 20mA, over **2000V**, physically impossible for any real 4-20mA transmitter. A single fixed passive network cannot serve both modes correctly (verified by circuit analysis, not assumption): 0-10V sensing needs a high-impedance divider (~100kΩ+ class) while 4-20mA sensing needs a low-impedance burden (~150Ω class) with no series resistance blocking the loop — the two requirements are mutually exclusive for one fixed network.
+
+**Fix:** jumper-selectable dual network per channel, matching standard industrial universal-analog-input practice (verified correct in both modes by circuit analysis before implementing, using KiCad-stock, production-appropriate parts — 2.54mm pin headers + shorting jumpers, not a novel/hobby component):
+- `R_SER` revalued 100k → 232k (now the divider's top leg), paired with new `R_VBOT` (100k, bottom leg): `10V × 100k/(232k+100k) ≈ 3.01V` at the ADC — within the ESP32-S3 ADC's safe input range with headroom.
+- New `JP_VBYP` (2-pin jumper, in parallel with `R_SER`/232k): populate **only** for 4-20mA mode, shorting out the 232k resistor so loop current isn't blocked. Leave open for 0-10V mode.
+- New `JP_IGND` (2-pin jumper, gates `R_BURDEN`'s GND return): populate **only** for 4-20mA mode, together with `JP_VBYP` — completes the 150Ω burden's circuit (0.6-3.0V for 4-20mA, unchanged/correct). Leave open for 0-10V mode, so the 150Ω burden doesn't sit permanently across a voltage-mode transmitter's output (would otherwise pull ~67mA at 10V, likely exceeding many transmitters' rated output current).
+- **`JP_VBYP`/`JP_IGND` must be populated as a matched pair** — populating one without the other reintroduces one of the two original defects. A single mechanically-ganged DPDT switch or dual-row shorting shunt is a valid, more foolproof alternative at the layout/production engineer's discretion; not implemented here to avoid guessing a non-stock multi-pole part.
+- `D_CLHI`/`D_CLLO` clamp diodes, `C_FILT`, and the MCU ADC connection are unchanged — still correctly protect/filter the shared ADC sensing node in both modes.
+
+Verified via netlist trace, channel 1 shown (channels 2-6 identical topology): `SENSOR_CH1` = `{C_FILT1.1, D_CLHI1.2, D_CLLO1.1, JP_VBYP1.2, R_BURDEN1.1, R_SER1.2, R_VBOT1.1, U_MCU1.39}`; `net_CH1_SIG` = `{JP_VBYP1.1, J_SENSOR_SIG1.1, R_SER1.1}`; `net_CH1_IGND` = `{JP_IGND1.1, R_BURDEN1.2}` — exactly the designed topology.
+
+### 6.3 Other audit categories
+
+Connector verification, pull-up/pull-down survey, protection audit, RF verification (LoRa link budget — already covered in §3 Step 5), test point review, and BOM validation did not surface additional defects beyond items already tracked in §7's open-items list (M12 connector placeholders, `--schematic-parity` gap, `_TBD` resistor values). Full SPICE-level simulation is not available in this environment; the two findings above were instead verified by hand-calculation (link budget, divider ratio, current-loop compliance voltage) cross-checked against real netlist topology — the same discipline used throughout this project.
+
+Component count: 161 → **181** BOM/PCB-placed components (3 new for §6.1's fix: `F2`, `TP_VALVE_PWR1`, plus a schematic-only `FLAG6` `PWR_FLAG` that carries no footprint, same as `FLAG1-5`; 18 new for §6.2's fix: 6× `R_VBOT`, 6× `JP_VBYP`, 6× `JP_IGND` — the revalued/rewired existing `R_SER`/`R_BURDEN` per channel don't add count). Schematic symbol count (including `FLAG6`): 182. PCB rebuilt with the same measured-footprint placement technique as §5 (0 out-of-bounds); board grew from 420×355mm to 420×361.6mm to fit the 20 new footprints. BOM regenerated: 84 grouped lines covering 181 components (`BOM/SWAFarmNodeV1_NodeCore_BOM.csv`), full disclosure notes in `BOM/SWAFarmNodeV1_NodeCore_BOM_Notes.md`.
+
+## 7. Files changed
+
+- `Hardware/SWAFarmNodeV1/SWAFarmNodeV1.kicad_sch` — extended through Steps 2-7 (incremental splices onto Step 1's file), then further edited 2026-08-01 for the §6 audit fixes (coordinate-anchored splices + targeted net/value edits, not a full rebuild).
+- `Hardware/SWAFarmNodeV1/SWAFarmNodeV1.kicad_pcb` — rebuilt from scratch for Step 8 (Arduino_Mega template placeholder replaced), then re-placed 2026-08-01 to include the §6 fix's 20 new footprints.
 - `Hardware/SWAFarmNodeV1/fp-lib-table` — extended to reference the full KiCad standard footprint library table (was previously only the Arduino template's single mounting-hole library).
 - `Hardware/SWAFarmNodeV1/SWAFarmNodeV1_erc.json`, `_netlist.xml`, `_drc.json` — fresh exports.
 - `Documentation/images/SWAFarmNodeV1_NodeCore_08PCB_TopView.png` — rendered top-down placement view.
+- `BOM/SWAFarmNodeV1_NodeCore_BOM.csv`, `BOM/SWAFarmNodeV1_NodeCore_BOM_Notes.md` — regenerated/updated for the §6 fixes.
 
-## 7. Open items for pre-fabrication review
+## 8. Open items for pre-fabrication review
 
 - M12 connector footprints are placeholder THT headers, not real circular-connector footprints (same disclosed gap as Step 1's design review flagged) — must be resolved before Gerber export.
 - `kicad-cli --schematic-parity` cross-reference gap (§5) — run "Update PCB from Schematic" in the KiCad GUI once, before routing, to fully link footprint UUIDs to schematic symbols.
 - eFuse `ILIM`/`dVdT`, buck compensation, and now valve-driver `ILIM` resistor values remain reasoned placeholders (`_TBD` suffix in their Value fields) pending real datasheet-formula/loop-stability confirmation.
 - Second-source qualification for all newly-introduced parts (`ESP32-S3-WROOM-1`, `ISO7761DW`, `MEE1S0505SC`, `THVD1450DR`, `DRV8871DDA`, `MCP23S17`, `RAK3172`) — same open item class as every prior milestone's Risk R-2/SWA-CST-004.
 - Isolation-barrier creepage/clearance is not yet enforced by an actual copper-exclusion keepout zone on the PCB (floor-plan only) — needs a real keepout region around the RS485 isolated zone before routing, sized to the isolator/DC-DC's rated working voltage.
+- `F1`/`F2` cited by real PTC family/class (Bourns MF-RG1812 / Littelfuse 1812L) rather than an exact single MPN — pin down exact hold-current part once the M12 connector's real current rating is resolved (previous item).
+- `JP_VBYP`/`JP_IGND` (§6.2) are 2 separate jumpers populated as a matched pair by convention, not physically interlocked — consider a single mechanically-ganged DPDT switch or dual-row shorting shunt at the production-engineering stage to remove the possibility of populating them inconsistently.

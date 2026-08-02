@@ -9,7 +9,7 @@ C_DVDT1,1,1nF_TBD,Capacitor_SMD:C_0805_2012Metric,,,,,
 C_IN3,1,10uF_16V,Capacitor_SMD:C_1206_3216Metric,,,,,
 "C_OUT2, C_OUT3",2,22uF_10V,Capacitor_SMD:C_1206_3216Metric,,,,,
 C_SS1,1,10nF_TBD,Capacitor_SMD:C_0603_1608Metric,,,,,
-C_VALVEBULK1,1,1000uF_25V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,,Panasonic,EEU-FR1E102,CMP_VALVE_PULSE_BULK_CAP,Exact match (1000uF/25V radial electrolytic)
+C_VALVEBULK1,1,1000uF_25V,Capacitor_THT:CP_Radial_D12.5mm_P5.00mm,,Panasonic,EEU-FR1E102,CMP_VALVE_PULSE_BULK_CAP,Exact match (1000uF/25V radial electrolytic). Moved from V12_SW to the new V12_VALVE net during the 2026-08-01 design audit -- see F2 note.
 D1,1,SMBJ18CA,Diode_SMD:D_SMB,,Littelfuse,SMBJ18CA,CMP_INPUT_TVS / CMP_SURGE_PROTECTOR,"Spec suggests SMBJ24A/SMAJ24A (two BOM rows, likely redundant spec entries for the same physical TVS) -- schematic uses SMBJ18CA (18V clamp) instead; confirm target clamp voltage against real 12V rail transient spec before BOM lock"
 "D_CLHI1, D_CLHI2, D_CLHI3, D_CLHI4, D_CLHI5, D_CLHI6",6,BAV99_1of2,Diode_SMD:D_SOD-123,,onsemi,BAV99LT1G,CMP_SENSOR_INPUT_PROTECT,SUBSTITUTION: spec specifies 1x BAV99 dual-diode package per channel (qty 6). Design uses 2x discrete Device:D diodes per channel (12 total) implementing the identical bipolar-clamp function -- disclosed schematic-level simplification; BAV99 SOT-23 can implement both at real PCB/BOM stage if preferred
 "D_CLLO1, D_CLLO2, D_CLLO3, D_CLLO4, D_CLLO5, D_CLLO6",6,BAV99_2of2,Diode_SMD:D_SOD-123,,onsemi,BAV99LT1G,CMP_SENSOR_INPUT_PROTECT,See D_CLHI note -- same disclosed substitution
@@ -19,8 +19,11 @@ D_LED2,1,Green_3V3Present,LED_SMD:LED_0805_2012Metric,,,,,
 D_LINK1,1,Yellow_LINK,LED_SMD:LED_0805_2012Metric,,Kingbright,APT1608SYCK,CMP_LED_LINK,Exact match
 D_PWR1,1,Green_PWR,LED_SMD:LED_0805_2012Metric,,Kingbright,APT1608QBC-D,CMP_LED_PWR,Exact match
 "D_RS485PROT1, D_RS485PROT2",2,SM712-02HTG,Package_TO_SOT_SMD:SOT-23,,Littelfuse,SM712-02HTG,CMP_RS485_LINE_PROTECT,Exact match
-F1,1,Polyfuse_1.5A,Fuse:Fuse_1812_4532Metric,,Bourns,MF-R110,CMP_INPUT_FUSE_PTC,
+F1,1,Polyfuse_5A,Fuse:Fuse_1812_4532Metric,,Bourns,MF-RG1812 series (5A-hold class),CMP_INPUT_FUSE_PTC,RESIZED 1.5A -> 5A during the 2026-08-01 design audit: at 1.5A this input fuse was undersized even for ONE valve channel's DRV8871 pulse current (2.5-3.6A) alone. Sized for local worst-case (~0.5A logic + one valve pulse) with margin; still needs reconciling against the M12 connector's real current rating once that footprint placeholder is resolved.
+F2,1,Polyfuse_4A,Fuse:Fuse_1812_4532Metric,,Littelfuse,1812L series (4A-hold class),,"NEW, added during the 2026-08-01 design audit. Dedicated valve-rail fuse, taps V12_PROT upstream of the TPS26600PWP eFuse (U1) so valve pulse current no longer shares the eFuse's 2A silicon current limit with the logic/buck chain (V12_SW). Sized for one DRV8871 channel pulsing at a time -- firmware must sequence valve actuation (not fire multiple channels simultaneously) unless this branch and its wiring/connector gauge are resized further for simultaneous multi-valve operation."
 J1,1,M12_5P_A_Coded_PowerIn,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,TE Connectivity,T4141412041-000,CMP_CONN_M12A_4P_PWR12_PANEL,Placeholder THT pin-header footprint used for schematic/PCB placement -- swap to real M12 A-coded panel-mount footprint before Gerber export
+"JP_IGND1, JP_IGND2, JP_IGND3, JP_IGND4, JP_IGND5, JP_IGND6",6,I_mode_gnd,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,,,,"NEW, added during the 2026-08-01 design audit. 2-pin jumper per channel, gates R_BURDEN's (150R) return to GND. Populate ONLY for 4-20mA mode, together with JP_VBYP -- completes the burden resistor's circuit (0.6-3.0V for 4-20mA). Leave open for 0-10V mode, so the 150R burden doesn't overload a voltage-output field transmitter (would otherwise pull ~67mA at 10V)."
+"JP_VBYP1, JP_VBYP2, JP_VBYP3, JP_VBYP4, JP_VBYP5, JP_VBYP6",6,V_mode_bypass,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,,,,"NEW, added during the 2026-08-01 design audit. 2-pin jumper per channel, in parallel with R_SER/R_VTOP (232k). Populate ONLY for 4-20mA mode: shorts out the 232k series resistor so loop current isn't blocked (232k in series would need >4000V compliance at 20mA, physically impossible). Leave open for 0-10V mode. Populate as a matched pair with JP_IGND -- never populate one without the other."
 J_LORASMA1,1,SMA_Bulkhead_Antenna,Connector_Coaxial:SMA_Amphenol_132134_Vertical,,Amphenol RF,132134,CMP_CONN_SMA_BULKHEAD,Exact match. Populated -- external gain antenna (>=3dBi) required at deployment to hit the 5km+ range target
 J_OUT1,1,M12_5P_A_Coded_PowerOut,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,TE Connectivity,T4141412041-000,CMP_CONN_M12A_4P_PWR12_PANEL,Placeholder THT pin-header footprint -- swap to real M12 footprint before Gerber export
 J_PROG1,1,Debug_UART_TX_RX_GND,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,,,"Generic 3-pin 2.54mm header for optional external debug UART adapter, not spec-itemized"
@@ -37,11 +40,11 @@ L2,1,2.2uH_TBD,Inductor_SMD:L_Bourns-SRN4018,,Wurth Elektronik,74438335022 (2.2u
 Q1,1,IPD50N06S4L-16,Package_TO_SOT_SMD:SOT-23,,Infineon,IPD50N06S4L-16,CMP_POLARITY_PROTECT,Exact match
 "R_BIASA1, R_BIASB1",2,680,Resistor_SMD:R_0805_2012Metric,,Vishay,CRCW0603680RFKEA,CMP_RS485_BIAS_NET,Exact match
 "R_BOOT1, R_EN1B1, R_ENPU1, R_EXPRST1, R_FB1B1, R_FB2B1, R_FLT1, R_IMON1, R_LORABOOT1, R_LORARST1, R_OVP2, R_PG1, R_SETUP1, R_UVLO2, R_gate1",15,10k,Resistor_SMD:R_0805_2012Metric,,,,,
-"R_BURDEN1, R_BURDEN2, R_BURDEN3, R_BURDEN4, R_BURDEN5, R_BURDEN6",6,150_0.1pct,Resistor_SMD:R_0805_2012Metric,,Yageo,RT0805BRD07150RL,CMP_SENSOR_BURDEN_R,"Exact match, 150R/0.1% burden/divider resistor (x6 channels)"
+"R_BURDEN1, R_BURDEN2, R_BURDEN3, R_BURDEN4, R_BURDEN5, R_BURDEN6",6,150_0.1pct,Resistor_SMD:R_0805_2012Metric,,Yageo,RT0805BRD07150RL,CMP_SENSOR_BURDEN_R,"150R/0.1% burden resistor (x6 channels), unchanged value. Its GND return moved from hardwired to jumper-gated (JP_IGND) during the 2026-08-01 design audit -- see JP_IGND/JP_VBYP notes."
 "R_CC1_1, R_CC2_1",2,5.1k,Resistor_SMD:R_0805_2012Metric,,,,,
 R_COMP1,1,10k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
 R_EN1A1,1,73.2k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
-"R_EN2, R_SER1, R_SER2, R_SER3, R_SER4, R_SER5, R_SER6, R_SHDN1",8,100k,Resistor_SMD:R_0805_2012Metric,,,,,
+"R_EN2, R_SHDN1, R_VBOT1, R_VBOT2, R_VBOT3, R_VBOT4, R_VBOT5, R_VBOT6",8,100k,Resistor_SMD:R_0805_2012Metric,,,,,
 R_FB1A1,1,52.3k,Resistor_SMD:R_0805_2012Metric,,,,,
 R_FB2A1,1,32.4k,Resistor_SMD:R_0805_2012Metric,,,,,
 "R_ILIM1, R_ILIM_V1, R_ILIM_V2, R_ILIM_V3, R_ILIM_V4, R_ILIM_V5, R_ILIM_V6",7,20k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
@@ -49,6 +52,7 @@ R_FB2A1,1,32.4k,Resistor_SMD:R_0805_2012Metric,,,,,
 R_LED2,1,330,Resistor_SMD:R_0805_2012Metric,,,,,
 R_OVP1,1,124k,Resistor_SMD:R_0805_2012Metric,,,,,
 R_RT1,1,100k_TBD,Resistor_SMD:R_0805_2012Metric,,,,,
+"R_SER1, R_SER2, R_SER3, R_SER4, R_SER5, R_SER6",6,232k,Resistor_SMD:R_0805_2012Metric,,,,,"REVALUED 100k -> 232k during the 2026-08-01 design audit (paired with new R_VBOT, 100k): the original 100k+150R shared divider/burden network gave only ~15mV at the ADC for a 10V input (unusable) and made the 4-20mA loop's compliance voltage impossible (100k+150R in series needs >2000V at 20mA). Now the V-mode divider top leg only -- see JP_VBYP/JP_IGND/R_VBOT notes for the full jumper-selectable topology."
 R_TERM1,1,120_SOLDER_SELECT,Resistor_SMD:R_0805_2012Metric,,Vishay,CRCW0603120RFKEA,CMP_RS485_TERM_SELECT,"Spec qty=2 (one per segment); design has 1 (single shared bus, see U_RS485_TX1 note). Solder-select: populate only at true end-of-line node"
 R_UVLO1,1,64.9k,Resistor_SMD:R_0805_2012Metric,,,,,
 SW_BOOT1,1,BOOT,Button_Switch_SMD:SW_SPST_B3U-1000P,,,,,
@@ -68,10 +72,11 @@ TP_PG1,1,nPWRGD,TestPoint:TestPoint_Pad_D1.5mm,,,,,
 TP_RS485DI1,1,ISO_DI,TestPoint:TestPoint_Pad_D1.5mm,,,,,
 TP_RS485RO1,1,ISO_RO,TestPoint:TestPoint_Pad_D1.5mm,,,,,
 TP_USBVBUS1,1,USB_VBUS,TestPoint:TestPoint_Pad_D1.5mm,,,,,
+TP_VALVE_PWR1,1,V12_VALVE,TestPoint:TestPoint_Pad_D1.5mm,,,,,"NEW test point on the new V12_VALVE net, added during the 2026-08-01 design audit, matching the existing TP_12V_SW1 pattern for the logic-side rail."
 U1,1,TPS26600PWP,Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias,,Texas Instruments,TPS26600PWPR,CMP_EFUSE_UVLO_OVP,Exact match (PWPR = tape/reel of PWP)
 U2,1,TPS54561,Package_SON:WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias,,Texas Instruments,TPS54561DDAR,CMP_REGULATOR_12V_TO_5V,"SUBSTITUTION: spec specifies TPS54531DDAR, no exact KiCad stock symbol exists. TPS54561 is the same TI SWIFT integrated-FET family, 5A vs spec's 3.5A (headroom). Package differs (WSON-10 vs SO-8 PowerPAD) -- confirm before BOM lock"
 U3,1,TPS563201,Package_TO_SOT_SMD:SOT-23-6,,Texas Instruments,TPS563201DDCR,CMP_REGULATOR_5V_TO_3V3,Exact match
-"U_DRV1, U_DRV2, U_DRV3, U_DRV4, U_DRV5, U_DRV6",6,DRV8871DDAR,Package_SO:TI_SO-PowerPAD-8_ThermalVias,,Texas Instruments,DRV8871DDAR,CMP_VALVE_DRIVER_CH,Exact match
+"U_DRV1, U_DRV2, U_DRV3, U_DRV4, U_DRV5, U_DRV6",6,DRV8871DDAR,Package_SO:TI_SO-PowerPAD-8_ThermalVias,,Texas Instruments,DRV8871DDAR,CMP_VALVE_DRIVER_CH,"Exact match. VM (pin 5) moved from V12_SW to the new V12_VALVE net during the 2026-08-01 design audit: V12_SW (the TPS26600PWP eFuse's 2A-rated output) previously fed both buck1 AND all 6 of these drivers, each capable of 2.5-3.6A pulses -- a single valve pulse could exceed the eFuse's rating. See F2 note for the fix."
 U_ISO1,1,ISO7761DW,Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm,,Texas Instruments,ISO7761DW,CMP_RS485_ISOLATOR,"SUBSTITUTION: spec specifies ISO1410BDWR. ISO7761DW is a real stock 6-channel (5fwd/1rev) TI isolator with more channel headroom than needed (2fwd+1rev used) -- disclosed substitution, same TI isolator family/class"
 U_ISODCDC1,1,MEE1S0505SC,Converter_DCDC:Converter_DCDC_Murata_MEE1SxxxxSC_THT,,Murata,MEE1S0505SC,CMP_RS485_ISO_DCDC,"SUBSTITUTION: spec specifies NXE1S0505MC. MEE1S0505SC is a real, stock, function-identical (5Vin/5Vout, 1W, SIP) Murata isolated DC-DC -- disclosed substitution, same class"
 U_LORA1,1,RAK3172-xx-8-SM-xI,RF_Module:RAK3172,,RAKwireless,RAK3172-xx-8-SM-xI,,"Populated (not DNP) per explicit user request for India-region LoRa with 5km+ theoretical range. This exact stock symbol variant's own Description field reads ""LoRa Module, STM32WLE5, RU864/IN865/EU868"" -- IN865 is India's LoRaWAN band. Link budget: +22dBm max TX, -148dBm RX sensitivity (SF12/BW125) => ~176dB budget => ~71dB margin over free-space path loss at 5km with a conservative 3dBi/3dBi antenna assumption. UART/AT-command interface (STM32WLE5 onboard) is host-MCU-agnostic -- confirmed compatible with ESP32-S3 (3.3V logic, spare UART on GPIO17/18 exactly as Final_MCU_Pin_Map allocates, 2 spare GPIOs for BOOT0/RESET). See Step 5 design review for the full calculation."

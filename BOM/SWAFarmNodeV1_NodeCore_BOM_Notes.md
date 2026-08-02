@@ -1,10 +1,14 @@
 # SWAFarm NODE_CORE — BOM Notes
 
 **BOM file:** `SWAFarmNodeV1_NodeCore_BOM.csv`
-**Generated:** 2026-08-01, from the live schematic (`Hardware/SWAFarmNodeV1/SWAFarmNodeV1.kicad_sch`, 161 components, Steps 1-8 of the ESP32-S3 NODE_CORE rebuild).
+**Generated:** 2026-08-01, from the live schematic (`Hardware/SWAFarmNodeV1/SWAFarmNodeV1.kicad_sch`, 181 components, Steps 1-8 of the ESP32-S3 NODE_CORE rebuild + the 2026-08-01 design audit fixes below).
 **Source of truth for part numbers:** `NodeForRefrence.csv` (actual `.xlsx`), `BOM` sheet, `NODE_CORE` rows — 38 line items with real manufacturer/MPN data, cross-referenced by function against this project's actual schematic components.
 
 **Scope note (LoRaWAN):** the LoRaWAN module bay went through 3 revisions on 2026-08-01 — captured DNP (optional), fully removed per user decision, then re-added **fully populated** per a follow-up request for an India-region module with ~5km+ theoretical range. `U_LORA1` is the `RAK3172-xx-8-SM-xI` variant (its own stock-symbol Description field reads "RU864/**IN865**/EU868" — IN865 is India's LoRaWAN band). Link-budget calculation and ESP32-S3 compatibility confirmation are in the `U_LORA1` BOM row below and in the Step 5 design review. See `TODO.md` for the full revision history.
+
+**2026-08-01 design audit fixes (2 critical findings, both resolved):** a full 11-category engineering audit (datasheet verification, power rail audit, connectivity review, connector/pull-up/protection/RF/test-point checks, BOM validation) surfaced two real defects, both now fixed and re-verified (0 ERC errors, 0 DRC violations):
+1. **Valve rail overcurrent risk (power rail audit).** `V12_SW`, the TPS26600PWP eFuse's 2A-rated output, fed both the 5V buck regulator AND all 6 `DRV8871` valve drivers (each capable of 2.5-3.6A pulses for latching solenoids) — a single valve pulse could exceed the eFuse's silicon current limit. Fixed by giving the valve rail its own branch, `V12_VALVE`, tapped from `V12_PROT` upstream of the eFuse through a new dedicated fuse `F2`; `F1` (input fuse) resized 1.5A → 5A to cover the new worst-case local draw. See `F1`/`F2`/`U_DRV`/`C_VMDEC`/`C_VALVEBULK1` BOM rows below.
+2. **Sensor front-end 0-10V divider math (datasheet/connectivity review).** The shared `R_SER`(100k)+`R_BURDEN`(150R) network gave only ~15mV at the ADC for a 10V input (unusable), and also made the 4-20mA loop's compliance voltage physically impossible (100k+150R in series needs >2000V at 20mA). Fixed with a jumper-selectable dual network per channel (industry-standard universal analog input practice): `R_SER` revalued to 232k (paired with new `R_VBOT`, 100k) for a proper 0-10V→3.01V divider, gated in/out of circuit by new jumpers `JP_VBYP`/`JP_IGND` per channel. See `R_SER`/`R_VBOT`/`R_BURDEN`/`JP_VBYP`/`JP_IGND` BOM rows below.
 
 ## How to read the BOM
 
@@ -13,9 +17,11 @@
 - **Spec_Component_ID**: the matching `CMP_*` identifier from the reference spec, for traceability back to `NodeForRefrence.csv`.
 - **Notes**: flags every disclosed substitution, package variant, value mismatch, or placeholder — same disclosure discipline used throughout this project's design reviews. Nothing in this BOM is silently different from the spec without a note explaining why.
 
-## Real MPN matches (18 lines, exact)
+## Real MPN matches (17 lines, exact)
 
-Q1, F1, U1, U3, U_MCU1, D_RS485PROT1/2, CMC_RS485_1/2, R_BIASA1/B1, J_SENSOR_SIG1/RET1, J_VALVE_OUT1_1/OUT2_1, C_VALVEBULK1, U_DRV1-6, D_PWR1, D_LINK1, R_PWR1/LINK1, R_BURDEN1-6, J_LORASMA1, U_LORA1 (part number matches; not itemized with a spec `CMP_*` ID since NODE_CORE's LoRa was originally PROVISIONAL/optional in the reference spec).
+Q1, U1, U3, U_MCU1, D_RS485PROT1/2, CMC_RS485_1/2, R_BIASA1/B1, J_SENSOR_SIG1/RET1, J_VALVE_OUT1_1/OUT2_1, C_VALVEBULK1, U_DRV1-6, D_PWR1, D_LINK1, R_PWR1/LINK1, R_BURDEN1-6, J_LORASMA1, U_LORA1 (part number matches; not itemized with a spec `CMP_*` ID since NODE_CORE's LoRa was originally PROVISIONAL/optional in the reference spec).
+
+**F1 and the new F2** are cited by real PTC *family/class* (Bourns MF-RG1812 series / Littelfuse 1812L series) rather than a single exact MPN, pending final hold-current selection against the M12 connector's real current rating (see the footprint-placeholder note below) — moved out of the exact-match list during the 2026-08-01 resize.
 
 ## Disclosed substitutions (carried over from the design reviews)
 
