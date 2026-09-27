@@ -34,6 +34,9 @@ Section ID ranges:
 | QA Lead | Owns power validation matrix |
 
 ## Architecture
+
+For the approved two-unit relay POC (2026-09-24), the manufacturing-review copy uses external 12 VDC power and two fixed RECOM regulator modules, both supplied from the protected `12V_SW` rail. Valve power is a separate isolated 24 VAC source switched by dry contacts. The approved input revision removes the low-side MOSFET, keeps a solid ground return, and uses TPS26600 with a separate RTN/thermal island. Modules, auxiliary output and fused relay coils all share its nominal 1.489 A limit; the normal operating target is <=1.2 A total. The 12 V / 3 A adapter and module nameplates do not establish a combined board-current budget. Startup, fault-energy/current-limit coordination, sourcing and physical load tests remain open; see the [revision checkpoint](../../manufacturing-review/2026-09-24/reports/relay-power-checkpoint.md). The general solar/battery architecture below remains a production requirement, not a claim of POC functionality.
+
 ```mermaid
 flowchart TD
 	SOLAR[Solar Input] --> PMU[Power Management Unit]

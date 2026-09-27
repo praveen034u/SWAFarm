@@ -1,0 +1,245 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-26T09:27:37",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "SWAFarmNodeV1.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation (pad clearance 0.6000 mm; actual 0.2295 mm)",
+            "items": [
+                {
+                    "description": "Pad [<no net>] of FID5 on F.Cu",
+                    "pos": {
+                        "x": 79.0,
+                        "y": 33.0
+                    },
+                    "uuid": "6e7285a9-adb9-4e92-844e-6f3df5948296"
+                },
+                {
+                    "description": "Track [+3V3] on F.Cu, length 10.3297 mm",
+                    "pos": {
+                        "x": 84.5292,
+                        "y": 40.1265
+                    },
+                    "uuid": "e472087b-df6f-4729-9960-d526026fab27"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (pad clearance 0.6000 mm; actual 0.2648 mm)",
+            "items": [
+                {
+                    "description": "Pad [<no net>] of FID4 on F.Cu",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 15.0
+                    },
+                    "uuid": "30f934e3-3d88-4fbb-8347-c8c1b3ee5947"
+                },
+                {
+                    "description": "Track [+3V3] on F.Cu, length 1.3044 mm",
+                    "pos": {
+                        "x": 44.8352,
+                        "y": 14.5532
+                    },
+                    "uuid": "dd8eb171-229a-448d-89ec-a9b32ebce046"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (pad clearance 0.6000 mm; actual 0.2396 mm)",
+            "items": [
+                {
+                    "description": "Pad [<no net>] of FID4 on F.Cu",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 15.0
+                    },
+                    "uuid": "30f934e3-3d88-4fbb-8347-c8c1b3ee5947"
+                },
+                {
+                    "description": "Track [+3V3] on F.Cu, length 6.5004 mm",
+                    "pos": {
+                        "x": 49.4317,
+                        "y": 9.9567
+                    },
+                    "uuid": "bdcd2fba-ae93-4e53-a098-26a79fcca461"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (pad clearance 0.6000 mm; actual 0.5301 mm)",
+            "items": [
+                {
+                    "description": "Pad [<no net>] of FID4 on F.Cu",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 15.0
+                    },
+                    "uuid": "30f934e3-3d88-4fbb-8347-c8c1b3ee5947"
+                },
+                {
+                    "description": "Track [+3V3] on F.Cu, length 4.3203 mm",
+                    "pos": {
+                        "x": 44.8352,
+                        "y": 15.8576
+                    },
+                    "uuid": "bacbfd62-d012-4a4e-8f9b-61941969c47b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0343 mm)",
+            "items": [
+                {
+                    "description": "Track [net_USB_DM] on F.Cu, length 1.2265 mm",
+                    "pos": {
+                        "x": 34.75,
+                        "y": 6.68
+                    },
+                    "uuid": "3d937490-a5b5-4f52-96b4-25538c0e215f"
+                },
+                {
+                    "description": "Pad A5 [/Power/net_CC1] of J_USB1 on F.Cu",
+                    "pos": {
+                        "x": 35.25,
+                        "y": 6.68
+                    },
+                    "uuid": "e4d1c7fe-1aa9-4a27-aeb5-5037bf848aa7"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1834 mm)",
+            "items": [
+                {
+                    "description": "Pad A8 [unconnected-(J_USB1-SBU1-PadA8)] of J_USB1 on F.Cu",
+                    "pos": {
+                        "x": 32.75,
+                        "y": 6.68
+                    },
+                    "uuid": "052ce1eb-8c67-47c7-b347-7433eee6ff11"
+                },
+                {
+                    "description": "Track [net_USB_DP] on F.Cu, length 2.0501 mm",
+                    "pos": {
+                        "x": 33.25,
+                        "y": 6.68
+                    },
+                    "uuid": "eede7767-1ff3-4908-b49b-1981c0fb411b"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 6.5004 mm",
+                    "pos": {
+                        "x": 49.4317,
+                        "y": 9.9567
+                    },
+                    "uuid": "bdcd2fba-ae93-4e53-a098-26a79fcca461"
+                },
+                {
+                    "description": "Pad [<no net>] of FID4 on F.Cu",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 15.0
+                    },
+                    "uuid": "30f934e3-3d88-4fbb-8347-c8c1b3ee5947"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 1.3044 mm",
+                    "pos": {
+                        "x": 44.8352,
+                        "y": 14.5532
+                    },
+                    "uuid": "dd8eb171-229a-448d-89ec-a9b32ebce046"
+                },
+                {
+                    "description": "Pad [<no net>] of FID4 on F.Cu",
+                    "pos": {
+                        "x": 46.0,
+                        "y": 15.0
+                    },
+                    "uuid": "30f934e3-3d88-4fbb-8347-c8c1b3ee5947"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 10.3297 mm",
+                    "pos": {
+                        "x": 84.5292,
+                        "y": 40.1265
+                    },
+                    "uuid": "e472087b-df6f-4729-9960-d526026fab27"
+                },
+                {
+                    "description": "Pad [<no net>] of FID5 on F.Cu",
+                    "pos": {
+                        "x": 79.0,
+                        "y": 33.0
+                    },
+                    "uuid": "6e7285a9-adb9-4e92-844e-6f3df5948296"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        }
+    ]
+}

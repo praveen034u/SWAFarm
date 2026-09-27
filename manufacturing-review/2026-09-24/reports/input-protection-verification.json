@@ -1,0 +1,31 @@
+{
+  "input_topology_exact_pin_sets_verified": true,
+  "eight_relay_contacts_commands_and_coil_sinks_unchanged": true,
+  "rtn_isolated_from_system_ground": true,
+  "unrelated_net_partitions_unchanged": true,
+  "pcb_pad_net_assignments_checked": 566,
+  "footprints_including_four_mechanical": 165,
+  "no_missing_extra_or_duplicate_footprints": true,
+  "unrelated_footprint_blocks_byte_preserved": 143,
+  "terminal_pitch_drill_and_fuse_lands_checked": true,
+  "unrelated_sheets_and_project_rules_unchanged": true,
+  "original_source_sha256_verified": {
+    "MCU.kicad_sch": "4e8b1365a065c2830d71c6895892159e55fdf3b5640a6f85d3d38938f9660990",
+    "Motor Valve.kicad_sch": "9516de6764fef9aaeb523ae40bd32fa234a16f4946e49c8b4505bcd829ca41c8",
+    "Power.kicad_sch": "497a92ef8b935b2e52b5a32fe8f76ed77d5d702e2a18d411abea9227c4f83660",
+    "RS-485.kicad_sch": "382da933b6d91d63617241b303bc38d73db9ab62cf45b8c44938cb81a14cb688",
+    "Sensors & LORA.kicad_sch": "3fdc2509e5aa8eae0d7e9b3516fd132d0996a5e47be5f57b62c0ff9f781a4aa1",
+    "SWAFarmNodeV1.kicad_pcb": "21452bd0784ca3ca93ecca3943340244ddaa46ca415082456d036f355b7f7a4f",
+    "SWAFarmNodeV1.kicad_pro": "da447e545d70d084c776cbe18a0bdb9fbc7565665899dc7f60623dd1af91e65e",
+    "SWAFarmNodeV1.kicad_sch": "4dd53f382466d5bcad32cc49391b8ce92d7db4017e5687f20d4b80f3d88964ee"
+  },
+  "tracks": 0,
+  "copper_zones": 0,
+  "bom_components": 147,
+  "bom_with_mpn": 36,
+  "nominal_current_limit_A": 1.4888,
+  "nominal_uvlo_V": 8.9131,
+  "nominal_ovp_V": 15.946,
+  "nominal_ramp_ms_at_12V": 9.6,
+  "status": "NOT READY: placement, routing, thermal holes, sourcing, load tests and release validation remain"
+}

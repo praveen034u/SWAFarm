@@ -1,0 +1,1691 @@
+{
+  "kicad": "10.0.5",
+  "dsn_export_available": true,
+  "ses_import_available": true,
+  "copper_layers": 4,
+  "outline_bbox_mm": [
+    420.15,
+    361.7295
+  ],
+  "thickness_mm": 1.6,
+  "tracks_and_vias": 0,
+  "zones": 0,
+  "footprint_count": 184,
+  "components": 181,
+  "no_footprint": [
+    "J2"
+  ],
+  "no_schematic_mpn": 181,
+  "no_assembler_part": 181,
+  "historical_mpn_present": 55,
+  "source_matches_copy": true,
+  "sha256": {
+    "fp-lib-table": "23704fde1b9a1688f5e0ff02e1c7ea7c6e1282ae1c70eed43e3015cd59a5f165",
+    "MCU.kicad_sch": "4e8b1365a065c2830d71c6895892159e55fdf3b5640a6f85d3d38938f9660990",
+    "Motor Valve.kicad_sch": "9516de6764fef9aaeb523ae40bd32fa234a16f4946e49c8b4505bcd829ca41c8",
+    "Power.kicad_sch": "497a92ef8b935b2e52b5a32fe8f76ed77d5d702e2a18d411abea9227c4f83660",
+    "RS-485.kicad_sch": "382da933b6d91d63617241b303bc38d73db9ab62cf45b8c44938cb81a14cb688",
+    "Sensors & LORA.kicad_sch": "3fdc2509e5aa8eae0d7e9b3516fd132d0996a5e47be5f57b62c0ff9f781a4aa1",
+    "SWAFarmNodeV1.kicad_pcb": "21452bd0784ca3ca93ecca3943340244ddaa46ca415082456d036f355b7f7a4f",
+    "SWAFarmNodeV1.kicad_pro": "da447e545d70d084c776cbe18a0bdb9fbc7565665899dc7f60623dd1af91e65e",
+    "SWAFarmNodeV1.kicad_sch": "4dd53f382466d5bcad32cc49391b8ce92d7db4017e5687f20d4b80f3d88964ee"
+  },
+  "footprints": [
+    {
+      "ref": "C_OUT2",
+      "value": "22uF_10V",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 178.291678,
+      "y_mm": 14.19825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_SER2",
+      "value": "232k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 158.37501,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_EN1B1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 89.958338,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "J_RS485_OUT1",
+      "value": "M12_5P_A_Coded_RS485_Bus_Out",
+      "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+      "x_mm": 219.291679,
+      "y_mm": 193.572249,
+      "rotation": 0.0,
+      "pads": 5
+    },
+    {
+      "ref": "J_SENSOR_SIG1",
+      "value": "SensorSignal_x6",
+      "footprint": "TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+      "x_mm": 366.567876,
+      "y_mm": 262.32175,
+      "rotation": 0.0,
+      "pads": 6
+    },
+    {
+      "ref": "TP_LORABOOT1",
+      "value": "LORA_BOOT0",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 89.136911,
+      "y_mm": 160.928999,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "TP_IMON1",
+      "value": "IMON",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 192.434531,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "JP_VBYP2",
+      "value": "V_mode_bypass",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 150.482151,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_CC2_1",
+      "value": "5.1k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 367.244071,
+      "y_mm": 67.56775,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "F2",
+      "value": "Polyfuse_4A",
+      "footprint": "Fuse_1812_4532Metric",
+      "x_mm": 167.922627,
+      "y_mm": 295.38475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_IN2",
+      "value": "10uF_25V",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 118.541674,
+      "y_mm": 14.19825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "J_RS485_LOC1",
+      "value": "M12_5P_A_Coded_RS485_Local",
+      "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+      "x_mm": 187.851201,
+      "y_mm": 193.572249,
+      "rotation": 0.0,
+      "pads": 5
+    },
+    {
+      "ref": "C_FILT6",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 118.541674,
+      "y_mm": 243.43525,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_TERM1",
+      "value": "120R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 284.803588,
+      "y_mm": 192.84225,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_EN2",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 109.875006,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_LORA1",
+      "value": "RAK3172-xx-8-SM-xI",
+      "footprint": "RAK3172",
+      "x_mm": 134.136912,
+      "y_mm": 166.99575,
+      "rotation": 0.0,
+      "pads": 32
+    },
+    {
+      "ref": "TP_LORARST1",
+      "value": "LORA_RESET",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 111.625007,
+      "y_mm": 160.928999,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "D_CLHI2",
+      "value": "BAV99",
+      "footprint": "SOT-23",
+      "x_mm": 149.660722,
+      "y_mm": 244.005249,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "TP_PG1",
+      "value": "nPWRGD",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 214.922627,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "Q1",
+      "value": "IPD50N06S4L-16",
+      "footprint": "SOT-23",
+      "x_mm": 34.589287,
+      "y_mm": 33.82475,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "R_SER5",
+      "value": "232k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 218.125014,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "CMC_RS485_2",
+      "value": "744232090",
+      "footprint": "L_CommonModeChoke_Bourns_SRF1260",
+      "x_mm": 61.160718,
+      "y_mm": 198.39225,
+      "rotation": 0.0,
+      "pads": 4
+    },
+    {
+      "ref": "U_ISODCDC1",
+      "value": "MEE1S0505SC",
+      "footprint": "Converter_DCDC_Murata_MEE1SxxxxSC_THT",
+      "x_mm": 56.755952,
+      "y_mm": 216.30875,
+      "rotation": 0.0,
+      "pads": 4
+    },
+    {
+      "ref": "R_LINK1",
+      "value": "1k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 103.767864,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BURDEN6",
+      "value": "150R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 118.541674,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_IGND5",
+      "value": "I_mode_gnd",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 56.160717,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VMDEC2",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 67.125001,
+      "y_mm": 294.41475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_FILT3",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 58.79167,
+      "y_mm": 243.43525,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D1",
+      "value": "SMBJ18CA",
+      "footprint": "D_SMB",
+      "x_mm": 234.303348,
+      "y_mm": 15.34825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ILIM_V5",
+      "value": "20k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 18.958334,
+      "y_mm": 316.08125,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_12V_SW1",
+      "value": "V12_SW",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 79.994052,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "J_PROG1",
+      "value": "Debug_UART_TX_RX_GND",
+      "footprint": "PinHeader_1x03_P2.54mm_Vertical",
+      "x_mm": 263.720255,
+      "y_mm": 68.29775,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "U_VALVEEXP1",
+      "value": "MCP23S17-E/SO",
+      "footprint": "SOIC-28W_7.5x17.9mm_P1.27mm",
+      "x_mm": 264.755964,
+      "y_mm": 324.33125,
+      "rotation": 0.0,
+      "pads": 28
+    },
+    {
+      "ref": "C_DEC5",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 138.458342,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DVDT1",
+      "value": "1nF_TBD",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 78.708338,
+      "y_mm": 14.02825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "F1",
+      "value": "Polyfuse_5A",
+      "footprint": "Fuse_1812_4532Metric",
+      "x_mm": 294.912876,
+      "y_mm": 14.99825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_3V3",
+      "value": "V3V3_RAIL",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 102.482148,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "C_VMDEC6",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 146.791673,
+      "y_mm": 294.41475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_FLT1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 209.458346,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "MH4",
+      "value": "MountingHole_3.2mm_M3",
+      "footprint": "MountingHole_3.2mm_M3",
+      "x_mm": 408.0,
+      "y_mm": 349.5795,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "C_ISOOUT1",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 108.422626,
+      "y_mm": 192.62225,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_LINK1",
+      "value": "Yellow",
+      "footprint": "LED_0805_2012Metric",
+      "x_mm": 41.446431,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_FILT4",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 78.708338,
+      "y_mm": 243.43525,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_VBOT6",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 357.54169,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_DRV5",
+      "value": "DRV8871DDAR",
+      "footprint": "TI_SO-PowerPAD-8_ThermalVias",
+      "x_mm": 204.87501,
+      "y_mm": 317.93125,
+      "rotation": 0.0,
+      "pads": 19
+    },
+    {
+      "ref": "C_IN3",
+      "value": "10uF_16V",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 138.458342,
+      "y_mm": 14.19825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_CC1_1",
+      "value": "5.1k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 347.327403,
+      "y_mm": 67.56775,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_PWR1",
+      "value": "Green",
+      "footprint": "LED_0805_2012Metric",
+      "x_mm": 63.077385,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_RS485DI1",
+      "value": "ISO_DI",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 350.982162,
+      "y_mm": 192.842249,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "R_BURDEN1",
+      "value": "150R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 18.958334,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_VBOT2",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 277.875018,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "SW_SETUP1",
+      "value": "SETUP",
+      "footprint": "SW_SPST_B3U-1000P",
+      "x_mm": 164.3512,
+      "y_mm": 142.0825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC9",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 218.125014,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_BOOT1",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 18.958334,
+      "y_mm": 13.77825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_OUT1",
+      "value": "10uF_25V",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 158.37501,
+      "y_mm": 14.19825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BURDEN4",
+      "value": "150R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 78.708338,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_LORABOOT1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 48.017861,
+      "y_mm": 160.929,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_LED1",
+      "value": "Green_PowerGood",
+      "footprint": "LED_0805_2012Metric",
+      "x_mm": 251.293825,
+      "y_mm": 13.99825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_PG1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 348.875022,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "CMC_RS485_1",
+      "value": "744232090",
+      "footprint": "L_CommonModeChoke_Bourns_SRF1260",
+      "x_mm": 26.386906,
+      "y_mm": 198.39225,
+      "rotation": 0.0,
+      "pads": 4
+    },
+    {
+      "ref": "R_EXPRST1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 305.458347,
+      "y_mm": 294.38475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_PWR1",
+      "value": "1k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 123.684531,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_USBVBUS1",
+      "value": "USB_VBUS",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 63.410716,
+      "y_mm": 85.00925,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "J_OUT1",
+      "value": "M12_5P",
+      "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+      "x_mm": 365.246213,
+      "y_mm": 14.728249,
+      "rotation": 0.0,
+      "pads": 4
+    },
+    {
+      "ref": "JP_VBYP6",
+      "value": "V_mode_bypass",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 276.244062,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_GND1",
+      "value": "GND",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 169.946435,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "J_RS485_IN1",
+      "value": "M12_5P_A_Coded_RS485_Bus_In",
+      "footprint": "PinHeader_1x05_P2.54mm_Vertical",
+      "x_mm": 156.410723,
+      "y_mm": 193.572249,
+      "rotation": 0.0,
+      "pads": 5
+    },
+    {
+      "ref": "U_DRV4",
+      "value": "DRV8871DDAR",
+      "footprint": "TI_SO-PowerPAD-8_ThermalVias",
+      "x_mm": 175.196437,
+      "y_mm": 317.93125,
+      "rotation": 0.0,
+      "pads": 19
+    },
+    {
+      "ref": "R_SHDN1",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 388.708358,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC1",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 38.875002,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_LED2",
+      "value": "330",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 289.125018,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC7",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 178.291678,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_UVLO2",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 38.875002,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_UVLO1",
+      "value": "64.9k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 18.958334,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_CLHI5",
+      "value": "BAV99",
+      "footprint": "SOT-23",
+      "x_mm": 191.982151,
+      "y_mm": 244.005249,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "C_EN1",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 238.041682,
+      "y_mm": 67.597749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ILIM_V3",
+      "value": "20k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 365.208351,
+      "y_mm": 294.38475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_SER3",
+      "value": "232k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 178.291678,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_CLHI4",
+      "value": "BAV99",
+      "footprint": "SOT-23",
+      "x_mm": 177.875008,
+      "y_mm": 244.005249,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "C_IN1",
+      "value": "10uF_25V",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 98.625006,
+      "y_mm": 14.19825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_VBYP5",
+      "value": "V_mode_bypass",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 244.803584,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U2",
+      "value": "TPS54561",
+      "footprint": "WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias",
+      "x_mm": 317.922626,
+      "y_mm": 47.271249,
+      "rotation": 0.0,
+      "pads": 25
+    },
+    {
+      "ref": "D_FLT1",
+      "value": "Red",
+      "footprint": "LED_0805_2012Metric",
+      "x_mm": 19.815477,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_ISO5V1",
+      "value": "ISO_5V",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 306.00597,
+      "y_mm": 192.842249,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "R_VBOT4",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 317.708354,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_IGND3",
+      "value": "I_mode_gnd",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 376.386919,
+      "y_mm": 244.385249,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_LORARST1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 67.934529,
+      "y_mm": 160.929,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_VBOT3",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 297.791686,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_MCU1",
+      "value": "ESP32-S3-WROOM-1-N16R8",
+      "footprint": "ESP32-S3-WROOM-1",
+      "x_mm": 101.179764,
+      "y_mm": 110.286,
+      "rotation": 0.0,
+      "pads": 62
+    },
+    {
+      "ref": "R_FB2B1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 189.541678,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_VBOT1",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 257.95835,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "J_USB1",
+      "value": "USB-C_Programming",
+      "footprint": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "x_mm": 298.446447,
+      "y_mm": 71.56275,
+      "rotation": 0.0,
+      "pads": 22
+    },
+    {
+      "ref": "JP_VBYP3",
+      "value": "V_mode_bypass",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 181.922628,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC6",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 158.37501,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_SER4",
+      "value": "232k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 198.208346,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ILIM_V6",
+      "value": "20k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 38.875002,
+      "y_mm": 316.08125,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VMDEC4",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 106.958337,
+      "y_mm": 294.41475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VALVEBULK1",
+      "value": "1000uF_25V",
+      "footprint": "CP_Radial_D12.5mm_P5.00mm",
+      "x_mm": 20.624999,
+      "y_mm": 300.23475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC3",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 98.625006,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_SER6",
+      "value": "232k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 238.041682,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_RS485PROT2",
+      "value": "SM712-02HTG",
+      "footprint": "SOT-23",
+      "x_mm": 135.113103,
+      "y_mm": 193.59225,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "TP_ISOGND1",
+      "value": "ISO_GND",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 328.494066,
+      "y_mm": 192.842249,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "J_VALVE_OUT1_1",
+      "value": "ValveOut1_x6",
+      "footprint": "TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+      "x_mm": 195.496438,
+      "y_mm": 299.05475,
+      "rotation": 0.0,
+      "pads": 6
+    },
+    {
+      "ref": "MH1",
+      "value": "MountingHole_3.2mm_M3",
+      "footprint": "MountingHole_3.2mm_M3",
+      "x_mm": 12.0,
+      "y_mm": 12.0,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "SW_BOOT1",
+      "value": "BOOT",
+      "footprint": "SW_SPST_B3U-1000P",
+      "x_mm": 19.791667,
+      "y_mm": 85.85925,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "J_LORASMA1",
+      "value": "SMA_Bulkhead_Antenna",
+      "footprint": "SMA_Amphenol_132134_Vertical",
+      "x_mm": 23.529763,
+      "y_mm": 164.029,
+      "rotation": 0.0,
+      "pads": 5
+    },
+    {
+      "ref": "C_FILT1",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 18.958334,
+      "y_mm": 243.43525,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VMDEC1",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 47.208333,
+      "y_mm": 294.41475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U3",
+      "value": "TPS563201",
+      "footprint": "SOT-23-6",
+      "x_mm": 349.005959,
+      "y_mm": 46.72125,
+      "rotation": 0.0,
+      "pads": 6
+    },
+    {
+      "ref": "R_OVP1",
+      "value": "124k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 309.041686,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC10",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 58.79167,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "L2",
+      "value": "2.2uH_TBD",
+      "footprint": "L_Bourns-SRN4018",
+      "x_mm": 19.005952,
+      "y_mm": 34.52475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_EN1A1",
+      "value": "73.2k_TBD",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 70.04167,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_CLHI3",
+      "value": "BAV99",
+      "footprint": "SOT-23",
+      "x_mm": 163.767865,
+      "y_mm": 244.005249,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "C_BOOT2",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 38.875002,
+      "y_mm": 13.77825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_FILT2",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 38.875002,
+      "y_mm": 243.43525,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC8",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 198.208346,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_LEDFLT1",
+      "value": "1k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 83.851195,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_RS485_TX1",
+      "value": "THVD1450DR",
+      "footprint": "SOIC-8_3.9x4.9mm_P1.27mm",
+      "x_mm": 90.625001,
+      "y_mm": 216.20875,
+      "rotation": 0.0,
+      "pads": 8
+    },
+    {
+      "ref": "L1",
+      "value": "3.3uH_TBD",
+      "footprint": "L_Bourns-SRN6028",
+      "x_mm": 390.972405,
+      "y_mm": 16.34825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BURDEN2",
+      "value": "150R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 38.875002,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "J_SENSOR_RET1",
+      "value": "SensorReturn_x6",
+      "footprint": "TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+      "x_mm": 308.365493,
+      "y_mm": 262.32175,
+      "rotation": 0.0,
+      "pads": 6
+    },
+    {
+      "ref": "C_SS1",
+      "value": "10nF_TBD",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 218.125014,
+      "y_mm": 13.77825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_FB1A1",
+      "value": "52.3k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 129.791674,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U1",
+      "value": "TPS26600PWP",
+      "footprint": "HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias",
+      "x_mm": 259.839294,
+      "y_mm": 47.77125,
+      "rotation": 0.0,
+      "pads": 33
+    },
+    {
+      "ref": "SW_RESET1",
+      "value": "RESET",
+      "footprint": "SW_SPST_B3U-1000P",
+      "x_mm": 41.375001,
+      "y_mm": 85.85925,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_IGND2",
+      "value": "I_mode_gnd",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 344.946441,
+      "y_mm": 244.385249,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BURDEN3",
+      "value": "150R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 58.79167,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VMDEC3",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 87.041669,
+      "y_mm": 294.41475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VMDEC5",
+      "value": "1uF",
+      "footprint": "C_0805_2012Metric",
+      "x_mm": 126.875005,
+      "y_mm": 294.41475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_RS485PROT1",
+      "value": "SM712-02HTG",
+      "footprint": "SOT-23",
+      "x_mm": 123.958341,
+      "y_mm": 193.59225,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "TP_FLT1",
+      "value": "nFLT",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 147.45834,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "C_COMP1",
+      "value": "2.2nF_TBD",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 58.79167,
+      "y_mm": 13.77825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ILIM_V2",
+      "value": "20k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 345.291683,
+      "y_mm": 294.38475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ILIM_V4",
+      "value": "20k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 385.125019,
+      "y_mm": 294.38475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_IGND1",
+      "value": "I_mode_gnd",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 313.505963,
+      "y_mm": 244.385249,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_CLHI1",
+      "value": "BAV99",
+      "footprint": "SOT-23",
+      "x_mm": 135.553579,
+      "y_mm": 244.005249,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "JP_IGND6",
+      "value": "I_mode_gnd",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 87.601194,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_DEC2",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 78.708338,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_RS485RO1",
+      "value": "ISO_RO",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 373.470258,
+      "y_mm": 192.842249,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "MH2",
+      "value": "MountingHole_3.2mm_M3",
+      "footprint": "MountingHole_3.2mm_M3",
+      "x_mm": 408.0,
+      "y_mm": 12.0,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "R_SER1",
+      "value": "232k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 138.458342,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_VBOT5",
+      "value": "100k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 337.625022,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_IMON1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 249.291682,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BIASB1",
+      "value": "680",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 264.886919,
+      "y_mm": 192.84225,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_5V1",
+      "value": "V5_RAIL",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 124.970244,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "R_COMP1",
+      "value": "10k_TBD",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 50.125002,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "TP_VALVE_PWR1",
+      "value": "V12_VALVE",
+      "footprint": "TestPoint_Pad_D1.5mm",
+      "x_mm": 60.077384,
+      "y_mm": 316.08125,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "R_OVP2",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 328.958354,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "J_VALVE_OUT2_1",
+      "value": "ValveOut2_x6",
+      "footprint": "TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+      "x_mm": 253.698821,
+      "y_mm": 299.05475,
+      "rotation": 0.0,
+      "pads": 6
+    },
+    {
+      "ref": "C_DEC4",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 118.541674,
+      "y_mm": 67.347749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "MH3",
+      "value": "MountingHole_3.2mm_M3",
+      "footprint": "MountingHole_3.2mm_M3",
+      "x_mm": 12.0,
+      "y_mm": 349.5795,
+      "rotation": 0.0,
+      "pads": 1
+    },
+    {
+      "ref": "C_ISOIN1",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 88.505958,
+      "y_mm": 192.62225,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_DRV2",
+      "value": "DRV8871DDAR",
+      "footprint": "TI_SO-PowerPAD-8_ThermalVias",
+      "x_mm": 115.839291,
+      "y_mm": 317.93125,
+      "rotation": 0.0,
+      "pads": 19
+    },
+    {
+      "ref": "R_SETUP1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 143.6012,
+      "y_mm": 141.2325,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_gate1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 58.79167,
+      "y_mm": 45.97125,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_DRV6",
+      "value": "DRV8871DDAR",
+      "footprint": "TI_SO-PowerPAD-8_ThermalVias",
+      "x_mm": 234.553583,
+      "y_mm": 317.93125,
+      "rotation": 0.0,
+      "pads": 19
+    },
+    {
+      "ref": "J1",
+      "value": "PWR JACK",
+      "footprint": "PinHeader_1x04_P2.54mm_Vertical",
+      "x_mm": 333.805735,
+      "y_mm": 14.728249,
+      "rotation": 0.0,
+      "pads": 4
+    },
+    {
+      "ref": "D_LED2",
+      "value": "Green_3V3Present",
+      "footprint": "LED_0805_2012Metric",
+      "x_mm": 272.924779,
+      "y_mm": 13.99825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_FB2A1",
+      "value": "32.4k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 169.62501,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ENPU1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 387.160739,
+      "y_mm": 67.56775,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_DRV1",
+      "value": "DRV8871DDAR",
+      "footprint": "TI_SO-PowerPAD-8_ThermalVias",
+      "x_mm": 86.160718,
+      "y_mm": 317.93125,
+      "rotation": 0.0,
+      "pads": 19
+    },
+    {
+      "ref": "JP_IGND4",
+      "value": "I_mode_gnd",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 24.720239,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_FILT5",
+      "value": "100nF",
+      "footprint": "C_0603_1608Metric",
+      "x_mm": 98.625006,
+      "y_mm": 243.43525,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_FB1B1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 149.708342,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BIASA1",
+      "value": "680",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 244.970252,
+      "y_mm": 192.84225,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_ILIM_V1",
+      "value": "20k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 325.375015,
+      "y_mm": 294.38475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_VBYP1",
+      "value": "V_mode_bypass",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 119.041673,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "D_CLHI6",
+      "value": "BAV99",
+      "footprint": "SOT-23",
+      "x_mm": 206.089294,
+      "y_mm": 244.005249,
+      "rotation": 0.0,
+      "pads": 3
+    },
+    {
+      "ref": "R_BURDEN5",
+      "value": "150R",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 98.625006,
+      "y_mm": 276.38825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_BULK2",
+      "value": "10uF",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 18.958334,
+      "y_mm": 67.767749,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_OUT3",
+      "value": "22uF_10V",
+      "footprint": "C_1206_3216Metric",
+      "x_mm": 198.208346,
+      "y_mm": 14.19825,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_BOOT1",
+      "value": "10k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 327.410735,
+      "y_mm": 67.56775,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_LED1",
+      "value": "1k",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 269.20835,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "JP_VBYP4",
+      "value": "V_mode_bypass",
+      "footprint": "PinHeader_1x02_P2.54mm_Vertical",
+      "x_mm": 213.363106,
+      "y_mm": 258.38175,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_DRV3",
+      "value": "DRV8871DDAR",
+      "footprint": "TI_SO-PowerPAD-8_ThermalVias",
+      "x_mm": 145.517864,
+      "y_mm": 317.93125,
+      "rotation": 0.0,
+      "pads": 19
+    },
+    {
+      "ref": "R_ILIM1",
+      "value": "20k_TBD",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 229.375014,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "R_RT1",
+      "value": "100k_TBD",
+      "footprint": "R_0805_2012Metric",
+      "x_mm": 368.79169,
+      "y_mm": 33.07475,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "U_ISO1",
+      "value": "ISO7761DW",
+      "footprint": "SOIC-16W_7.5x10.3mm_P1.27mm",
+      "x_mm": 24.363094,
+      "y_mm": 218.90875,
+      "rotation": 0.0,
+      "pads": 16
+    },
+    {
+      "ref": "C_VALVEBULK2",
+      "value": "1000uF_25V",
+      "footprint": "CP_Radial_D12.5mm_P5.00mm",
+      "x_mm": 285.0,
+      "y_mm": 340.0,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VALVEBULK3",
+      "value": "1000uF_25V",
+      "footprint": "CP_Radial_D12.5mm_P5.00mm",
+      "x_mm": 305.0,
+      "y_mm": 340.0,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VALVEBULK4",
+      "value": "1000uF_25V",
+      "footprint": "CP_Radial_D12.5mm_P5.00mm",
+      "x_mm": 325.0,
+      "y_mm": 340.0,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VALVEBULK5",
+      "value": "1000uF_25V",
+      "footprint": "CP_Radial_D12.5mm_P5.00mm",
+      "x_mm": 345.0,
+      "y_mm": 340.0,
+      "rotation": 0.0,
+      "pads": 2
+    },
+    {
+      "ref": "C_VALVEBULK6",
+      "value": "1000uF_25V",
+      "footprint": "CP_Radial_D12.5mm_P5.00mm",
+      "x_mm": 365.0,
+      "y_mm": 340.0,
+      "rotation": 0.0,
+      "pads": 2
+    }
+  ]
+}

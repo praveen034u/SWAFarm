@@ -1,0 +1,17 @@
+{
+  "original_sources_unchanged": true,
+  "existing_footprint_positions_orientations_uuids_preserved": true,
+  "project_rules_unchanged": true,
+  "footprints": 185,
+  "pcb_pads_checked": 694,
+  "catch_diode_polarity_verified": true,
+  "choke_3_4_pin_swap_verified": true,
+  "all_other_net_partitions_preserved": true,
+  "six_clamp_pinouts_preserved": true,
+  "tracks": 0,
+  "zones": 0,
+  "netlist_components": 182,
+  "bom_included_components": 181,
+  "components_with_explicit_mpn": 15,
+  "release_status": "BLOCKED - not manufacturing ready"
+}

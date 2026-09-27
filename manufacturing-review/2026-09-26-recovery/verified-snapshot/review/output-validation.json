@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": {
+    "bom_cpl_board_reference_match": {
+      "pass": true,
+      "detail": {
+        "bom": 153,
+        "cpl": 153,
+        "board_fitted": 153,
+        "bom_only": [],
+        "cpl_only": []
+      }
+    },
+    "bom_quantities": {
+      "pass": true,
+      "detail": 153
+    },
+    "manufacturer_mpns_complete": {
+      "pass": true,
+      "detail": {
+        "groups": 59,
+        "missing": []
+      }
+    },
+    "no_fitted_dnp": {
+      "pass": true,
+      "detail": null
+    },
+    "cpl_positions_rotations_side": {
+      "pass": true,
+      "detail": {
+        "mismatches": [],
+        "convention": "KiCad absolute mm, X right / Y up (negative on this board), rotations unchanged; assembler-library offsets not available"
+      }
+    },
+    "all_pad_centers_inside_outline": {
+      "pass": true,
+      "detail": null
+    },
+    "original_project_unchanged": {
+      "pass": true,
+      "detail": {
+        "MCU.kicad_sch": true,
+        "Motor Valve.kicad_sch": true,
+        "Power.kicad_sch": true,
+        "RS-485.kicad_sch": true,
+        "Sensors & LORA.kicad_sch": true,
+        "SWAFarmNodeV1.kicad_pcb": true,
+        "SWAFarmNodeV1.kicad_pro": true,
+        "SWAFarmNodeV1.kicad_sch": true
+      }
+    },
+    "drill_positions_sizes_and_plating_match_board": {
+      "pass": true,
+      "detail": {
+        "expected": 289,
+        "exported": 289,
+        "missing": [],
+        "extra": [],
+        "parser_warnings": [
+          "C:\\Project\\SWAFarm\\manufacturing-review\\2026-09-24\\release-candidate\\fab\\SWAFarmNodeV1-PTH.drl:30 \"G90\": G90 header statement found after end of header",
+          "C:\\Project\\SWAFarm\\manufacturing-review\\2026-09-24\\release-candidate\\fab\\SWAFarmNodeV1-NPTH.drl:14 \"G90\": G90 header statement found after end of header"
+        ]
+      }
+    },
+    "closed_200x160_outline": {
+      "pass": true,
+      "detail": {
+        "edge_centerline_vertices": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            200.0,
+            0.0
+          ],
+          [
+            0.0,
+            -160.0
+          ],
+          [
+            200.0,
+            -160.0
+          ]
+        ],
+        "note": "Gerber job extents include 0.05 mm edge stroke; finished profile follows centerline."
+      }
+    },
+    "four_copper_layers_in_order": {
+      "pass": true,
+      "detail": [
+        "Copper,L1,Top",
+        "Copper,L2,Inr",
+        "Copper,L3,Inr",
+        "Copper,L4,Bot"
+      ]
+    },
+    "all_requested_gerbers_parse": {
+      "pass": true,
+      "detail": {
+        "SWAFarmNodeV1-B_Cu.gbl": 456,
+        "SWAFarmNodeV1-B_Mask.gbs": 149,
+        "SWAFarmNodeV1-B_Paste.gbp": 0,
+        "SWAFarmNodeV1-B_Silkscreen.gbo": 1809,
+        "SWAFarmNodeV1-Edge_Cuts.gm1": 4,
+        "SWAFarmNodeV1-F_Cu.gtl": 1802,
+        "SWAFarmNodeV1-F_Mask.gts": 560,
+        "SWAFarmNodeV1-F_Paste.gtp": 408,
+        "SWAFarmNodeV1-F_Silkscreen.gto": 11235,
+        "SWAFarmNodeV1-In1_Cu.g1": 285,
+        "SWAFarmNodeV1-In2_Cu.g2": 285
+      }
+    },
+    "mask_paste_pad_centers_match": {
+      "pass": true,
+      "detail": {
+        "F_Mask.gts": {
+          "pad_apertures_checked": 570,
+          "unmatched": [],
+          "export_objects": 560
+        },
+        "B_Mask.gbs": {
+          "pad_apertures_checked": 143,
+          "unmatched": [],
+          "export_objects": 149
+        },
+        "F_Paste.gtp": {
+          "pad_apertures_checked": 408,
+          "unmatched": [],
+          "export_objects": 408
+        },
+        "B_Paste.gbp": {
+          "pad_apertures_checked": 0,
+          "unmatched": [],
+          "export_objects": 0
+        }
+      }
+    },
+    "ipc356_parses_and_mask_fields_valid": {
+      "pass": true,
+      "detail": {
+        "records": 705,
+        "mask_codes_corrected": 116,
+        "note": "All records matched to source coordinates/nets; documented KiCad 10.0.5 mask-field compatibility correction. Full names in ipc356-normalization.json."
+      }
+    },
+    "native_drc_clean": {
+      "pass": true,
+      "detail": {
+        "ignored_check_categories": [
+          {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+          },
+          {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+          },
+          {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+          },
+          {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+          },
+          {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+          }
+        ],
+        "date": "2026-09-26T15:00:40"
+      }
+    }
+  },
+  "footprints": 176,
+  "tracks": 1276,
+  "vias": 116,
+  "zones": 4,
+  "thermal_holes": 24,
+  "board_sha256": "4fbc35ad63737708aa704cb92434f5a28fa5603ff309278dfe3b924a38a52451",
+  "limits": [
+    "No physical electrical, EMC, RF, environmental or valve-load tests have been performed.",
+    "No assembler library rotation offsets, stock allocation, stencil process or final impedance acceptance has been received.",
+    "3D render omits parts without installed models; not enclosure collision certification."
+  ]
+}

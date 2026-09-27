@@ -43,6 +43,13 @@ Section ID ranges:
 | Manufacturing Engineer | Ensures requirements are testable on line |
 
 ## Architecture
+
+### Approved two-unit POC variant, 2026-09-24
+
+The current manufacturing-review copy is an eight-SPDT-relay, low-voltage-only variant, replacing the earlier six H-bridge outputs. It uses external 12 VDC controller power and a separate isolated 24 VAC valve supply; solar/battery operation is not implemented in this POC. The user also approved RECOM R-78B5.0-2.0 and R-78B3.3-2.0 regulator modules. This exception does not replace the general production requirements below or establish global certification. Implementation status and release gates are maintained in the [revision checkpoint](../../manufacturing-review/2026-09-24/reports/relay-power-checkpoint.md). The design remains unreleased.
+
+The approved copy additionally uses regulated TMR 1-0511 isolated power, default-low ISO7761FDWR and India/868 RAK3172-T-8-SM-NI on UART2. The 200 x 160 mm four-layer board has zero unrouted connections and clean configured ERC/DRC/parity checks. Vendor thermal-hole/stencil, sourcing and impedance acceptance remain release gates; physical tests are unperformed. This does not relax production requirements below.
+
 ```mermaid
 flowchart LR
 	MCU[Industrial MCU]

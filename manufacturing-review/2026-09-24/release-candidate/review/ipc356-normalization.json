@@ -1,0 +1,1328 @@
+{
+  "records_matched_to_board": 705,
+  "native_mask_values_corrected": 116,
+  "fixed_field_alignment": "Inserted reserved column 72 before S at column 73 for every test record.",
+  "changes": [
+    {
+      "record": 1,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 150.63724,
+      "y_mm": -95.52432
+    },
+    {
+      "record": 2,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 102.99954000000001,
+      "y_mm": -93.27387999999999
+    },
+    {
+      "record": 3,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 32.64916,
+      "y_mm": -9.70534
+    },
+    {
+      "record": 4,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 75.06208,
+      "y_mm": -76.14920000000001
+    },
+    {
+      "record": 5,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 132.00126,
+      "y_mm": -79.72552
+    },
+    {
+      "record": 6,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 103.38816,
+      "y_mm": -51.00066
+    },
+    {
+      "record": 7,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 59.55792,
+      "y_mm": -46.489619999999995
+    },
+    {
+      "record": 8,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 164.11194,
+      "y_mm": -75.55229999999999
+    },
+    {
+      "record": 9,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 80.67548,
+      "y_mm": -14.00048
+    },
+    {
+      "record": 10,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 38.17366,
+      "y_mm": -68.95338
+    },
+    {
+      "record": 11,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 95.39985999999999,
+      "y_mm": -57.8993
+    },
+    {
+      "record": 12,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 56.06288000000001,
+      "y_mm": -100.8507
+    },
+    {
+      "record": 13,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 164.86124,
+      "y_mm": -84.1756
+    },
+    {
+      "record": 14,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 37.06368,
+      "y_mm": -100.0506
+    },
+    {
+      "record": 15,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 90.51035999999999,
+      "y_mm": -7.25424
+    },
+    {
+      "record": 16,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 168.9989,
+      "y_mm": -75.84948
+    },
+    {
+      "record": 17,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 98.7806,
+      "y_mm": -37.96792
+    },
+    {
+      "record": 18,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 93.01226,
+      "y_mm": -84.63534
+    },
+    {
+      "record": 19,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 96.01454,
+      "y_mm": -88.65108
+    },
+    {
+      "record": 20,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 75.06208,
+      "y_mm": -101.15042000000001
+    },
+    {
+      "record": 21,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 60.97524000000001,
+      "y_mm": -31.99892
+    },
+    {
+      "record": 22,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 49.28616,
+      "y_mm": -29.3624
+    },
+    {
+      "record": 23,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 102.97413999999999,
+      "y_mm": -24.00046
+    },
+    {
+      "record": 24,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 57.2008,
+      "y_mm": -94.22384
+    },
+    {
+      "record": 25,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 111.99876,
+      "y_mm": -93.27387999999999
+    },
+    {
+      "record": 26,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 38.24986,
+      "y_mm": -8.10006
+    },
+    {
+      "record": 27,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 91.35618,
+      "y_mm": -47.00016
+    },
+    {
+      "record": 28,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 37.150040000000004,
+      "y_mm": -8.10006
+    },
+    {
+      "record": 29,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 132.00126,
+      "y_mm": -96.72574
+    },
+    {
+      "record": 30,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 54.010560000000005,
+      "y_mm": -12.938760000000002
+    },
+    {
+      "record": 31,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 75.06462,
+      "y_mm": -68.25996
+    },
+    {
+      "record": 32,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 37.06368,
+      "y_mm": -76.14920000000001
+    },
+    {
+      "record": 33,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 38.199059999999996,
+      "y_mm": -94.22384
+    },
+    {
+      "record": 34,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 56.06288000000001,
+      "y_mm": -76.14920000000001
+    },
+    {
+      "record": 35,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 32.25038,
+      "y_mm": -5.20192
+    },
+    {
+      "record": 36,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 98.97618,
+      "y_mm": -109.99978
+    },
+    {
+      "record": 37,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 91.00058,
+      "y_mm": -93.27387999999999
+    },
+    {
+      "record": 38,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 72.29856,
+      "y_mm": -23.2664
+    },
+    {
+      "record": 39,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 74.20864,
+      "y_mm": -42.25036
+    },
+    {
+      "record": 40,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 51.00066,
+      "y_mm": -78.03388
+    },
+    {
+      "record": 41,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 32.25038,
+      "y_mm": -7.87146
+    },
+    {
+      "record": 42,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 35.93592,
+      "y_mm": -10.96264
+    },
+    {
+      "record": 43,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 158.7627,
+      "y_mm": -109.59084
+    },
+    {
+      "record": 44,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 91.93021999999999,
+      "y_mm": -113.64214
+    },
+    {
+      "record": 45,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 140.36548,
+      "y_mm": -91.21394
+    },
+    {
+      "record": 46,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 78.5368,
+      "y_mm": -69.88556
+    },
+    {
+      "record": 47,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 68.27774,
+      "y_mm": -9.00938
+    },
+    {
+      "record": 48,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 68.93814,
+      "y_mm": -27.424380000000003
+    },
+    {
+      "record": 49,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 77.22616,
+      "y_mm": -11.81354
+    },
+    {
+      "record": 50,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 77.27188,
+      "y_mm": -25.864819999999998
+    },
+    {
+      "record": 51,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 121.89967999999999,
+      "y_mm": -42.27576
+    },
+    {
+      "record": 52,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 136.0678,
+      "y_mm": -44.90466
+    },
+    {
+      "record": 53,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 115.64874,
+      "y_mm": -50.34534
+    },
+    {
+      "record": 54,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 149.90064,
+      "y_mm": -20.06346
+    },
+    {
+      "record": 55,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 57.85612,
+      "y_mm": -15.35938
+    },
+    {
+      "record": 56,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 130.89636000000002,
+      "y_mm": -42.458639999999995
+    },
+    {
+      "record": 57,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 129.1336,
+      "y_mm": -22.410420000000002
+    },
+    {
+      "record": 58,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 134.5692,
+      "y_mm": -46.489619999999995
+    },
+    {
+      "record": 59,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 61.902339999999995,
+      "y_mm": -26.88336
+    },
+    {
+      "record": 60,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 62.865,
+      "y_mm": -52.76595999999999
+    },
+    {
+      "record": 61,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 70.60184000000001,
+      "y_mm": -23.27402
+    },
+    {
+      "record": 62,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 76.74101999999999,
+      "y_mm": -62.05982
+    },
+    {
+      "record": 63,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 63.02248,
+      "y_mm": -26.855420000000002
+    },
+    {
+      "record": 64,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 65.15354,
+      "y_mm": -56.56326
+    },
+    {
+      "record": 65,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 84.03336,
+      "y_mm": -76.43114
+    },
+    {
+      "record": 66,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 66.27875999999999,
+      "y_mm": -24.13
+    },
+    {
+      "record": 67,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 103.01223999999999,
+      "y_mm": -85.17381999999999
+    },
+    {
+      "record": 68,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 93.19514,
+      "y_mm": -95.01886
+    },
+    {
+      "record": 69,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 101.61778,
+      "y_mm": -88.24468
+    },
+    {
+      "record": 70,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 96.13138000000001,
+      "y_mm": -96.57842
+    },
+    {
+      "record": 71,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 107.44200000000001,
+      "y_mm": -95.8342
+    },
+    {
+      "record": 72,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 108.48085999999999,
+      "y_mm": -88.29802
+    },
+    {
+      "record": 73,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 95.98152,
+      "y_mm": -98.08718
+    },
+    {
+      "record": 74,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 96.83749999999999,
+      "y_mm": -98.64598
+    },
+    {
+      "record": 75,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 109.98454,
+      "y_mm": -88.31326
+    },
+    {
+      "record": 76,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 108.94821999999999,
+      "y_mm": -96.84766
+    },
+    {
+      "record": 77,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 114.53367999999999,
+      "y_mm": -94.41687999999999
+    },
+    {
+      "record": 78,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 114.53367999999999,
+      "y_mm": -88.011
+    },
+    {
+      "record": 79,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 98.88728,
+      "y_mm": -96.7105
+    },
+    {
+      "record": 80,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 33.80486,
+      "y_mm": -4.70662
+    },
+    {
+      "record": 81,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 30.30474,
+      "y_mm": -11.650979999999999
+    },
+    {
+      "record": 82,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 54.86908,
+      "y_mm": -14.99616
+    },
+    {
+      "record": 83,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 54.894479999999994,
+      "y_mm": -11.58494
+    },
+    {
+      "record": 84,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 166.57574,
+      "y_mm": -80.94726
+    },
+    {
+      "record": 85,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 166.5478,
+      "y_mm": -94.95027999999999
+    },
+    {
+      "record": 86,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 152.58288,
+      "y_mm": -77.9653
+    },
+    {
+      "record": 87,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 75.50404,
+      "y_mm": -19.16938
+    },
+    {
+      "record": 88,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 79.17179999999999,
+      "y_mm": -15.68196
+    },
+    {
+      "record": 89,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 36.692840000000004,
+      "y_mm": -10.27176
+    },
+    {
+      "record": 90,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 33.50006,
+      "y_mm": -11.03376
+    },
+    {
+      "record": 91,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 156.03220000000002,
+      "y_mm": -91.7194
+    },
+    {
+      "record": 92,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 157.72638,
+      "y_mm": -83.20024000000001
+    },
+    {
+      "record": 93,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 44.483019999999996,
+      "y_mm": -19.80692
+    },
+    {
+      "record": 94,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 35.25012,
+      "y_mm": -8.10006
+    },
+    {
+      "record": 95,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 33.748979999999996,
+      "y_mm": -7.80034
+    },
+    {
+      "record": 96,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 38.818819999999995,
+      "y_mm": -121.21896
+    },
+    {
+      "record": 97,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 69.75094,
+      "y_mm": -11.93292
+    },
+    {
+      "record": 98,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 31.67634,
+      "y_mm": -78.0288
+    },
+    {
+      "record": 99,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 166.5986,
+      "y_mm": -81.97596
+    },
+    {
+      "record": 100,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 167.91432,
+      "y_mm": -89.75852
+    },
+    {
+      "record": 101,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 43.215559999999996,
+      "y_mm": -23.1521
+    },
+    {
+      "record": 102,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 47.72152,
+      "y_mm": -15.52448
+    },
+    {
+      "record": 103,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 84.7979,
+      "y_mm": -10.68832
+    },
+    {
+      "record": 104,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 77.55128,
+      "y_mm": -18.15338
+    },
+    {
+      "record": 105,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 71.82357999999999,
+      "y_mm": -11.1252
+    },
+    {
+      "record": 106,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 104.72927999999999,
+      "y_mm": -42.306239999999995
+    },
+    {
+      "record": 107,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 72.83196,
+      "y_mm": -34.74974
+    },
+    {
+      "record": 108,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 61.13526,
+      "y_mm": -17.899379999999997
+    },
+    {
+      "record": 109,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 107.98809999999999,
+      "y_mm": -48.176179999999995
+    },
+    {
+      "record": 110,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 98.12782,
+      "y_mm": -41.12768
+    },
+    {
+      "record": 111,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 75.78344,
+      "y_mm": -43.1546
+    },
+    {
+      "record": 112,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 71.03364,
+      "y_mm": -20.94484
+    },
+    {
+      "record": 113,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 59.3344,
+      "y_mm": -20.43938
+    },
+    {
+      "record": 114,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 73.36789999999999,
+      "y_mm": -47.00016
+    },
+    {
+      "record": 115,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 75.11796,
+      "y_mm": -17.8308
+    },
+    {
+      "record": 116,
+      "old_mask_field": "S-1815688029",
+      "new_mask_field": "S3",
+      "x_mm": 82.97164,
+      "y_mm": -8.99922
+    }
+  ],
+  "exported_net_name_to_full_board_net": {
+    "GND": [
+      "GND"
+    ],
+    "SENSOR_CH2": [
+      "SENSOR_CH2"
+    ],
+    "/POWER/NET_CC2": [
+      "/Power/net_CC2"
+    ],
+    "+12V": [
+      "+12V"
+    ],
+    "+3V3": [
+      "+3V3"
+    ],
+    "ISO_GND": [
+      "ISO_GND"
+    ],
+    "SENSOR_CH6": [
+      "SENSOR_CH6"
+    ],
+    "485/NET_MAIN_B": [
+      "/RS-485/net_MAIN_B"
+    ],
+    "VALVE_SPI_CS": [
+      "VALVE_SPI_CS"
+    ],
+    "VALVE_SPI_SCLK": [
+      "VALVE_SPI_SCLK"
+    ],
+    "VALVE_SPI_MOSI": [
+      "VALVE_SPI_MOSI"
+    ],
+    "VALVE_SPI_MISO": [
+      "VALVE_SPI_MISO"
+    ],
+    "LVE/RELAY_CMD2": [
+      "/Motor Valve/RELAY_CMD2"
+    ],
+    "LVE/RELAY_CMD3": [
+      "/Motor Valve/RELAY_CMD3"
+    ],
+    "LVE/RELAY_CMD6": [
+      "/Motor Valve/RELAY_CMD6"
+    ],
+    "LVE/RELAY_CMD7": [
+      "/Motor Valve/RELAY_CMD7"
+    ],
+    "LVE/RELAY_CMD8": [
+      "/Motor Valve/RELAY_CMD8"
+    ],
+    "/POWER/NET_CC1": [
+      "/Power/net_CC1"
+    ],
+    "SENSOR_CH5": [
+      "SENSOR_CH5"
+    ],
+    "SENSOR_CH3": [
+      "SENSOR_CH3"
+    ],
+    "/POWER/EF_DVDT": [
+      "/Power/EF_DVDT"
+    ],
+    "/POWER/EF_RTN": [
+      "/Power/EF_RTN"
+    ],
+    "/MCU/LED_PWR": [
+      "/MCU/LED_PWR"
+    ],
+    "R/NET_USB_VBUS": [
+      "/Power/net_USB_VBUS"
+    ],
+    "/POWER/EF_SHDN": [
+      "/Power/EF_SHDN"
+    ],
+    "SENSOR_CH4": [
+      "SENSOR_CH4"
+    ],
+    "NET_USB_DM": [
+      "net_USB_DM"
+    ],
+    "ALVE/COIL_LOW2": [
+      "/Motor Valve/COIL_LOW2"
+    ],
+    "SENSOR_CH1": [
+      "SENSOR_CH1"
+    ],
+    "/POWER/EF_ILIM": [
+      "/Power/EF_ILIM"
+    ],
+    "CU/NET_CHIP_EN": [
+      "/MCU/net_CHIP_EN"
+    ],
+    "/MCU/LED_FAULT": [
+      "/MCU/LED_FAULT"
+    ],
+    "RS485_TX": [
+      "RS485_TX"
+    ],
+    "RS485_RX": [
+      "RS485_RX"
+    ],
+    "LORA_UART_TX": [
+      "LORA_UART_TX"
+    ],
+    "LORA_UART_RX": [
+      "LORA_UART_RX"
+    ],
+    "/MCU/LED_LINK": [
+      "/MCU/LED_LINK"
+    ],
+    "N/C": [
+      ""
+    ],
+    "+5V": [
+      "+5V"
+    ],
+    "RA/NET_CH2_SIG": [
+      "/Sensors & LORA/net_CH2_SIG"
+    ],
+    "NET_LORA_BOOT0": [
+      "/Sensors & LORA/net_LORA_BOOT0"
+    ],
+    "/POWER/EF_IMON": [
+      "/Power/EF_IMON"
+    ],
+    "12V_SW": [
+      "12V_SW"
+    ],
+    "/NET_LOC_A_RAW": [
+      "/RS-485/net_LOC_A_RAW"
+    ],
+    "/NET_LOC_B_RAW": [
+      "/RS-485/net_LOC_B_RAW"
+    ],
+    "C1-PIN_4-PAD4)": [
+      "unconnected-(J_RS485_LOC1-Pin_4-Pad4)"
+    ],
+    "VALVE/RLY8_COM": [
+      "/Motor Valve/RLY8_COM"
+    ],
+    "?VALVE/RLY8_NO": [
+      "/Motor Valve/RLY8_NO"
+    ],
+    "?VALVE/RLY8_NC": [
+      "/Motor Valve/RLY8_NC"
+    ],
+    "485/NET_MAIN_A": [
+      "/RS-485/net_MAIN_A"
+    ],
+    "T1-PIN_4-PAD4)": [
+      "unconnected-(J_RS485_OUT1-Pin_4-Pad4)"
+    ],
+    "ISO_5V": [
+      "ISO_5V"
+    ],
+    "P_IGND6-PIN_1)": [
+      "Net-(JP_IGND6-Pin_1)"
+    ],
+    "VIN_12V": [
+      "VIN_12V"
+    ],
+    "ALVE/COIL_LOW1": [
+      "/Motor Valve/COIL_LOW1"
+    ],
+    "VALVE/RLY1_COM": [
+      "/Motor Valve/RLY1_COM"
+    ],
+    "?VALVE/RLY1_NO": [
+      "/Motor Valve/RLY1_NO"
+    ],
+    "?VALVE/RLY1_NC": [
+      "/Motor Valve/RLY1_NC"
+    ],
+    "U/NET_DEBUG_TX": [
+      "/MCU/net_DEBUG_TX"
+    ],
+    "U/NET_DEBUG_RX": [
+      "/MCU/net_DEBUG_RX"
+    ],
+    "XP1-GPB0-PAD1)": [
+      "unconnected-(U_VALVEEXP1-GPB0-Pad1)"
+    ],
+    "XP1-GPB1-PAD2)": [
+      "unconnected-(U_VALVEEXP1-GPB1-Pad2)"
+    ],
+    "XP1-GPB2-PAD3)": [
+      "unconnected-(U_VALVEEXP1-GPB2-Pad3)"
+    ],
+    "XP1-GPB3-PAD4)": [
+      "unconnected-(U_VALVEEXP1-GPB3-Pad4)"
+    ],
+    "XP1-GPB4-PAD5)": [
+      "unconnected-(U_VALVEEXP1-GPB4-Pad5)"
+    ],
+    "XP1-GPB5-PAD6)": [
+      "unconnected-(U_VALVEEXP1-GPB5-Pad6)"
+    ],
+    "XP1-GPB6-PAD7)": [
+      "unconnected-(U_VALVEEXP1-GPB6-Pad7)"
+    ],
+    "XP1-GPB7-PAD8)": [
+      "unconnected-(U_VALVEEXP1-GPB7-Pad8)"
+    ],
+    "VE/EXP_RESET_N": [
+      "/Motor Valve/EXP_RESET_N"
+    ],
+    "P1-INTB-PAD19)": [
+      "unconnected-(U_VALVEEXP1-INTB-Pad19)"
+    ],
+    "P1-INTA-PAD20)": [
+      "unconnected-(U_VALVEEXP1-INTA-Pad20)"
+    ],
+    "LVE/RELAY_CMD1": [
+      "/Motor Valve/RELAY_CMD1"
+    ],
+    "LVE/RELAY_CMD4": [
+      "/Motor Valve/RELAY_CMD4"
+    ],
+    "LVE/RELAY_CMD5": [
+      "/Motor Valve/RELAY_CMD5"
+    ],
+    "ER/DC_IN_RAW_P": [
+      "/Power/DC_IN_RAW_P"
+    ],
+    "85/NET_ISO_DIR": [
+      "/RS-485/net_ISO_DIR"
+    ],
+    "VALVE/RLY5_COM": [
+      "/Motor Valve/RLY5_COM"
+    ],
+    "?VALVE/RLY5_NO": [
+      "/Motor Valve/RLY5_NO"
+    ],
+    "?VALVE/RLY5_NC": [
+      "/Motor Valve/RLY5_NC"
+    ],
+    "NET-(D_PWR1-A)": [
+      "Net-(D_PWR1-A)"
+    ],
+    "485/NET_ISO_DI": [
+      "/RS-485/net_ISO_DI"
+    ],
+    "RA/NET_CH5_SIG": [
+      "/Sensors & LORA/net_CH5_SIG"
+    ],
+    "ET-(D_LINK1-A)": [
+      "Net-(D_LINK1-A)"
+    ],
+    "/POWER/EF_UVLO": [
+      "/Power/EF_UVLO"
+    ],
+    "RA/NET_CH3_SIG": [
+      "/Sensors & LORA/net_CH3_SIG"
+    ],
+    "RS485_DE": [
+      "RS485_DE"
+    ],
+    "NET-(D_FLT1-A)": [
+      "Net-(D_FLT1-A)"
+    ],
+    "P_IGND3-PIN_1)": [
+      "Net-(JP_IGND3-Pin_1)"
+    ],
+    "NET_USB_DP": [
+      "net_USB_DP"
+    ],
+    "B1-SBU1-PADA8)": [
+      "unconnected-(J_USB1-SBU1-PadA8)"
+    ],
+    "B1-SBU2-PADB8)": [
+      "unconnected-(J_USB1-SBU2-PadB8)"
+    ],
+    "RA/NET_CH4_SIG": [
+      "/Sensors & LORA/net_CH4_SIG"
+    ],
+    "ALVE/COIL_LOW8": [
+      "/Motor Valve/COIL_LOW8"
+    ],
+    "ALVE/COIL_LOW7": [
+      "/Motor Valve/COIL_LOW7"
+    ],
+    "ALVE/COIL_LOW6": [
+      "/Motor Valve/COIL_LOW6"
+    ],
+    "ALVE/COIL_LOW5": [
+      "/Motor Valve/COIL_LOW5"
+    ],
+    "ALVE/COIL_LOW4": [
+      "/Motor Valve/COIL_LOW4"
+    ],
+    "ALVE/COIL_LOW3": [
+      "/Motor Valve/COIL_LOW3"
+    ],
+    "RA/NET_CH6_SIG": [
+      "/Sensors & LORA/net_CH6_SIG"
+    ],
+    "P_IGND1-PIN_1)": [
+      "Net-(JP_IGND1-Pin_1)"
+    ],
+    "A/NET_LORA_RST": [
+      "/Sensors & LORA/net_LORA_RST"
+    ],
+    "&?LORA/LORA_RF": [
+      "/Sensors & LORA/LORA_RF"
+    ],
+    "/POWER/EF_OVP": [
+      "/Power/EF_OVP"
+    ],
+    "5/NET_IN_A_RAW": [
+      "/RS-485/net_IN_A_RAW"
+    ],
+    "5/NET_IN_B_RAW": [
+      "/RS-485/net_IN_B_RAW"
+    ],
+    "N1-PIN_4-PAD4)": [
+      "unconnected-(J_RS485_IN1-Pin_4-Pad4)"
+    ],
+    "P_IGND2-PIN_1)": [
+      "Net-(JP_IGND2-Pin_1)"
+    ],
+    "VALVE/RLY3_COM": [
+      "/Motor Valve/RLY3_COM"
+    ],
+    "?VALVE/RLY3_NO": [
+      "/Motor Valve/RLY3_NO"
+    ],
+    "?VALVE/RLY3_NC": [
+      "/Motor Valve/RLY3_NC"
+    ],
+    "VALVE/RLY4_COM": [
+      "/Motor Valve/RLY4_COM"
+    ],
+    "?VALVE/RLY4_NO": [
+      "/Motor Valve/RLY4_NO"
+    ],
+    "?VALVE/RLY4_NC": [
+      "/Motor Valve/RLY4_NC"
+    ],
+    "POWER/EF_FLT_N": [
+      "/Power/EF_FLT_N"
+    ],
+    "P_IGND5-PIN_1)": [
+      "Net-(JP_IGND5-Pin_1)"
+    ],
+    "VALVE/RLY2_COM": [
+      "/Motor Valve/RLY2_COM"
+    ],
+    "?VALVE/RLY2_NO": [
+      "/Motor Valve/RLY2_NO"
+    ],
+    "?VALVE/RLY2_NC": [
+      "/Motor Valve/RLY2_NC"
+    ],
+    "OWER/LED_3V3_K": [
+      "/Power/LED_3V3_K"
+    ],
+    "485/NET_ISO_RO": [
+      "/RS-485/net_ISO_RO"
+    ],
+    "RA/NET_CH1_SIG": [
+      "/Sensors & LORA/net_CH1_SIG"
+    ],
+    "VALVE/RLY6_COM": [
+      "/Motor Valve/RLY6_COM"
+    ],
+    "?VALVE/RLY6_NO": [
+      "/Motor Valve/RLY6_NO"
+    ],
+    "?VALVE/RLY6_NC": [
+      "/Motor Valve/RLY6_NC"
+    ],
+    "D-(U1-NC-PAD4)": [
+      "unconnected-(U1-NC-Pad4)"
+    ],
+    "-(U1-NC-PAD13)": [
+      "unconnected-(U1-NC-Pad13)"
+    ],
+    "P_IGND4-PIN_1)": [
+      "Net-(JP_IGND4-Pin_1)"
+    ],
+    "/MCU/SETUP_BTN": [
+      "/MCU/SETUP_BTN"
+    ],
+    "VALVE/RLY7_COM": [
+      "/Motor Valve/RLY7_COM"
+    ],
+    "?VALVE/RLY7_NO": [
+      "/Motor Valve/RLY7_NO"
+    ],
+    "?VALVE/RLY7_NC": [
+      "/Motor Valve/RLY7_NC"
+    ],
+    "/MCU/NET_BOOT": [
+      "/MCU/net_BOOT"
+    ],
+    "CU1-IO8-PAD12)": [
+      "unconnected-(U_MCU1-IO8-Pad12)"
+    ],
+    "CU1-IO3-PAD15)": [
+      "unconnected-(U_MCU1-IO3-Pad15)"
+    ],
+    "U1-IO46-PAD16)": [
+      "unconnected-(U_MCU1-IO46-Pad16)"
+    ],
+    "CU1-IO9-PAD17)": [
+      "unconnected-(U_MCU1-IO9-Pad17)"
+    ],
+    "U1-IO21-PAD23)": [
+      "unconnected-(U_MCU1-IO21-Pad23)"
+    ],
+    "U1-IO47-PAD24)": [
+      "unconnected-(U_MCU1-IO47-Pad24)"
+    ],
+    "U1-IO48-PAD25)": [
+      "unconnected-(U_MCU1-IO48-Pad25)"
+    ],
+    "U1-IO45-PAD26)": [
+      "unconnected-(U_MCU1-IO45-Pad26)"
+    ],
+    "U1-IO35-PAD28)": [
+      "unconnected-(U_MCU1-IO35-Pad28)"
+    ],
+    "U1-IO36-PAD29)": [
+      "unconnected-(U_MCU1-IO36-Pad29)"
+    ],
+    "U1-IO37-PAD30)": [
+      "unconnected-(U_MCU1-IO37-Pad30)"
+    ],
+    "U1-IO42-PAD35)": [
+      "unconnected-(U_MCU1-IO42-Pad35)"
+    ],
+    "O1-OUTE-PAD11)": [
+      "unconnected-(U_ISO1-OUTE-Pad11)"
+    ],
+    "O1-OUTD-PAD12)": [
+      "unconnected-(U_ISO1-OUTD-Pad12)"
+    ],
+    "O1-OUTC-PAD13)": [
+      "unconnected-(U_ISO1-OUTC-Pad13)"
+    ],
+    "H}PIN_A4-PAD3)": [
+      "unconnected-(U_LORA1-PA15{slash}PIN_A4-Pad3)"
+    ],
+    "UART1_TX-PAD4)": [
+      "unconnected-(U_LORA1-PB6{slash}UART1_TX-Pad4)"
+    ],
+    "UART1_RX-PAD5)": [
+      "unconnected-(U_LORA1-PB7{slash}UART1_RX-Pad5)"
+    ],
+    "ORA1-PA1-PAD6)": [
+      "unconnected-(U_LORA1-PA1-Pad6)"
+    ],
+    "SH}SWDIO-PAD7)": [
+      "unconnected-(U_LORA1-PA13{slash}SWDIO-Pad7)"
+    ],
+    "SH}SWCLK-PAD8)": [
+      "unconnected-(U_LORA1-PA14{slash}SWCLK-Pad8)"
+    ],
+    "LASH}SCL-PAD9)": [
+      "unconnected-(U_LORA1-PA12{slash}SCL-Pad9)"
+    ],
+    "ASH}SDA-PAD10)": [
+      "unconnected-(U_LORA1-PA11{slash}SDA-Pad10)"
+    ],
+    "I1_MOSI-PAD13)": [
+      "unconnected-(U_LORA1-PA7{slash}SPI1_MOSI-Pad13)"
+    ],
+    "I1_MISO-PAD14)": [
+      "unconnected-(U_LORA1-PA6{slash}SPI1_MISO-Pad14)"
+    ],
+    "PI1_CLK-PAD15)": [
+      "unconnected-(U_LORA1-PA5{slash}SPI1_CLK-Pad15)"
+    ],
+    "PI1_SS}-PAD16)": [
+      "unconnected-(U_LORA1-PA4{slash}~{SPI1_SS}-Pad16)"
+    ],
+    "RA1-PA8-PAD19)": [
+      "unconnected-(U_LORA1-PA8-Pad19)"
+    ],
+    "RA1-PA9-PAD20)": [
+      "unconnected-(U_LORA1-PA9-Pad20)"
+    ],
+    "}PIN_A3-PAD25)": [
+      "unconnected-(U_LORA1-PA10{slash}PIN_A3-Pad25)"
+    ],
+    "}PIN_A2-PAD26)": [
+      "unconnected-(U_LORA1-PB2{slash}PIN_A2-Pad26)"
+    ],
+    "A1-PB12-PAD27)": [
+      "unconnected-(U_LORA1-PB12-Pad27)"
+    ],
+    "RA1-PA0-PAD29)": [
+      "unconnected-(U_LORA1-PA0-Pad29)"
+    ],
+    "RA1-PB5-PAD30)": [
+      "unconnected-(U_LORA1-PB5-Pad30)"
+    ],
+    "}PIN_A1-PAD31)": [
+      "unconnected-(U_LORA1-PB4{slash}PIN_A1-Pad31)"
+    ],
+    "}PIN_A0-PAD32)": [
+      "unconnected-(U_LORA1-PB3{slash}PIN_A0-Pad32)"
+    ]
+  },
+  "net_name_collisions": {},
+  "source": "https://raw.githubusercontent.com/KiCad/kicad-source-mirror/10.0/pcbnew/exporters/export_d356.cpp",
+  "scope": "Export compatibility correction only. No PCB or schematic nets, positions, pad sizes, layer access or drill fields changed."
+}

@@ -1,0 +1,10 @@
+{
+  "io41_to_isolator_inb_verified": true,
+  "io42_no_connect_verified": true,
+  "only_authorized_net_merge": true,
+  "section_a_connectivity_preserved": true,
+  "isolated_side_combined_direction_preserved": true,
+  "pcb_pads_checked": 691,
+  "pcb_changes_only_three_pad_net_assignments": true,
+  "original_sources_unchanged": true
+}

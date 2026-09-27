@@ -1,0 +1,474 @@
+{
+  "approved_connections_verified": {
+    "SENSOR_CH1": {
+      "net": "SENSOR_CH1",
+      "pins": [
+        [
+          "C_FILT1",
+          "1"
+        ],
+        [
+          "D_CLHI1",
+          "3"
+        ],
+        [
+          "JP_VBYP1",
+          "2"
+        ],
+        [
+          "R_BURDEN1",
+          "1"
+        ],
+        [
+          "R_SER1",
+          "2"
+        ],
+        [
+          "R_VBOT1",
+          "1"
+        ],
+        [
+          "U_MCU1",
+          "39"
+        ]
+      ]
+    },
+    "SENSOR_CH2": {
+      "net": "SENSOR_CH2",
+      "pins": [
+        [
+          "C_FILT2",
+          "1"
+        ],
+        [
+          "D_CLHI2",
+          "3"
+        ],
+        [
+          "JP_VBYP2",
+          "2"
+        ],
+        [
+          "R_BURDEN2",
+          "1"
+        ],
+        [
+          "R_SER2",
+          "2"
+        ],
+        [
+          "R_VBOT2",
+          "1"
+        ],
+        [
+          "U_MCU1",
+          "38"
+        ]
+      ]
+    },
+    "SENSOR_CH3": {
+      "net": "SENSOR_CH3",
+      "pins": [
+        [
+          "C_FILT3",
+          "1"
+        ],
+        [
+          "D_CLHI3",
+          "3"
+        ],
+        [
+          "JP_VBYP3",
+          "2"
+        ],
+        [
+          "R_BURDEN3",
+          "1"
+        ],
+        [
+          "R_SER3",
+          "2"
+        ],
+        [
+          "R_VBOT3",
+          "1"
+        ],
+        [
+          "U_MCU1",
+          "4"
+        ]
+      ]
+    },
+    "SENSOR_CH4": {
+      "net": "SENSOR_CH4",
+      "pins": [
+        [
+          "C_FILT4",
+          "1"
+        ],
+        [
+          "D_CLHI4",
+          "3"
+        ],
+        [
+          "JP_VBYP4",
+          "2"
+        ],
+        [
+          "R_BURDEN4",
+          "1"
+        ],
+        [
+          "R_SER4",
+          "2"
+        ],
+        [
+          "R_VBOT4",
+          "1"
+        ],
+        [
+          "U_MCU1",
+          "5"
+        ]
+      ]
+    },
+    "SENSOR_CH5": {
+      "net": "SENSOR_CH5",
+      "pins": [
+        [
+          "C_FILT5",
+          "1"
+        ],
+        [
+          "D_CLHI5",
+          "3"
+        ],
+        [
+          "JP_VBYP5",
+          "2"
+        ],
+        [
+          "R_BURDEN5",
+          "1"
+        ],
+        [
+          "R_SER5",
+          "2"
+        ],
+        [
+          "R_VBOT5",
+          "1"
+        ],
+        [
+          "U_MCU1",
+          "6"
+        ]
+      ]
+    },
+    "SENSOR_CH6": {
+      "net": "SENSOR_CH6",
+      "pins": [
+        [
+          "C_FILT6",
+          "1"
+        ],
+        [
+          "D_CLHI6",
+          "3"
+        ],
+        [
+          "JP_VBYP6",
+          "2"
+        ],
+        [
+          "R_BURDEN6",
+          "1"
+        ],
+        [
+          "R_SER6",
+          "2"
+        ],
+        [
+          "R_VBOT6",
+          "1"
+        ],
+        [
+          "U_MCU1",
+          "7"
+        ]
+      ]
+    },
+    "VALVE_SPI_CS": {
+      "net": "VALVE_SPI_CS",
+      "pins": [
+        [
+          "U_MCU1",
+          "18"
+        ],
+        [
+          "U_VALVEEXP1",
+          "11"
+        ]
+      ]
+    },
+    "VALVE_SPI_MOSI": {
+      "net": "VALVE_SPI_MOSI",
+      "pins": [
+        [
+          "U_MCU1",
+          "19"
+        ],
+        [
+          "U_VALVEEXP1",
+          "13"
+        ]
+      ]
+    },
+    "VALVE_SPI_SCLK": {
+      "net": "VALVE_SPI_SCLK",
+      "pins": [
+        [
+          "U_MCU1",
+          "20"
+        ],
+        [
+          "U_VALVEEXP1",
+          "12"
+        ]
+      ]
+    },
+    "VALVE_SPI_MISO": {
+      "net": "VALVE_SPI_MISO",
+      "pins": [
+        [
+          "U_MCU1",
+          "21"
+        ],
+        [
+          "U_VALVEEXP1",
+          "14"
+        ]
+      ]
+    },
+    "LORA_UART_TX": {
+      "net": "LORA_UART_TX",
+      "pins": [
+        [
+          "U_LORA1",
+          "5"
+        ],
+        [
+          "U_MCU1",
+          "10"
+        ]
+      ]
+    },
+    "LORA_UART_RX": {
+      "net": "LORA_UART_RX",
+      "pins": [
+        [
+          "U_LORA1",
+          "4"
+        ],
+        [
+          "U_MCU1",
+          "11"
+        ]
+      ]
+    },
+    "net_USB_DM": {
+      "net": "net_USB_DM",
+      "pins": [
+        [
+          "J_USB1",
+          "A7"
+        ],
+        [
+          "J_USB1",
+          "B7"
+        ],
+        [
+          "U_MCU1",
+          "13"
+        ]
+      ]
+    },
+    "net_USB_DP": {
+      "net": "net_USB_DP",
+      "pins": [
+        [
+          "J_USB1",
+          "A6"
+        ],
+        [
+          "J_USB1",
+          "B6"
+        ],
+        [
+          "U_MCU1",
+          "14"
+        ]
+      ]
+    },
+    "RS485_TX": {
+      "net": "RS485_TX",
+      "pins": [
+        [
+          "U_ISO1",
+          "2"
+        ],
+        [
+          "U_MCU1",
+          "8"
+        ]
+      ]
+    },
+    "RS485_RX": {
+      "net": "RS485_RX",
+      "pins": [
+        [
+          "U_ISO1",
+          "7"
+        ],
+        [
+          "U_MCU1",
+          "9"
+        ]
+      ]
+    },
+    "+3V3_TP": {
+      "net": "+3V3",
+      "pins": [
+        [
+          "C_BULK2",
+          "1"
+        ],
+        [
+          "C_DEC1",
+          "1"
+        ],
+        [
+          "C_DEC10",
+          "1"
+        ],
+        [
+          "C_DEC2",
+          "1"
+        ],
+        [
+          "C_DEC3",
+          "1"
+        ],
+        [
+          "C_DEC4",
+          "1"
+        ],
+        [
+          "C_DEC5",
+          "1"
+        ],
+        [
+          "C_DEC6",
+          "1"
+        ],
+        [
+          "C_DEC7",
+          "1"
+        ],
+        [
+          "C_DEC8",
+          "1"
+        ],
+        [
+          "C_DEC9",
+          "1"
+        ],
+        [
+          "C_OUT3",
+          "1"
+        ],
+        [
+          "D_CLHI1",
+          "2"
+        ],
+        [
+          "D_CLHI2",
+          "2"
+        ],
+        [
+          "D_CLHI3",
+          "2"
+        ],
+        [
+          "D_CLHI4",
+          "2"
+        ],
+        [
+          "D_CLHI5",
+          "2"
+        ],
+        [
+          "D_CLHI6",
+          "2"
+        ],
+        [
+          "D_LED2",
+          "1"
+        ],
+        [
+          "L2",
+          "2"
+        ],
+        [
+          "R_BOOT1",
+          "1"
+        ],
+        [
+          "R_ENPU1",
+          "1"
+        ],
+        [
+          "R_EXPRST1",
+          "1"
+        ],
+        [
+          "R_FB2A1",
+          "1"
+        ],
+        [
+          "R_LORARST1",
+          "1"
+        ],
+        [
+          "R_SETUP1",
+          "1"
+        ],
+        [
+          "TP_3V3",
+          "1"
+        ],
+        [
+          "U_ISO1",
+          "1"
+        ],
+        [
+          "U_LORA1",
+          "24"
+        ],
+        [
+          "U_MCU1",
+          "2"
+        ],
+        [
+          "U_VALVEEXP1",
+          "9"
+        ]
+      ]
+    }
+  },
+  "all_net_partitions_match_authorized_merges": true,
+  "rs485_direction_pins_still_separate": true,
+  "pcb_pads_checked": 691,
+  "footprint_geometry_unchanged": true,
+  "original_sources_unchanged": true
+}

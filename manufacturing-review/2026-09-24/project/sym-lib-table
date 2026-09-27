@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "SWAFarm_Review") (type "KiCad") (uri "${KIPRJMOD}/SWAFarm_Review.kicad_sym") (options "") (descr "Datasheet-verified pin maps preserving review schematic geometry"))
+)

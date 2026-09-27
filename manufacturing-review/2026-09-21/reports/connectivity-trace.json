@@ -1,0 +1,4312 @@
+{
+  "nets": [
+    {
+      "net": "+3V3",
+      "nodes": [
+        {
+          "ref": "C_BULK2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC10",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC3",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC4",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC5",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC6",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC7",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC8",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC9",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_OUT3",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI1",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI2",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI3",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI4",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI5",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI6",
+          "pin": "2",
+          "pinfunction": "A_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_LED2",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L2",
+          "pin": "2",
+          "pinfunction": "2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BOOT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ENPU1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_EXPRST1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FB2A1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_LORARST1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SETUP1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "1",
+          "pinfunction": "Vcc1_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_LORA1",
+          "pin": "24",
+          "pinfunction": "VDD_24",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_MCU1",
+          "pin": "2",
+          "pinfunction": "3V3_2",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "9",
+          "pinfunction": "V_{DD}_9",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "net": "+5V",
+      "nodes": [
+        {
+          "ref": "C_IN3",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_ISOIN1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_OUT2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L1",
+          "pin": "2",
+          "pinfunction": "2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_EN2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FB1A1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_LED1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_PG1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_5V1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "3",
+          "pinfunction": "VIN_3",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_ISODCDC1",
+          "pin": "2",
+          "pinfunction": "+Vin_2",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/LORA_UART_RX",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "11",
+          "pinfunction": "IO18_11",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/LORA_UART_TX",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "10",
+          "pinfunction": "IO17_10",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/RS485_DE",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "34",
+          "pinfunction": "IO41_34",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/RS485_RE",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "35",
+          "pinfunction": "IO42_35",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/RS485_RX",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "9",
+          "pinfunction": "IO16_9",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/RS485_TX",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "8",
+          "pinfunction": "IO15_8",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/SENSOR_CH1",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "39",
+          "pinfunction": "IO1_39",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/SENSOR_CH2",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "38",
+          "pinfunction": "IO2_38",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/SENSOR_CH3",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "4",
+          "pinfunction": "IO4_4",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/SENSOR_CH4",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "5",
+          "pinfunction": "IO5_5",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/SENSOR_CH5",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "6",
+          "pinfunction": "IO6_6",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/SENSOR_CH6",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "7",
+          "pinfunction": "IO7_7",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/VALVE_SPI_CS",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "18",
+          "pinfunction": "IO10_18",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/VALVE_SPI_MISO",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "21",
+          "pinfunction": "IO13_21",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/VALVE_SPI_MOSI",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "19",
+          "pinfunction": "IO11_19",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/VALVE_SPI_SCLK",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "20",
+          "pinfunction": "IO12_20",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/net_USB_DM",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "13",
+          "pinfunction": "USB_D-_13",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/MCU/net_USB_DP",
+      "nodes": [
+        {
+          "ref": "U_MCU1",
+          "pin": "14",
+          "pinfunction": "USB_D+_14",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/Motor Valve/VALVE_SPI_CS",
+      "nodes": [
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "11",
+          "pinfunction": "~{CS}_11",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "/Motor Valve/VALVE_SPI_MISO",
+      "nodes": [
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "14",
+          "pinfunction": "SO_14",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "net": "/Motor Valve/VALVE_SPI_MOSI",
+      "nodes": [
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "13",
+          "pinfunction": "SI_13",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "/Motor Valve/VALVE_SPI_SCLK",
+      "nodes": [
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "12",
+          "pinfunction": "SCK_12",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "/Power/DC_IN_RAW_N",
+      "nodes": [
+        {
+          "ref": "J1",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "Q1",
+          "pin": "3",
+          "pinfunction": "D_3",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Power/net_Q1G",
+      "nodes": [
+        {
+          "ref": "Q1",
+          "pin": "1",
+          "pinfunction": "G_1",
+          "pintype": "input"
+        },
+        {
+          "ref": "R_gate1",
+          "pin": "2",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Power/net_USB_DM",
+      "nodes": [
+        {
+          "ref": "J_USB1",
+          "pin": "A7",
+          "pinfunction": "D-_A7",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "B7",
+          "pinfunction": "D-_B7",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/Power/net_USB_DP",
+      "nodes": [
+        {
+          "ref": "J_USB1",
+          "pin": "A6",
+          "pinfunction": "D+_A6",
+          "pintype": "bidirectional"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "B6",
+          "pinfunction": "D+_B6",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/RS-485/RS485_DE",
+      "nodes": [
+        {
+          "ref": "U_ISO1",
+          "pin": "3",
+          "pinfunction": "INB_3",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "/RS-485/RS485_RX",
+      "nodes": [
+        {
+          "ref": "U_ISO1",
+          "pin": "7",
+          "pinfunction": "OUTF_7",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "net": "/RS-485/RS485_TX",
+      "nodes": [
+        {
+          "ref": "U_ISO1",
+          "pin": "2",
+          "pinfunction": "INA_2",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/LORA_UART_RX",
+      "nodes": [
+        {
+          "ref": "U_LORA1",
+          "pin": "4",
+          "pinfunction": "PB6/UART1_TX_4",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/LORA_UART_TX",
+      "nodes": [
+        {
+          "ref": "U_LORA1",
+          "pin": "5",
+          "pinfunction": "PB7/UART1_RX_5",
+          "pintype": "bidirectional"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/SENSOR_CH1",
+      "nodes": [
+        {
+          "ref": "C_FILT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI1",
+          "pin": "3",
+          "pinfunction": "A/K_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_VBYP1",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BURDEN1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SER1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT1",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/SENSOR_CH2",
+      "nodes": [
+        {
+          "ref": "C_FILT2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI2",
+          "pin": "3",
+          "pinfunction": "A/K_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_VBYP2",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BURDEN2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SER2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT2",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/SENSOR_CH3",
+      "nodes": [
+        {
+          "ref": "C_FILT3",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI3",
+          "pin": "3",
+          "pinfunction": "A/K_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_VBYP3",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BURDEN3",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SER3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT3",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/SENSOR_CH4",
+      "nodes": [
+        {
+          "ref": "C_FILT4",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI4",
+          "pin": "3",
+          "pinfunction": "A/K_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_VBYP4",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BURDEN4",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SER4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT4",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/SENSOR_CH5",
+      "nodes": [
+        {
+          "ref": "C_FILT5",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI5",
+          "pin": "3",
+          "pinfunction": "A/K_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_VBYP5",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BURDEN5",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SER5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT5",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "/Sensors & LORA/SENSOR_CH6",
+      "nodes": [
+        {
+          "ref": "C_FILT6",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI6",
+          "pin": "3",
+          "pinfunction": "A/K_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_VBYP6",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BURDEN6",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SER6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT6",
+          "pin": "1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "12V_SW",
+      "nodes": [
+        {
+          "ref": "C_IN2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_OUT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_EN1A1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FLT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_12V_SW1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "15",
+          "pinfunction": "OUT_15",
+          "pintype": "power_out"
+        },
+        {
+          "ref": "U1",
+          "pin": "16",
+          "pinfunction": "OUT_16",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "2",
+          "pinfunction": "VIN_2",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "net": "GND",
+      "nodes": [
+        {
+          "ref": "C_BULK2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_COMP1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC10",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC7",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC8",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DEC9",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_DVDT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_EN1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_FILT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_FILT2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_FILT3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_FILT4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_FILT5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_FILT6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_IN1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_IN2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_IN3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_ISOIN1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_OUT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_OUT2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_OUT3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_SS1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VALVEBULK1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VALVEBULK2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VALVEBULK3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VALVEBULK4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VALVEBULK5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VALVEBULK6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VMDEC1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VMDEC2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VMDEC3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VMDEC4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VMDEC5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "C_VMDEC6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D1",
+          "pin": "2",
+          "pinfunction": "A2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI1",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI2",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI3",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI4",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI5",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_CLHI6",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_FLT1",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_LINK1",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_PWR1",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J1",
+          "pin": "3",
+          "pinfunction": "Pin_3_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_IGND1",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_IGND2",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_IGND3",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_IGND4",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_IGND5",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "JP_IGND6",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_LORASMA1",
+          "pin": "2",
+          "pinfunction": "Ext_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_OUT1",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_OUT1",
+          "pin": "3",
+          "pinfunction": "Pin_3_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_PROG1",
+          "pin": "3",
+          "pinfunction": "Pin_3_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_SENSOR_RET1",
+          "pin": "1",
+          "pinfunction": "Pin_1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_SENSOR_RET1",
+          "pin": "2",
+          "pinfunction": "Pin_2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_SENSOR_RET1",
+          "pin": "3",
+          "pinfunction": "Pin_3_3",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_SENSOR_RET1",
+          "pin": "4",
+          "pinfunction": "Pin_4_4",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_SENSOR_RET1",
+          "pin": "5",
+          "pinfunction": "Pin_5_5",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_SENSOR_RET1",
+          "pin": "6",
+          "pinfunction": "Pin_6_6",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "A1",
+          "pinfunction": "GND_A1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "A12",
+          "pinfunction": "GND_A12",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "B1",
+          "pinfunction": "GND_B1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "B12",
+          "pinfunction": "GND_B12",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_USB1",
+          "pin": "SH",
+          "pinfunction": "SHIELD_SH",
+          "pintype": "passive"
+        },
+        {
+          "ref": "Q1",
+          "pin": "2",
+          "pinfunction": "S_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_CC1_1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_CC2_1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_EN1B1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FB1B1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FB2B1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM_V1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM_V2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM_V3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM_V4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM_V5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_ILIM_V6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_IMON1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_LED2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_LORABOOT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_OVP2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_RT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_UVLO2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT3",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT4",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT5",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_VBOT6",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "SW_BOOT1",
+          "pin": "2",
+          "pinfunction": "2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "SW_RESET1",
+          "pin": "2",
+          "pinfunction": "2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "SW_SETUP1",
+          "pin": "2",
+          "pinfunction": "2_2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_GND1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "17",
+          "pinfunction": "RTN_17",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "6",
+          "pinfunction": "MODE_6",
+          "pintype": "input"
+        },
+        {
+          "ref": "U1",
+          "pin": "8",
+          "pinfunction": "RTN_8",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U2",
+          "pin": "11",
+          "pinfunction": "GND_11",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "8",
+          "pinfunction": "GND_8",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U3",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV1",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV1",
+          "pin": "7",
+          "pinfunction": "GND_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV1",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV2",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV2",
+          "pin": "7",
+          "pinfunction": "GND_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV2",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV3",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV3",
+          "pin": "7",
+          "pinfunction": "GND_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV3",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV4",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV4",
+          "pin": "7",
+          "pinfunction": "GND_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV4",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV5",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV5",
+          "pin": "7",
+          "pinfunction": "GND_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV5",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV6",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_DRV6",
+          "pin": "7",
+          "pinfunction": "GND_7",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_DRV6",
+          "pin": "9",
+          "pinfunction": "GND_9",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "4",
+          "pinfunction": "INC_4",
+          "pintype": "input"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "5",
+          "pinfunction": "IND_5",
+          "pintype": "input"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "6",
+          "pinfunction": "INE_6",
+          "pintype": "input"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "8",
+          "pinfunction": "GND1_8",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_ISODCDC1",
+          "pin": "1",
+          "pinfunction": "-Vin_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_LORA1",
+          "pin": "11",
+          "pinfunction": "GND_11",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_LORA1",
+          "pin": "17",
+          "pinfunction": "GND_17",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_LORA1",
+          "pin": "18",
+          "pinfunction": "GND_18",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_LORA1",
+          "pin": "23",
+          "pinfunction": "GND_23",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_LORA1",
+          "pin": "28",
+          "pinfunction": "GND_28",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_MCU1",
+          "pin": "1",
+          "pinfunction": "GND_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_MCU1",
+          "pin": "40",
+          "pinfunction": "GND_40",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_MCU1",
+          "pin": "41",
+          "pinfunction": "GND_41",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "10",
+          "pinfunction": "V_{SS}_10",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "15",
+          "pinfunction": "A0_15",
+          "pintype": "input"
+        },
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "16",
+          "pinfunction": "A1_16",
+          "pintype": "input"
+        },
+        {
+          "ref": "U_VALVEEXP1",
+          "pin": "17",
+          "pinfunction": "A2_17",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "ISO_5V",
+      "nodes": [
+        {
+          "ref": "C_ISOOUT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BIASA1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_ISO5V1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "16",
+          "pinfunction": "Vcc2_16",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_ISODCDC1",
+          "pin": "4",
+          "pinfunction": "+Vout_4",
+          "pintype": "power_out"
+        },
+        {
+          "ref": "U_RS485_TX1",
+          "pin": "8",
+          "pinfunction": "VCC_8",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "net": "ISO_GND",
+      "nodes": [
+        {
+          "ref": "C_ISOOUT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D_RS485PROT1",
+          "pin": "3",
+          "pinfunction": "common_3",
+          "pintype": "input"
+        },
+        {
+          "ref": "D_RS485PROT2",
+          "pin": "3",
+          "pinfunction": "common_3",
+          "pintype": "input"
+        },
+        {
+          "ref": "J_RS485_IN1",
+          "pin": "1",
+          "pinfunction": "Pin_1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_RS485_IN1",
+          "pin": "5",
+          "pinfunction": "Pin_5_5",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_RS485_LOC1",
+          "pin": "1",
+          "pinfunction": "Pin_1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_RS485_LOC1",
+          "pin": "5",
+          "pinfunction": "Pin_5_5",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_RS485_OUT1",
+          "pin": "1",
+          "pinfunction": "Pin_1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_RS485_OUT1",
+          "pin": "5",
+          "pinfunction": "Pin_5_5",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_BIASB1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_ISOGND1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U_ISO1",
+          "pin": "9",
+          "pinfunction": "GND2_9",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U_ISODCDC1",
+          "pin": "3",
+          "pinfunction": "-Vout_3",
+          "pintype": "power_out"
+        },
+        {
+          "ref": "U_RS485_TX1",
+          "pin": "5",
+          "pinfunction": "GND_5",
+          "pintype": "power_in"
+        }
+      ]
+    },
+    {
+      "net": "Net-(D_LED1-K)",
+      "nodes": [
+        {
+          "ref": "D_LED1",
+          "pin": "1",
+          "pinfunction": "K_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_PG1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_PG1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "10",
+          "pinfunction": "PWRGD_10",
+          "pintype": "open_collector"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-ILIM)",
+      "nodes": [
+        {
+          "ref": "R_ILIM1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "11",
+          "pinfunction": "ILIM_11",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-IMON)",
+      "nodes": [
+        {
+          "ref": "R_IMON1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_IMON1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "10",
+          "pinfunction": "IMON_10",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-OVP)",
+      "nodes": [
+        {
+          "ref": "R_OVP1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_OVP2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "5",
+          "pinfunction": "OVP_5",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-UVLO)",
+      "nodes": [
+        {
+          "ref": "R_UVLO1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_UVLO2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "3",
+          "pinfunction": "UVLO_3",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-dVdT)",
+      "nodes": [
+        {
+          "ref": "C_DVDT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "12",
+          "pinfunction": "dVdT_12",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-~{FLT})",
+      "nodes": [
+        {
+          "ref": "R_FLT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "TP_FLT1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "14",
+          "pinfunction": "~{FLT}_14",
+          "pintype": "open_collector"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U1-~{SHDN})",
+      "nodes": [
+        {
+          "ref": "R_SHDN1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "7",
+          "pinfunction": "~{SHDN}_7",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-BOOT)",
+      "nodes": [
+        {
+          "ref": "C_BOOT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "1",
+          "pinfunction": "BOOT_1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-COMP)",
+      "nodes": [
+        {
+          "ref": "R_COMP1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "7",
+          "pinfunction": "COMP_7",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-EN)",
+      "nodes": [
+        {
+          "ref": "R_EN1A1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_EN1B1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "3",
+          "pinfunction": "EN_3",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-FB)",
+      "nodes": [
+        {
+          "ref": "R_FB1A1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FB1B1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "6",
+          "pinfunction": "FB_6",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-RT/CLK)",
+      "nodes": [
+        {
+          "ref": "R_RT1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "5",
+          "pinfunction": "RT/CLK_5",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-SS/TR)",
+      "nodes": [
+        {
+          "ref": "C_SS1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "4",
+          "pinfunction": "SS/TR_4",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U2-SW)",
+      "nodes": [
+        {
+          "ref": "C_BOOT1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L1",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U2",
+          "pin": "9",
+          "pinfunction": "SW_9",
+          "pintype": "power_out"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U3-EN)",
+      "nodes": [
+        {
+          "ref": "R_EN2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "5",
+          "pinfunction": "EN_5",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U3-SW)",
+      "nodes": [
+        {
+          "ref": "C_BOOT2",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "L2",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "2",
+          "pinfunction": "SW_2",
+          "pintype": "output"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U3-VBST)",
+      "nodes": [
+        {
+          "ref": "C_BOOT2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "6",
+          "pinfunction": "VBST_6",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "Net-(U3-VFB)",
+      "nodes": [
+        {
+          "ref": "R_FB2A1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_FB2B1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U3",
+          "pin": "4",
+          "pinfunction": "VFB_4",
+          "pintype": "input"
+        }
+      ]
+    },
+    {
+      "net": "VIN_12V",
+      "nodes": [
+        {
+          "ref": "C_IN1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "D1",
+          "pin": "1",
+          "pinfunction": "A1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "F1",
+          "pin": "2",
+          "pintype": "passive"
+        },
+        {
+          "ref": "F2",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "J_OUT1",
+          "pin": "1",
+          "pinfunction": "Pin_1_1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_OVP1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_SHDN1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_UVLO1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "R_gate1",
+          "pin": "1",
+          "pintype": "passive"
+        },
+        {
+          "ref": "U1",
+          "pin": "1",
+          "pinfunction": "IN_1",
+          "pintype": "power_in"
+        },
+        {
+          "ref": "U1",
+          "pin": "2",
+          "pinfunction": "IN_2",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "unconnected-(TP_3V3-Pad1)",
+      "nodes": [
+        {
+          "ref": "TP_3V3",
+          "pin": "1",
+          "pinfunction": "1_1",
+          "pintype": "passive"
+        }
+      ]
+    },
+    {
+      "net": "unconnected-(U1-NC-Pad4)",
+      "nodes": [
+        {
+          "ref": "U1",
+          "pin": "4",
+          "pinfunction": "NC_4",
+          "pintype": "no_connect"
+        }
+      ]
+    },
+    {
+      "net": "unconnected-(U1-NC-Pad13)",
+      "nodes": [
+        {
+          "ref": "U1",
+          "pin": "13",
+          "pinfunction": "NC_13",
+          "pintype": "no_connect"
+        }
+      ]
+    }
+  ],
+  "power_symbols": [
+    {
+      "sheet": "MCU.kicad_sch",
+      "reference": "#PWR070",
+      "value": "+3V3",
+      "at": [
+        [
+          "at",
+          "116.84",
+          "55.88",
+          "0"
+        ]
+      ],
+      "uuid": [
+        [
+          "uuid",
+          "d371bf23-9d22-41b4-ab8d-050089f6bfce"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "reference": "#PWR0160",
+      "value": "+12V",
+      "at": [
+        [
+          "at",
+          "66.04",
+          "19.05",
+          "0"
+        ]
+      ],
+      "uuid": [
+        [
+          "uuid",
+          "901f98d7-ef84-4ebb-ad40-5b3e1b8e9264"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "reference": "#PWR0167",
+      "value": "VIN_12V",
+      "at": [
+        [
+          "at",
+          "82.55",
+          "48.26",
+          "0"
+        ]
+      ],
+      "uuid": [
+        [
+          "uuid",
+          "566f8fa7-037f-474b-a45c-347cb4906e52"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "reference": "TP_3V3",
+      "value": "V3V3_RAIL",
+      "at": [
+        [
+          "at",
+          "240.03",
+          "107.95",
+          "0"
+        ]
+      ],
+      "uuid": [
+        [
+          "uuid",
+          "5ba3265a-7f1d-4c66-b6ac-97ede19dc064"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "reference": "#PWR01",
+      "value": "GND",
+      "at": [
+        [
+          "at",
+          "46.99",
+          "55.88",
+          "0"
+        ]
+      ],
+      "uuid": [
+        [
+          "uuid",
+          "d71c3373-68b7-47cc-8abf-1cd98a732966"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "reference": "#PWR0133",
+      "value": "+5V",
+      "at": [
+        [
+          "at",
+          "35.56",
+          "25.4",
+          "0"
+        ]
+      ],
+      "uuid": [
+        [
+          "uuid",
+          "43c06f09-68a1-4e04-bf6a-3ee93cc101b5"
+        ]
+      ]
+    }
+  ],
+  "labels": [
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_MOSI",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "95.25",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_DEBUG_RX",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "64.77",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LED_LINK",
+      "at": [
+        [
+          "at",
+          "119.38",
+          "139.7",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH6",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "85.09",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SETUP_BTN",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "102.87",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LED_PWR",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "87.63",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SETUP_BTN",
+      "at": [
+        [
+          "at",
+          "121.92",
+          "179.07",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_DEBUG_RX",
+      "at": [
+        [
+          "at",
+          "92.71",
+          "179.07",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_SCLK",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "97.79",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_BOOT",
+      "at": [
+        [
+          "at",
+          "78.74",
+          "135.89",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "RS485_TX",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "105.41",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH3",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "77.47",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_CS",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "92.71",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_DP",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "74.93",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH4",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "80.01",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LORA_UART_RX",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "69.85",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "RS485_RX",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "107.95",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LED_PWR",
+      "at": [
+        [
+          "at",
+          "119.38",
+          "127",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "RS485_RE",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "97.79",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_CHIP_EN",
+      "at": [
+        [
+          "at",
+          "76.2",
+          "157.48",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH1",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "69.85",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH2",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "72.39",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LED_FAULT",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "92.71",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_BOOT",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "67.31",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH5",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "82.55",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "RS485_DE",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "95.25",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_CHIP_EN",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "62.23",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_DM",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "72.39",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LED_LINK",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "90.17",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LED_FAULT",
+      "at": [
+        [
+          "at",
+          "119.38",
+          "152.4",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_MISO",
+      "at": [
+        [
+          "at",
+          "85.09",
+          "100.33",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_DEBUG_TX",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "62.23",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "LORA_UART_TX",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "67.31",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "MCU.kicad_sch",
+      "kind": "label",
+      "name": "net_DEBUG_TX",
+      "at": [
+        [
+          "at",
+          "92.71",
+          "176.53",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_OUT2",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "50.8",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_OUT1",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "30.48",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_IN2",
+      "at": [
+        [
+          "at",
+          "44.45",
+          "45.72",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_OUT1",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "35.56",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_IN2",
+      "at": [
+        [
+          "at",
+          "107.95",
+          "172.72",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_IN2",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "33.02",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_OUT2",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "43.18",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_MOSI",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "30.48",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_IN1",
+      "at": [
+        [
+          "at",
+          "107.95",
+          "43.18",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_OUT2",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "53.34",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_OUT1",
+      "at": [
+        [
+          "at",
+          "90.17",
+          "170.18",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_OUT1",
+      "at": [
+        [
+          "at",
+          "153.67",
+          "43.18",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_MISO",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "33.02",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_IN1",
+      "at": [
+        [
+          "at",
+          "107.95",
+          "106.68",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_OUT1",
+      "at": [
+        [
+          "at",
+          "153.67",
+          "106.68",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_IN1",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "30.48",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_OUT1",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "25.4",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_IN2",
+      "at": [
+        [
+          "at",
+          "44.45",
+          "109.22",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_IN1",
+      "at": [
+        [
+          "at",
+          "44.45",
+          "106.68",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_IN2",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "55.88",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_IN2",
+      "at": [
+        [
+          "at",
+          "107.95",
+          "109.22",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_OUT1",
+      "at": [
+        [
+          "at",
+          "90.17",
+          "43.18",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_OUT2",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "45.72",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_IN2",
+      "at": [
+        [
+          "at",
+          "44.45",
+          "172.72",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_OUT2",
+      "at": [
+        [
+          "at",
+          "153.67",
+          "172.72",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_OUT1",
+      "at": [
+        [
+          "at",
+          "153.67",
+          "170.18",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_IN2",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "43.18",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_OUT2",
+      "at": [
+        [
+          "at",
+          "153.67",
+          "109.22",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_IN1",
+      "at": [
+        [
+          "at",
+          "44.45",
+          "170.18",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_OUT2",
+      "at": [
+        [
+          "at",
+          "153.67",
+          "45.72",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_OUT1",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "27.94",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_OUT2",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "48.26",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_OUT2",
+      "at": [
+        [
+          "at",
+          "90.17",
+          "172.72",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_IN2",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "38.1",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_OUT2",
+      "at": [
+        [
+          "at",
+          "90.17",
+          "109.22",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_EXP_RESET",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "48.26",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_IN1",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "40.64",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_IN1",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "48.26",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_IN2",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "50.8",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_IN2",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "27.94",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_IN1",
+      "at": [
+        [
+          "at",
+          "107.95",
+          "170.18",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V4_IN2",
+      "at": [
+        [
+          "at",
+          "107.95",
+          "45.72",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V5_OUT1",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "33.02",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_IN1",
+      "at": [
+        [
+          "at",
+          "44.45",
+          "43.18",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_OUT2",
+      "at": [
+        [
+          "at",
+          "90.17",
+          "45.72",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V2_OUT1",
+      "at": [
+        [
+          "at",
+          "90.17",
+          "106.68",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_IN1",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "53.34",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V3_IN1",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "35.56",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_IN1",
+      "at": [
+        [
+          "at",
+          "228.6",
+          "25.4",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_CS",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "25.4",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V6_OUT2",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "55.88",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "net_V1_OUT1",
+      "at": [
+        [
+          "at",
+          "243.84",
+          "22.86",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Motor Valve.kicad_sch",
+      "kind": "label",
+      "name": "VALVE_SPI_SCLK",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "27.94",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_DP",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "170.18",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_DM",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "167.64",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_Q1G",
+      "at": [
+        [
+          "at",
+          "74.93",
+          "68.58",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_DM",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "165.1",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_CC2",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "160.02",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_CC1",
+      "at": [
+        [
+          "at",
+          "156.21",
+          "162.56",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "DC_IN_RAW_N",
+      "at": [
+        [
+          "at",
+          "57.15",
+          "53.34",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_CC2",
+      "at": [
+        [
+          "at",
+          "167.64",
+          "162.56",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_DP",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "172.72",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "DC_IN_RAW_P",
+      "at": [
+        [
+          "at",
+          "57.15",
+          "50.8",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_CC1",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "157.48",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Power.kicad_sch",
+      "kind": "label",
+      "name": "net_USB_VBUS",
+      "at": [
+        [
+          "at",
+          "152.4",
+          "152.4",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_DIR",
+      "at": [
+        [
+          "at",
+          "83.82",
+          "88.9",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "RS485_TX",
+      "at": [
+        [
+          "at",
+          "25.4",
+          "85.09",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_A",
+      "at": [
+        [
+          "at",
+          "215.9",
+          "66.04",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_IN_B_RAW",
+      "at": [
+        [
+          "at",
+          "167.64",
+          "71.12",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_LOC_B_RAW",
+      "at": [
+        [
+          "at",
+          "223.52",
+          "111.76",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_RO",
+      "at": [
+        [
+          "at",
+          "83.82",
+          "83.82",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_DI",
+      "at": [
+        [
+          "at",
+          "76.2",
+          "85.09",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_RO",
+      "at": [
+        [
+          "at",
+          "76.2",
+          "97.79",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "RS485_DE",
+      "at": [
+        [
+          "at",
+          "25.4",
+          "90.17",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_IN_A_RAW",
+      "at": [
+        [
+          "at",
+          "167.64",
+          "66.04",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_LOC_A_RAW",
+      "at": [
+        [
+          "at",
+          "168.91",
+          "104.14",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_LOC_B_RAW",
+      "at": [
+        [
+          "at",
+          "168.91",
+          "109.22",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_B",
+      "at": [
+        [
+          "at",
+          "217.17",
+          "109.22",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_DI",
+      "at": [
+        [
+          "at",
+          "83.82",
+          "93.98",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_A",
+      "at": [
+        [
+          "at",
+          "226.06",
+          "87.63",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_B",
+      "at": [
+        [
+          "at",
+          "226.06",
+          "90.17",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_B",
+      "at": [
+        [
+          "at",
+          "215.9",
+          "71.12",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_B",
+      "at": [
+        [
+          "at",
+          "143.51",
+          "90.17",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_DIR",
+      "at": [
+        [
+          "at",
+          "83.82",
+          "86.36",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_A",
+      "at": [
+        [
+          "at",
+          "143.51",
+          "77.47",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_IN_A_RAW",
+      "at": [
+        [
+          "at",
+          "224.79",
+          "66.04",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_ISO_DIR",
+      "at": [
+        [
+          "at",
+          "76.2",
+          "87.63",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_IN_B_RAW",
+      "at": [
+        [
+          "at",
+          "224.79",
+          "68.58",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_LOC_A_RAW",
+      "at": [
+        [
+          "at",
+          "223.52",
+          "109.22",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "RS485_RX",
+      "at": [
+        [
+          "at",
+          "25.4",
+          "97.79",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "net_MAIN_A",
+      "at": [
+        [
+          "at",
+          "217.17",
+          "104.14",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "RS-485.kicad_sch",
+      "kind": "label",
+      "name": "RS485_RE",
+      "at": [
+        [
+          "at",
+          "25.4",
+          "87.63",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH1_SIG",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "19.05",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_LORA_BOOT0",
+      "at": [
+        [
+          "at",
+          "19.05",
+          "41.91",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH1_SIG",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "44.45",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH5_SIG",
+      "at": [
+        [
+          "at",
+          "224.79",
+          "82.55",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH6_SIG",
+      "at": [
+        [
+          "at",
+          "224.79",
+          "120.65",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH2_SIG",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "82.55",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH2",
+      "at": [
+        [
+          "at",
+          "125.73",
+          "92.71",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH3_SIG",
+      "at": [
+        [
+          "at",
+          "148.59",
+          "120.65",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "LORA_UART_TX",
+      "at": [
+        [
+          "at",
+          "26.67",
+          "59.69",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH3_SIG",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "24.13",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH4_SIG",
+      "at": [
+        [
+          "at",
+          "224.79",
+          "44.45",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH3",
+      "at": [
+        [
+          "at",
+          "125.73",
+          "130.81",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH1",
+      "at": [
+        [
+          "at",
+          "125.73",
+          "54.61",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH6_SIG",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "31.75",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH5",
+      "at": [
+        [
+          "at",
+          "201.93",
+          "92.71",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH2_SIG",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "21.59",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH6",
+      "at": [
+        [
+          "at",
+          "201.93",
+          "130.81",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH5_SIG",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "29.21",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "LORA_RF",
+      "at": [
+        [
+          "at",
+          "93.98",
+          "39.37",
+          "180"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "LORA_UART_RX",
+      "at": [
+        [
+          "at",
+          "26.67",
+          "57.15",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_LORA_RST",
+      "at": [
+        [
+          "at",
+          "19.05",
+          "39.37",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "net_CH4_SIG",
+      "at": [
+        [
+          "at",
+          "172.72",
+          "26.67",
+          "0"
+        ]
+      ]
+    },
+    {
+      "sheet": "Sensors & LORA.kicad_sch",
+      "kind": "label",
+      "name": "SENSOR_CH4",
+      "at": [
+        [
+          "at",
+          "201.93",
+          "54.61",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2594 @@
+[
+  {
+    "reference": "C_BOOT1",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_BOOT2",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_COMP1",
+    "value": "2.2nF_TBD",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DVDT1",
+    "value": "1nF_TBD",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_IN1",
+    "value": "10uF_25V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_IN2",
+    "value": "10uF_25V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_IN3",
+    "value": "10uF_16V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_OUT1",
+    "value": "10uF_25V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_OUT2",
+    "value": "22uF_10V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_OUT3",
+    "value": "22uF_10V",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_SS1",
+    "value": "10nF_TBD",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "D1",
+    "value": "SMBJ18CA",
+    "footprint": "Diode_SMD:D_SMB",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "diode TVS thyrector",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_BUCK1",
+    "value": "PDS760-13",
+    "footprint": "Diode_SMD:D_PowerDI-5",
+    "MPN": "PDS760-13",
+    "Manufacturer": "Diodes Incorporated",
+    "Qualification": "Reference candidate; load and thermal validation pending",
+    "properties": {
+      "Manufacturer": "Diodes Incorporated",
+      "MPN": "PDS760-13",
+      "Qualification": "Reference candidate; load and thermal validation pending",
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "diode Schottky",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_LED1",
+    "value": "Green_PowerGood",
+    "footprint": "LED_SMD:LED_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    }
+  },
+  {
+    "reference": "D_LED2",
+    "value": "Green_3V3Present",
+    "footprint": "LED_SMD:LED_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    }
+  },
+  {
+    "reference": "F1",
+    "value": "Polyfuse_5A",
+    "footprint": "Fuse:Fuse_1812_4532Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "resettable fuse PTC PPTC polyfuse polyswitch",
+      "ki_fp_filters": "*polyfuse* *PTC*"
+    }
+  },
+  {
+    "reference": "F2",
+    "value": "Polyfuse_4A",
+    "footprint": "Fuse:Fuse_1812_4532Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "resettable fuse PTC PPTC polyfuse polyswitch",
+      "ki_fp_filters": "*polyfuse* *PTC*"
+    }
+  },
+  {
+    "reference": "J1",
+    "value": "PWR JACK",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J2",
+    "value": "Barrel_Jack_Switch",
+    "footprint": null,
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "exclude_from_bom": "",
+      "exclude_from_board": "",
+      "exclude_from_pos_files": "",
+      "ki_keywords": "DC power barrel jack connector",
+      "ki_fp_filters": "BarrelJack*"
+    }
+  },
+  {
+    "reference": "J_OUT1",
+    "value": "M12_5P",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J_USB1",
+    "value": "USB-C_Programming",
+    "footprint": "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "usb universal serial bus type-C USB2.0",
+      "ki_fp_filters": "USB*C*Receptacle*"
+    }
+  },
+  {
+    "reference": "L1",
+    "value": "3.3uH_TBD",
+    "footprint": "Inductor_SMD:L_Bourns-SRN6028",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "inductor choke coil reactor magnetic",
+      "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+    }
+  },
+  {
+    "reference": "L2",
+    "value": "2.2uH_TBD",
+    "footprint": "Inductor_SMD:L_Bourns-SRN4018",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "inductor choke coil reactor magnetic",
+      "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+    }
+  },
+  {
+    "reference": "Q1",
+    "value": "IPD50N06S4L-16",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "transistor NMOS N-MOS N-MOSFET"
+    }
+  },
+  {
+    "reference": "R_CC1_1",
+    "value": "5.1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_CC2_1",
+    "value": "5.1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_COMP1",
+    "value": "10k_TBD",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_EN1A1",
+    "value": "73.2k_TBD",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_EN1B1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_EN2",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_FB1A1",
+    "value": "52.3k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_FB1B1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_FB2A1",
+    "value": "32.4k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_FB2B1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_FLT1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_gate1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM1",
+    "value": "20k_TBD",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_IMON1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_LED1",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_LED2",
+    "value": "330",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_OVP1",
+    "value": "124k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_OVP2",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_PG1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_RT1",
+    "value": "100k_TBD",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SHDN1",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_UVLO1",
+    "value": "64.9k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_UVLO2",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "TP_3V3",
+    "value": "V3V3_RAIL",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_5V1",
+    "value": "V5_RAIL",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_12V_SW1",
+    "value": "V12_SW",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_FLT1",
+    "value": "nFLT",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_GND1",
+    "value": "GND",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_IMON1",
+    "value": "IMON",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_PG1",
+    "value": "nPWRGD",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_USBVBUS1",
+    "value": "USB_VBUS",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_VALVE_PWR1",
+    "value": "V12_VALVE",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "U1",
+    "value": "TPS26600PWP",
+    "footprint": "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "efuse protection switch",
+      "ki_fp_filters": "HTSSOP*1EP*4.4x5mm*P0.65mm*Mask2.66x2.46mm*"
+    }
+  },
+  {
+    "reference": "U2",
+    "value": "TPS54561",
+    "footprint": "Package_SON:WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "step-down adjustable texas",
+      "ki_fp_filters": "WSON*4x4mm*P0.8mm*EP2.6x3mm*"
+    }
+  },
+  {
+    "reference": "U3",
+    "value": "TPS563201",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Power",
+      "Sheetfile": "Power.kicad_sch",
+      "ki_keywords": "step-down dcdc voltage regulator",
+      "ki_fp_filters": "SOT?23*"
+    }
+  },
+  {
+    "reference": "C_BULK2",
+    "value": "10uF",
+    "footprint": "Capacitor_SMD:C_1206_3216Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC1",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC2",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC3",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC4",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC5",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC6",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC7",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC8",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC9",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_DEC10",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_EN1",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "D_FLT1",
+    "value": "Red",
+    "footprint": "LED_SMD:LED_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    }
+  },
+  {
+    "reference": "D_LINK1",
+    "value": "Yellow",
+    "footprint": "LED_SMD:LED_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    }
+  },
+  {
+    "reference": "D_PWR1",
+    "value": "Green",
+    "footprint": "LED_SMD:LED_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    }
+  },
+  {
+    "reference": "J_PROG1",
+    "value": "Debug_UART_TX_RX_GND",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "R_BOOT1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ENPU1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_LEDFLT1",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_LINK1",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_PWR1",
+    "value": "1k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SETUP1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "SW_BOOT1",
+    "value": "BOOT",
+    "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "switch normally-open pushbutton push-button"
+    }
+  },
+  {
+    "reference": "SW_RESET1",
+    "value": "RESET",
+    "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "switch normally-open pushbutton push-button"
+    }
+  },
+  {
+    "reference": "SW_SETUP1",
+    "value": "SETUP",
+    "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "switch normally-open pushbutton push-button"
+    }
+  },
+  {
+    "reference": "U_MCU1",
+    "value": "ESP32-S3-WROOM-1-N16R8",
+    "footprint": "RF_Module:ESP32-S3-WROOM-1",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "MCU",
+      "Sheetfile": "MCU.kicad_sch",
+      "ki_keywords": "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna",
+      "ki_fp_filters": "ESP32?S3?WROOM?1*"
+    }
+  },
+  {
+    "reference": "CMC_RS485_1",
+    "value": "744232090",
+    "footprint": "Inductor_SMD:L_CommonMode_Wurth_WE-CNSW-1206",
+    "MPN": "744232090",
+    "Manufacturer": "Wurth Elektronik",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Wurth Elektronik",
+      "MPN": "744232090",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "EMI filter",
+      "ki_fp_filters": "L_* L_CommonMode*"
+    }
+  },
+  {
+    "reference": "CMC_RS485_2",
+    "value": "744232090",
+    "footprint": "Inductor_SMD:L_CommonMode_Wurth_WE-CNSW-1206",
+    "MPN": "744232090",
+    "Manufacturer": "Wurth Elektronik",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Wurth Elektronik",
+      "MPN": "744232090",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "EMI filter",
+      "ki_fp_filters": "L_* L_CommonMode*"
+    }
+  },
+  {
+    "reference": "C_ISOIN1",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_ISOOUT1",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "D_RS485PROT1",
+    "value": "SM712-02HTG",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "transient voltage suppressor thyrector transil",
+      "ki_fp_filters": "SOT?23*"
+    }
+  },
+  {
+    "reference": "D_RS485PROT2",
+    "value": "SM712-02HTG",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "transient voltage suppressor thyrector transil",
+      "ki_fp_filters": "SOT?23*"
+    }
+  },
+  {
+    "reference": "J_RS485_IN1",
+    "value": "M12_5P_A_Coded_RS485_Bus_In",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J_RS485_LOC1",
+    "value": "M12_5P_A_Coded_RS485_Local",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J_RS485_OUT1",
+    "value": "M12_5P_A_Coded_RS485_Bus_Out",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "R_BIASA1",
+    "value": "680",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_BIASB1",
+    "value": "680",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_TERM1",
+    "value": "120R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "TP_ISO5V1",
+    "value": "ISO_5V",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_ISOGND1",
+    "value": "ISO_GND",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_RS485DI1",
+    "value": "ISO_DI",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_RS485RO1",
+    "value": "ISO_RO",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "U_ISO1",
+    "value": "ISO7761DW",
+    "footprint": "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "6 channel digital isolator",
+      "ki_fp_filters": "SOIC*7.5x10.3mm*P1.27mm*"
+    }
+  },
+  {
+    "reference": "U_ISODCDC1",
+    "value": "MEE1S0505SC",
+    "footprint": "Converter_DCDC:Converter_DCDC_Murata_MEE1SxxxxSC_THT",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "murata DC/DC isolated converter",
+      "ki_fp_filters": "Converter*DCDC*Murata*MEE1SxxxxSC*THT*"
+    }
+  },
+  {
+    "reference": "U_RS485_TX1",
+    "value": "THVD1450DR",
+    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "RS-485",
+      "Sheetfile": "RS-485.kicad_sch",
+      "ki_keywords": "RS485 RS422 transceiver half duplex",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm*"
+    }
+  },
+  {
+    "reference": "C_FILT1",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_FILT2",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_FILT3",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_FILT4",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_FILT5",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_FILT6",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "D_CLHI1",
+    "value": "BAV99",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "BAV99LT1G",
+    "Manufacturer": "onsemi",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "onsemi",
+      "MPN": "BAV99LT1G",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_CLHI2",
+    "value": "BAV99",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "BAV99LT1G",
+    "Manufacturer": "onsemi",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "onsemi",
+      "MPN": "BAV99LT1G",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_CLHI3",
+    "value": "BAV99",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "BAV99LT1G",
+    "Manufacturer": "onsemi",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "onsemi",
+      "MPN": "BAV99LT1G",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_CLHI4",
+    "value": "BAV99",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "BAV99LT1G",
+    "Manufacturer": "onsemi",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "onsemi",
+      "MPN": "BAV99LT1G",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_CLHI5",
+    "value": "BAV99",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "BAV99LT1G",
+    "Manufacturer": "onsemi",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "onsemi",
+      "MPN": "BAV99LT1G",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "D_CLHI6",
+    "value": "BAV99",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "MPN": "BAV99LT1G",
+    "Manufacturer": "onsemi",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "onsemi",
+      "MPN": "BAV99LT1G",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    }
+  },
+  {
+    "reference": "JP_IGND1",
+    "value": "I_mode_gnd",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_IGND2",
+    "value": "I_mode_gnd",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_IGND3",
+    "value": "I_mode_gnd",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_IGND4",
+    "value": "I_mode_gnd",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_IGND5",
+    "value": "I_mode_gnd",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_IGND6",
+    "value": "I_mode_gnd",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_VBYP1",
+    "value": "V_mode_bypass",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_VBYP2",
+    "value": "V_mode_bypass",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_VBYP3",
+    "value": "V_mode_bypass",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_VBYP4",
+    "value": "V_mode_bypass",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_VBYP5",
+    "value": "V_mode_bypass",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "JP_VBYP6",
+    "value": "V_mode_bypass",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J_LORASMA1",
+    "value": "SMA_Bulkhead_Antenna",
+    "footprint": "Connector_Coaxial:SMA_Amphenol_132134_Vertical",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF",
+      "ki_fp_filters": "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+    }
+  },
+  {
+    "reference": "J_SENSOR_RET1",
+    "value": "SensorReturn_x6",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J_SENSOR_SIG1",
+    "value": "SensorSignal_x6",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "R_BURDEN1",
+    "value": "150R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_BURDEN2",
+    "value": "150R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_BURDEN3",
+    "value": "150R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_BURDEN4",
+    "value": "150R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_BURDEN5",
+    "value": "150R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_BURDEN6",
+    "value": "150R",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_LORABOOT1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_LORARST1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SER1",
+    "value": "232k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SER2",
+    "value": "232k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SER3",
+    "value": "232k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SER4",
+    "value": "232k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SER5",
+    "value": "232k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_SER6",
+    "value": "232k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_VBOT1",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_VBOT2",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_VBOT3",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_VBOT4",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_VBOT5",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_VBOT6",
+    "value": "100k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "TP_LORABOOT1",
+    "value": "LORA_BOOT0",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "TP_LORARST1",
+    "value": "LORA_RESET",
+    "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    }
+  },
+  {
+    "reference": "U_LORA1",
+    "value": "RAK3172-xx-8-SM-xI",
+    "footprint": "RF_Module:RAK3172",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Sensors & LORA",
+      "Sheetfile": "Sensors & LORA.kicad_sch",
+      "ki_keywords": "IoT LoRa LoRaWAN RF",
+      "ki_fp_filters": "RAK3172*"
+    }
+  },
+  {
+    "reference": "C_VALVEBULK1",
+    "value": "1000uF_25V",
+    "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+    "MPN": "EEUFR1E102",
+    "Manufacturer": "Panasonic",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Panasonic",
+      "MPN": "EEUFR1E102",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    }
+  },
+  {
+    "reference": "C_VALVEBULK2",
+    "value": "1000uF_25V",
+    "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+    "MPN": "EEUFR1E102",
+    "Manufacturer": "Panasonic",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Panasonic",
+      "MPN": "EEUFR1E102",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    }
+  },
+  {
+    "reference": "C_VALVEBULK3",
+    "value": "1000uF_25V",
+    "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+    "MPN": "EEUFR1E102",
+    "Manufacturer": "Panasonic",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Panasonic",
+      "MPN": "EEUFR1E102",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    }
+  },
+  {
+    "reference": "C_VALVEBULK4",
+    "value": "1000uF_25V",
+    "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+    "MPN": "EEUFR1E102",
+    "Manufacturer": "Panasonic",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Panasonic",
+      "MPN": "EEUFR1E102",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    }
+  },
+  {
+    "reference": "C_VALVEBULK5",
+    "value": "1000uF_25V",
+    "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+    "MPN": "EEUFR1E102",
+    "Manufacturer": "Panasonic",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Panasonic",
+      "MPN": "EEUFR1E102",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    }
+  },
+  {
+    "reference": "C_VALVEBULK6",
+    "value": "1000uF_25V",
+    "footprint": "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm",
+    "MPN": "EEUFR1E102",
+    "Manufacturer": "Panasonic",
+    "Qualification": "Package and pinout checked; system qualification pending",
+    "properties": {
+      "Manufacturer": "Panasonic",
+      "MPN": "EEUFR1E102",
+      "Qualification": "Package and pinout checked; system qualification pending",
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    }
+  },
+  {
+    "reference": "C_VMDEC1",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_VMDEC2",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_VMDEC3",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_VMDEC4",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_VMDEC5",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "C_VMDEC6",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "C_*"
+    }
+  },
+  {
+    "reference": "J_VALVE_OUT1_1",
+    "value": "ValveOut1_x6",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "J_VALVE_OUT2_1",
+    "value": "ValveOut2_x6",
+    "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    }
+  },
+  {
+    "reference": "R_EXPRST1",
+    "value": "10k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM_V1",
+    "value": "20k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM_V2",
+    "value": "20k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM_V3",
+    "value": "20k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM_V4",
+    "value": "20k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM_V5",
+    "value": "20k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "R_ILIM_V6",
+    "value": "20k",
+    "footprint": "Resistor_SMD:R_0805_2012Metric",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "R res resistor",
+      "ki_fp_filters": "R_*"
+    }
+  },
+  {
+    "reference": "U_DRV1",
+    "value": "DRV8871DDAR",
+    "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "H-bridge driver motor current limit",
+      "ki_fp_filters": "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+    }
+  },
+  {
+    "reference": "U_DRV2",
+    "value": "DRV8871DDAR",
+    "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "H-bridge driver motor current limit",
+      "ki_fp_filters": "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+    }
+  },
+  {
+    "reference": "U_DRV3",
+    "value": "DRV8871DDAR",
+    "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "H-bridge driver motor current limit",
+      "ki_fp_filters": "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+    }
+  },
+  {
+    "reference": "U_DRV4",
+    "value": "DRV8871DDAR",
+    "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "H-bridge driver motor current limit",
+      "ki_fp_filters": "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+    }
+  },
+  {
+    "reference": "U_DRV5",
+    "value": "DRV8871DDAR",
+    "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "H-bridge driver motor current limit",
+      "ki_fp_filters": "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+    }
+  },
+  {
+    "reference": "U_DRV6",
+    "value": "DRV8871DDAR",
+    "footprint": "Package_SO:TI_SO-PowerPAD-8_ThermalVias",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "H-bridge driver motor current limit",
+      "ki_fp_filters": "Texas*HTSOP*1EP*3.9x4.9mm*P1.27mm*EP2.95x4.9mm*Mask2.4x3.1mm*"
+    }
+  },
+  {
+    "reference": "U_VALVEEXP1",
+    "value": "MCP23S17-E/SO",
+    "footprint": "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm",
+    "MPN": "",
+    "Manufacturer": "",
+    "Qualification": "",
+    "properties": {
+      "Sheetname": "Motor Valve",
+      "Sheetfile": "Motor Valve.kicad_sch",
+      "ki_keywords": "Microchip port-expander GPIO",
+      "ki_fp_filters": "SOIC*7.5x17.9mm*P1.27mm*"
+    }
+  }
+]

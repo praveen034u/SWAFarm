@@ -1,0 +1,37 @@
+ERC report (2026-09-24T23:42:26, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[lib_symbol_issues]: Symbol 'USB_C_Receptacle_16P' not found in symbol library 'Connector'
+    ; warning
+    @(120.65 mm, 167.64 mm): Symbol J_USB1 [USB_C_Receptacle_16P]
+[lib_symbol_mismatch]: Symbol 'MEE1S0505SC' doesn't match copy in library 'Converter_DCDC_Isolated'
+    ; warning
+    @(50.80 mm, 33.02 mm): Symbol U_ISODCDC1 [MEE1S0505SC]
+[lib_symbol_mismatch]: Symbol 'THVD1450DR' doesn't match copy in library 'Interface_UART'
+    ; warning
+    @(107.95 mm, 88.90 mm): Symbol U_RS485_TX1 [THVD1450DR]
+[lib_symbol_mismatch]: Symbol 'SM712_SOT23' doesn't match copy in library 'Diode'
+    ; warning
+    @(187.96 mm, 83.82 mm): Symbol D_RS485PROT1 [SM712_SOT23]
+[lib_symbol_mismatch]: Symbol 'SM712_SOT23' doesn't match copy in library 'Diode'
+    ; warning
+    @(189.23 mm, 120.65 mm): Symbol D_RS485PROT2 [SM712_SOT23]
+
+***** Sheet /Power/
+
+***** Sheet /MCU/
+
+***** Sheet /RS-485/
+
+***** Sheet /Sensors & LORA/
+
+***** Sheet /Motor Valve/
+
+ ** ERC messages: 5  Errors 0  Warnings 5
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
